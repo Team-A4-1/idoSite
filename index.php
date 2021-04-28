@@ -12,6 +12,10 @@ $router->map( 'GET', '/', function() {
 $router->map( 'GET', '/books', function() {
 	require __DIR__ . '/views/books.php';
 });
+$router->map( 'GET', '/login', function() {
+	require __DIR__ . '/views/login.php';
+});
+
 
 // match current request url
 $match = $router->match();
