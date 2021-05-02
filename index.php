@@ -5,16 +5,15 @@ require 'vendor/autoload.php';
 $router = new AltoRouter();
 
 // map pages
-$router->map( 'GET', '/', function() {
-	require __DIR__ . '/views/home.php';
-});
 
-$router->map( 'GET', '/books', function() {
-	require __DIR__ . '/views/books.php';
-});
-$router->map( 'GET', '/login', function() {
-	require __DIR__ . '/views/login.php';
-});
+$router->addRoutes(array(
+	array('GET', '/', function() {require __DIR__ . '/views/home.php';}),
+	array('GET', '/books', function() {require __DIR__ . '/views/books.php';}),
+	array('GET', '/info', function() {require __DIR__ . '/views/info.php';}),
+	array('GET', '/about', function() {require __DIR__ . '/views/about.php';}),
+	array('GET', '/contact', function() {require __DIR__ . '/views/contact.php';}),
+));
+
 
 
 // match current request url

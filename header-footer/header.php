@@ -16,10 +16,10 @@
     <div class="header">
         <img class="header-logo" src="../header-footer/assets/logo-sideways.png" alt="ido-logo">
 
-            <a href="#shop">Shop</a>
-            <a href="#howdoesitwork">How does it work</a>
-            <a href="#about">About us</a>
-            <a href="#contact">Contact</a>
+            <a href="/books">Shop</a>
+            <a href="/info">How does it work</a>
+            <a href="/about">About us</a>
+            <a href="/contact">Contact</a>
 
         <div class="header-right">
             <i class="icon-header fas fa-shopping-cart"></i>

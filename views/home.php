@@ -1,7 +1,7 @@
 <?php
-require_once('../header-footer/header.php');
+require_once('header-footer\header.php');
 ?>
-Test
+home
 <?php
-require_once('../header-footer/footer.php');
+require_once('header-footer\footer.php');
 ?>
