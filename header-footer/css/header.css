@@ -1,68 +1,79 @@
-body { 
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .header {
-    overflow: hidden;
-    background-color: white;
-    padding: 20px 20px;
-    box-shadow: 1px 1px 10px 1px #7A7979;
-  }
-  
-  .header a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    transition-duration: .2s;
-  }
-  
-  .header a:hover {
-    color: black;
-    border-bottom: 3px solid #346DBB;
-    transition-duration: .2s;
-  }
-  
-  .header a.active {
-    border-bottom: 3px solid #346DBB;
-  }
-  
-  .header-right {
-    float: right;
-  }
-  
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .header-right {
-      float: none;
-    }
-  }
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: 1px 1px 10px 1px #7a7979;
+}
 
-  .header-logo {
-      width: 250px;
-      float: left;
-  }
+.header a {
+  /* float: left; */
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  /* line-height: 25px; */
+  transition-duration: 0.2s;
+}
 
-  .icon-header {
-      padding: 10px 10px;
-      border: 2px solid #346DBB;
-      border-radius: 50%;
-      font-size: 22px;
-      transition-duration: .2s;
-  }
+.header a:hover {
+  color: black;
+  border-bottom: 3px solid #346dbb;
+  transition-duration: 0.2s;
+}
 
-  .icon-header:hover {
-    transition-duration: .2s;
-    border: 2px solid #346DBB;
-    background-color: #346DBB;
-    color: white;
+.header a.active {
+  border-bottom: 3px solid #346dbb;
+}
+
+.header-logo {
+  width: 250px;
+  float: left;
+}
+
+.icon-header {
+  padding: 10px 10px;
+  border: 2px solid #346dbb;
+  border-radius: 50%;
+  font-size: 22px;
+  transition-duration: 0.2s;
+  float: right;
+}
+
+.icon-header:hover {
+  transition-duration: 0.2s;
+  border: 2px solid #346dbb;
+  background-color: #346dbb;
+  color: white;
+}
+
+.header-menu a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.4fr 0.8fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header-left header-center header-right";
+}
+
+.header-left {
+  grid-area: header-left;
+}
+
+.header-center {
+  grid-area: header-center;
+  text-align: center;
+  display: inline-block;
+}
+
+.header-right {
+  grid-area: header-right;
 }
