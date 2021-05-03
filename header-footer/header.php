@@ -3,12 +3,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<title>ido shop</title>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Kevin Kranenburg">
-    <link rel="stylesheet" href="../header-footer/css/header.css">
+    <meta name="description" content="Here is a precise description of my awesome webpage.">
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="header-footer\css\header.css">
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
 </head>
 <body>
