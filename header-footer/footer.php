@@ -19,11 +19,7 @@
             </div>
             <div class="footer-left-text">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. 
-                Cum sociis natoque penatibus et magnis dis parturient montes, 
-                nascetur ridiculus mus. Donec quam felis, 
-                ultricies nec, pellentesque eu, 
-                pretium quis, sem. Nulla consequat massa quis enim.</p>
+                Aenean commodo ligula eget dolor.</p>
             </div>
         </div>
 
@@ -40,7 +36,7 @@
 
         <div class="footer-right">
             <div class="newsletter">
-                <p><b>MENU</b></p>
+                <p><b>NEWSLETTER</b></p>
                 <p>Subscribe to our newsletter and never miss new books</p>
                 <input class="newsletter-input" type="text" id="email" name="email" placeholder="Your E-Mail...">
                 <input class="newsletter-button" type="submit" value="SEND">
