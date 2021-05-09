@@ -1,7 +1,31 @@
 <?php
 $ini = parse_ini_file('../settings.ini');
-echo $ini['db_name'];     // mydatabase
-echo $ini['db_user'];     // myuser
-echo $ini['db_password']; // mypassword
+$servername =    $ini['server_name'];
+$username   =    $ini['db_user'];  
+$password   =    $ini['db_password'];
+$dbname     =    $ini['db_name']; 
+
+
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  $stmt = $conn->prepare("SELECT * FROM `users`");
+
+//   $stmt->bind_param("ss", $firstname, $lastname);
+
+
+  $stmt->execute();
+  $result = $stmt->fetch();
+
+  echo 
+  print_r($result);
+
+  $stmt->close();
+  $conn->close();
+
 ?>
 test
