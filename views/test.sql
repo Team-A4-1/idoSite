@@ -8,3 +8,4 @@ WHERE usernames.username = "John" AND passwords.password ="Pass123"
 --add new user
 INSERT INTO `usernames` (username) VALUES ('Samson')
 INSERT INTO `passwords` (password) VALUES ('Gertje69')
+INSERT INTO `user atributes` (`id`, `rights`, `user id`) VALUES ('1', '1', '1');
