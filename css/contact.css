@@ -1,0 +1,149 @@
+.contact-page-bottom {
+  background-color: #346dbb;
+  width: 100%;
+  height: 350px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.contact-form-box {
+  background-color: white;
+  height: 650px;
+  width: 550px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  padding: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas: "contact-page-left contact-page-right";
+  padding-top: 50px;
+}
+
+.contact-page-left {
+  grid-area: contact-page-left;
+  /* border: 1px solid black; */
+  height: 500px;
+}
+
+.contact-page-right {
+  grid-area: contact-page-right;
+  /* border: 1px solid black; */
+}
+
+.contact-input {
+    background-color: white;
+    border: 2px solid #346dbb;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.contact-textarea {
+    background-color: white;
+    border: 2px solid #346dbb;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.contact-btn {
+    height: 20px;
+    width: 50px;
+}
+
+.contact-info {
+    width: 600px;
+    float: right;
+    padding: 50px;
+}
+
+.contact-icon {
+    color: #346dbb;
+    font-size: 50px;
+}
+
+.logo-footer {
+    width: 120px;
+    margin: auto;
+    display: block;
+  }
+  
+  .logo-footer-circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+  }
+
+  .footer-left-text {
+    width: 65%;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 15px;
+    float: left;
+    color: white;
+  }
+
+  .bottom-info-box {
+      width: 650px;
+      padding-left: 150px;
+      padding-top: 50px;
+  }
+
+  .title-contact {
+      font-size: 30px;
+      color: #7A7979;
+      font-weight: 200;
+  }
+
+  .contact-text {
+    color: #7A7979;
+  }
+
+  .bottom-menu {
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+  }
+
+  .bottom-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #346dbb;
+  }
+  
+  .bottom-menu li {
+    float: left;
+  }
+  
+  .bottom-menu li a {
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: 300;
+  }
+  
+  .bottom-menu li a:hover {
+    background-color: #111111;
+  }
