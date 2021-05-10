@@ -13,7 +13,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
 
-  $stmt = $conn->prepare("SELECT * FROM `users`");
+  $stmt = $conn->prepare("SELECT * FROM `usernames`");
 
 //   $stmt->bind_param("ss", $firstname, $lastname);
 
@@ -21,8 +21,7 @@ if ($conn->connect_error) {
   $stmt->execute();
   $result = $stmt->fetch();
 
-  echo 
-  print_r($result);
+  print_r( $result);
 
   $stmt->close();
   $conn->close();
