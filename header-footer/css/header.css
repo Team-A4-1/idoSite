@@ -8,7 +8,6 @@
 }
 
 html {
-  font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -22,7 +21,6 @@ a {
 
 .header {
   background-color: white;
-  padding: 20px 20px;
   box-shadow: 1px 1px 10px 1px #7a7979;
 }
 
