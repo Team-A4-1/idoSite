@@ -23,6 +23,11 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+footer p {
+  color: white;
+}
+
 .ft-title {
   color: #fff;
   font-family: "Roboto", sans-serif;

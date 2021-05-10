@@ -22,6 +22,9 @@ a {
 .header {
   background-color: white;
   box-shadow: 1px 1px 10px 1px #7a7979;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar {
