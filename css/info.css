@@ -4,9 +4,9 @@ p {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 
 
@@ -16,17 +16,23 @@ p {
 
 
 .info-block {
-    border: solid 2.5px #346dbb;
-    margin: 0 0 50px 0
+    border: solid 2px #346dbb;
+    margin: 0 0 50px 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 
 
 .info-block__header {
     color: #ffff;
+    font-weight: 100;
     background-color: #346dbb;
     padding: 0.6rem 3rem;
     margin: 0;
+    
 }
 
 .info-block__text {

@@ -15,7 +15,9 @@
 
     <header class="header">
         <nav class="navbar">
+            <a href="/">
             <img class="header-logo" src="../header-footer/assets/logo-sideways.png" alt="ido-logo">
+            </a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="/books" class="nav-link">Shop</a>
