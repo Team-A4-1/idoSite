@@ -1,0 +1,33 @@
+.wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.banner{
+
+}
+.banner__wrapper{
+    background-image: url("/views/assets/books.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.banner__content{
+
+}
+.banner__list{
+
+}
+.banner__item{
+
+}
+.banner__title{
+
+}
+.banner__text{
+
+}
+.banner__btn{
+
+}
