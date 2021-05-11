@@ -10,6 +10,8 @@
 </head>
 <body>
     
+     <!-- kan dit weg? -->
+
     <!-- <div class="footer">
         
     <div class="grid-container">
