@@ -9,47 +9,6 @@
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-     <!-- kan dit weg? -->
-
-    <!-- <div class="footer">
-        
-    <div class="grid-container">
-        <div class="footer-left">
-            <div class="logo-footer-circle">
-                <img class="logo-footer" src="../header-footer/assets/logo-middle.png" alt="logo">
-            </div>
-            <div class="footer-left-text">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor.</p>
-            </div>
-        </div>
-
-        <div class="footer-middle">
-            <div class="footer-menu">
-                <p><b>MENU</b></p>
-                <a href="">Home</a><br>
-                <a href="">Shop</a><br>
-                <a href="">About Us</a><br>
-                <a href="">How Does It Work</a><br>
-                <a href="">Contact</a>
-            </div>
-        </div>
-
-        <div class="footer-right">
-            <div class="newsletter">
-                <p><b>NEWSLETTER</b></p>
-                <p>Subscribe to our newsletter and never miss new books</p>
-                <input class="newsletter-input" type="text" id="email" name="email" placeholder="Your E-Mail...">
-                <input class="newsletter-button" type="submit" value="SEND">
-            </div>
-        </div>
-    </div>
-
-        <div class="footer-copyright">
-            <p>Copyright @ 2021 Librerio Tia Libro</p>
-        </div>
-    </div> -->
 
     <div class="container"></div>
 <footer>
@@ -70,11 +29,11 @@
     <div class="ft-main-item">
       <h2 class="ft-title">MENU</h2>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/books">Shop</a></li>
-        <li><a href="/info">About Us</a></li>
-        <li><a href="/about">How Does It Work</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">How Does It Work</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
