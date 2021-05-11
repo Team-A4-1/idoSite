@@ -15,28 +15,49 @@ require_once('header-footer/header.php');
 ?>
 
 <body>
-<div class="wrapper">
-    <section class="banner">
-        <div class="banner__wrapper">
-            <div class="banner__content">
-                <ul class="banner__list">
-                    <li class="banner__item">
-                        <div class="banner__title"><h1>Title</h1></div>
-                        <div class="banner__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, voluptatibus.</div>
-                        <div class="banner__btn"><a href="#">Buy now!</a></div>
-                    </li>
-                    <li class="banner__item">
-                        right
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="banner">best-sellers</section>
-    <section class="banner">advertisment</section>
-    <section class="banner">random-books</section>
+    <div class="wrapper">
+        <section class="banner">
+            <div class="banner__wrapper">
+                <div class="banner__content">
+                    <ul class="banner__list">
+                        <li class="banner__item">
+                            <div class="banner__title">
+                                <h2>Collection Sale</h2>
+                            </div>
+                            <div class="banner__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sed
+                                convallis, justo sit.</div>
+                            <div class="banner__btn"><a href="#">Buy now!</a></div>
+                        </li>
+                        <li class="banner__item">
 
-    <!-- <div class="wrap">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="banner">best-sellers</section>
+        <section class="advertisment">
+            <div class="advertisment__wrapper">
+                <div class="advertisment__content">
+                    <ul class="advertisment__list">
+                        <li class="advertisment__item advertisment__item--left">
+                            <div class="advertisment__title">
+                                <h2>Collection Sale</h2>
+                            </div>
+                            <div class="advertisment__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                                elit. Sed convallis, justo sit.</div>
+                            <div class="advertisment__btn"><a href="#">Buy now!</a></div>
+                        </li>
+                        <li class="advertisment__item">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="banner">random-books</section>
+
+        <!-- <div class="wrap">
         <div class="grid-container">
             <div class="middle-box">
                 <div class="box-header">Our Story</div>
@@ -65,7 +86,7 @@ require_once('header-footer/header.php');
         </div>
     </div> -->
 
-</div>
+    </div>
 </body>
 <?php
 require_once('header-footer/footer.php');

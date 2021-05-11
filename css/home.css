@@ -1,33 +1,105 @@
-.wrapper{
+.wrapper {
     max-width: 80%;
     margin: 0 auto;
 }
-.banner{
+
+.banner {}
+
+.banner__wrapper {
+    background-image: url("/views/assets/books.jpg");
+    /* The image used */
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 500px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.banner__content {
+    padding: 110px 90px;
+}
+
+.banner__list {
+    display: flex;
+}
+
+.banner__item {
+    flex: 1 1 50%;
 
 }
-.banner__wrapper{
-    background-image: url("/views/assets/books.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-.banner__content{
+
+.banner__title {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
 
 }
-.banner__list{
+
+.banner__text {
+    color: 20px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.banner__btn a {
+    padding: 10px 75px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    border: 5px solid #346DBB;
+    border-radius: 22px;
+}
+/* BANNER END */
+
+/* ADVERTISMENT BEGIN */
+
+.advertisment {
+    border: 1px solid red;
+}
+
+.advertisment__wrapper {
+    height: 500px;
+}
+
+.advertisment__content {
+   
+}
+
+.advertisment__list {
+    display: flex;
+}
+
+.advertisment__item {
+    flex: 1 1 50%;
 
 }
-.banner__item{
+.advertisment__item--left {
+    flex: 1 1 50%;
+border: 1px solid green;
+}
+.advertisment__title {
+    font-size: 32px;
+    color: #346DBB;
+    margin-bottom: 10px;
 
 }
-.banner__title{
 
+.advertisment__text {
+    color: 20px;
+    color: #346DBB;
+    margin-bottom: 50px;
 }
-.banner__text{
 
-}
-.banner__btn{
-
+.advertisment__btn a {
+    padding: 10px 75px;
+    color: #346DBB;
+    font-weight: 700;
+    font-size: 20px;
+    border: 5px solid #346DBB;
+    border-radius: 22px;
 }
