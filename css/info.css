@@ -1,0 +1,51 @@
+p {
+    margin: 10px 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+
+.flex-container {
+    margin: 5rem 0;
+}
+
+
+.info-block {
+    border: solid 2.5px #346dbb;
+    margin: 0 0 50px 0
+}
+
+
+
+.info-block__header {
+    color: #ffff;
+    background-color: #346dbb;
+    padding: 0.6rem 3rem;
+    margin: 0;
+}
+
+.info-block__text {
+    padding: 3rem;
+    color: #7a7979;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .info-block {
+        max-width: 45%;
+        margin: 0;
+    }
+    
+}
