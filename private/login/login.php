@@ -1,7 +1,8 @@
+test
 <?php
   class Login{
    private function getUser($username,$password): int{
-        $ini = parse_ini_file('../settings.ini');
+        $ini = parse_ini_file('settings.ini');
         $servername =    $ini['server_name'];
         $db_username   =    $ini['db_user'];  
         $db_password   =    $ini['db_password'];
