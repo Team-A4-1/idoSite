@@ -32,9 +32,12 @@
         $conn->close();
       }
 
-      public function sesionStart($username,$password){
+      public function sesionStart($username,$password): boolean{
+        $result = $this->getUser($username,$password);
+        if($result =! null){
         session_start();
-        $_SESSION['userid'] = $this->getUser($username,$password);
+        $_SESSION['userid'] = $result;
+        }
       }
 }
 
