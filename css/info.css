@@ -32,12 +32,15 @@ p {
     background-color: #346dbb;
     padding: 15px;
     margin: 0;
-    
+    font-family: "Roboto Light", sans-serif;
+    font-weight: 300;
 }
 
 .info-block__text {
     padding: 3rem;
     color: #7a7979;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: 300;
 }
 
 

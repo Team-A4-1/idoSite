@@ -73,11 +73,11 @@ a {
   transition-duration: 0.2s;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1110px) {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 7rem;
+    top: 4rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
