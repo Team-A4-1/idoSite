@@ -31,6 +31,7 @@ footer p {
 .ft-title {
   color: #fff;
   font-family: "Roboto Light", sans-serif;
+  font-weight: 400;
   font-size: 1.375rem;
   padding-bottom: 0.625rem;
 }

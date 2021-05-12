@@ -18,7 +18,7 @@
         <div class="grid-container">
             <div class="middle-box">
                 <div class="box-header">Our Story</div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                <p class="info-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor. Aenean massa. 
                 Cum sociis natoque penatibus et magnis dis parturient montes, 
                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
@@ -26,7 +26,7 @@
             </div>
             <div class="left-box">
                 <div class="box-header">About Us</div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                <p class="info-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor. Aenean massa. 
                 Cum sociis natoque penatibus et magnis dis parturient montes, 
                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
@@ -34,7 +34,7 @@
             </div>
             <div class="right-box">
                 <div class="box-header">History</div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                <p class="info-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor. Aenean massa. 
                 Cum sociis natoque penatibus et magnis dis parturient montes, 
                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
