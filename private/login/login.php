@@ -1,17 +1,18 @@
 <?php
   class Login{
    private function getUser($username,$password): int{
-        $ini = parse_ini_file('../../settings.ini');
+        $ini = parse_ini_file('../settings.ini');
         $servername =    $ini['server_name'];
         $db_username   =    $ini['db_user'];  
         $db_password   =    $ini['db_password'];
         $dbname     =    $ini['db_name']; 
 
+        
 
         $conn = new mysqli($servername, $db_username, $db_password, $dbname);
 
         if ($conn->connect_error) {
-            die("<div style='background-color:b00b69;color:69b00b'> Connection failed: " . $conn->connect_error."</div>");
+            die("Connection failed: " . $conn->connect_error);
           }
 
        $stmt = $conn->prepare("SELECT users.id 
@@ -31,9 +32,12 @@
         $conn->close();
       }
 
-      public function sesionStart($username,$password){
+      public function sesionStart($username,$password): boolean{
+        $result = $this->getUser($username,$password);
+        if($result =! null){
         session_start();
-        $_SESSION['userid'] = $this->getUser($username,$password);
+        $_SESSION['userid'] = $result;
+        }
       }
 }
 

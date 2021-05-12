@@ -51,7 +51,7 @@
   </div>
 </div>
     
-
+<script src="views\scripts\contact\mail.js"></script>
 <div class="contact-page-bottom">
     <div class="bottom-info-box">
     <div class="logo-footer-circle">
