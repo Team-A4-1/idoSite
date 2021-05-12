@@ -1,0 +1,18 @@
+.popup{
+    position:absolute;
+    z-Index:100;
+    max-Width:auto;
+    max-Height:auto;
+    width: auto;
+    height:100vh;
+    border:3px solid black;
+    border-Radius:15px;
+    background-Color:white;
+    margin-Top:30vh;
+   
+    top:0;
+	bottom: 0;
+	left: 25%;
+	right: 25%;
+
+}

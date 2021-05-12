@@ -1,15 +1,18 @@
 function error(message){
         //popup
         let popup = document.createElement("DIV");
+let header = document.getElementsByClassName('header')[0];
 
         var element, name, arr;
-        element = document.getElementById("myDIV");
+        element = popup;
         name = "popup";
         arr = element.className.split(" ");
         if (arr.indexOf(name) == -1) {
-          element.className += " " + name;
+          element.className += "" + name;
         }
+     
+      popup.innerHTML ="<h1>"+message+"</h1>";
+      document.body.insertBefore(popup,header);
+        // document.body.appendChild(popup);
 
-        popup.innerHTML ="<h1>"+message+"</h1>";
-        document.body.appendChild(popup);
 }
