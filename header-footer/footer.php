@@ -29,7 +29,7 @@
     <div class="ft-main-item">
       <h2 class="ft-title">MENU</h2>
       <ul>
-        <li><a href="/home">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/books">Shop</a></li>
         <li><a href="/about">About Us</a></li>
         <li><a href="/info">How Does It Work</a></li>
