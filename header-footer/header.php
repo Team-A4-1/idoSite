@@ -10,6 +10,7 @@
     <meta name="Author" content="Kevin Kranenburg">
     <link rel="stylesheet" href="../header-footer/css/header.css">
     <link rel="stylesheet" href="../header-footer/css/popup.css">
+    <script src="views\scripts\general\error message\popup.js"></script>
 
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
 </head>
