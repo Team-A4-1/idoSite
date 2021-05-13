@@ -1,7 +1,13 @@
 function error(message){
+ 
+
+
         //popup
         let popup = document.createElement("DIV");
         let header = document.getElementsByClassName('header')[0];
+
+ //remove popup before making new one
+ popup.remove();
 
         console.error(message);
 
