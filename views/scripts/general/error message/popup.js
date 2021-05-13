@@ -17,7 +17,8 @@ function error(message){
       document.body.insertBefore(popup,header);
         // document.body.appendChild(popup);
 
-        let body = document.body;
-        body.onclick();
+        window.addEventListener("click",function(){
+          popup.remove();
+        });
 
 }
