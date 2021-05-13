@@ -3,6 +3,7 @@ function error(message){
         let popup = document.createElement("DIV");
         let header = document.getElementsByClassName('header')[0];
 
+        console.error(message);
 
 
         var element, name, arr;
@@ -13,7 +14,7 @@ function error(message){
           element.className += "" + name;
         }
      
-      popup.innerHTML ="<h1>"+message+"</h1>";
+      popup.innerHTML ="<h2>error!</h2><br><p>"+message+"</p>";
       document.body.insertBefore(popup,header);
         // document.body.appendChild(popup);
 

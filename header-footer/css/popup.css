@@ -1,4 +1,5 @@
 .popup{
+    text-align: center;
     position:fixed;
     z-Index:100;
     max-Width:50vw;
