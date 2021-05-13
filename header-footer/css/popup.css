@@ -1,15 +1,17 @@
 .popup{
-    position:absolute;
+    position:fixed;
     z-Index:100;
-    max-Width:auto;
-    max-Height:auto;
+    max-Width:50vw;
+    max-Height:50vh;
     width: auto;
-    height:100vh;
-    border:3px solid black;
+    height:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-Radius:15px;
     background-Color:white;
     margin-Top:30vh;
    
+    opacity: 0.8;
+
     top:0;
 	bottom: 0;
 	left: 25%;
