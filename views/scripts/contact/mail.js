@@ -11,13 +11,13 @@ var xhttp = new XMLHttpRequest();
     if (this.readyState == 4 && this.status == 200) {
      error(this.responseText);
     }
-    else{
+    else if(this.status>200){
       error("ajax error"+this.readyState+" "+this.status);
 
     }
    
   };
-  xhttp.open("POST", "../../../private/mail.php", true);
+  xhttp.open("POST", "private/mail/mail.php", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send("ca=Henry&cn=Ford"); 
   xhttp.send();
