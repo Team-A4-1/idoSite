@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Kevin Kranenburg">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="public\css\about.css">
     <title>About Us</title>
 </head>
 

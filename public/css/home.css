@@ -6,7 +6,7 @@
 .banner {}
 
 .banner__wrapper {
-    background-image: url("/views/assets/books.jpg");
+    background-image: url("../assets/books.jpg");
     /* The image used */
     background-color: #cccccc;
     /* Used if the image is unavailable */

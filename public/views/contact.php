@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Kevin Kranenburg">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="public\css\contact.css">
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
@@ -51,11 +51,11 @@
   </div>
 </div>
     
-<script src="views\scripts\contact\mail.js"></script>
+<script src="public\scripts\contact\mail.js"></script>
 <div class="contact-page-bottom">
     <div class="bottom-info-box">
     <div class="logo-footer-circle">
-        <img class="logo-footer" src="../header-footer/assets/logo-middle.png" alt="logo">
+        <img class="logo-footer" src="public\assets\header-footer\logo-middle.png" alt="logo">
     </div>
     <div class="footer-left-text">
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.

@@ -8,9 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Kevin Kranenburg">
-    <link rel="stylesheet" href="../header-footer/css/header.css">
-    <link rel="stylesheet" href="../header-footer/css/popup.css">
-    <script src="views\scripts\general\error message\popup.js"></script>
+    <link rel="stylesheet" href="public\css\header-footer\header.css">
 
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +17,7 @@
     <header class="header">
         <nav class="navbar">
             <a href="/">
-            <img class="header-logo" src="../header-footer/assets/logo-sideways.png" alt="ido-logo">
+            <img class="header-logo" src="public\assets\header-footer\logo-sideways.png" alt="ido-logo">
             </a>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -49,7 +47,7 @@
         </nav>
 </header>
 
-<script src="../header-footer/js/header.js"></script>
+<script src="public\scripts\header-footer\header.js"></script>
 
 </body>
 </html>

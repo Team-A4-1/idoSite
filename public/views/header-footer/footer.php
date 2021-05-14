@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Kevin Kranenburg">
-    <link rel="stylesheet" href="../header-footer/css/footer.css">
+    <link rel="stylesheet" href="public\css\header-footer\footer.css">
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
   <section class="ft-main">
     <div class="ft-main-item">
       <div class="logo-footer-circle">
-                <img class="logo-footer" src="../header-footer/assets/logo-middle.png" alt="logo">
+                <img class="logo-footer" src="public\assets\header-footer\logo-middle.png" alt="logo">
             </div>
             <div class="footer-left-text">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
