@@ -9,10 +9,10 @@ function mailSend(){
 var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     error(this.responseText);
+    //  error(this.responseText);
     }
     else if(this.status>200){
-      error("ajax error"+this.readyState+" "+this.status);
+      // error("ajax error"+this.readyState+" "+this.status);
 
     }
    
