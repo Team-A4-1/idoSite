@@ -3,9 +3,23 @@
 use function PHPSTORM_META\elementType;
 
 $mailadres = "florian.tjeertes@gmail.com";
+
+if (!filter_var($_POST["ca"], FILTER_VALIDATE_EMAIL)) {
+    ReturnJason(false,"Invalid email format");
+    
+  }
+  else{
 $clientAdres =$_POST["ca"];
+  }
 $clientName =$_POST["cn"];
 $clientMessage =$_POST["cn"];
+
+$htmlSearch = array('<','>');
+$htmlreplace = array('&lt;','&gt;');
+
+
+$clientMessage = str_replace($htmlSearch,$htmlreplace,$clientMessage)
+
 
 
 
@@ -21,6 +35,8 @@ $message =
     </body>
 </html>';
 
+
+
 $headers = array(
     'From' => $clientAdres,
     'Reply-To' => $clientAdres,
@@ -31,11 +47,12 @@ $headers = array(
 );
 
 
+
 if( mail($mailadres, $clientAdres, $message, $headers)){
 ReturnJason(true,'succes');
 }
 else{
-    ReturnJason(true,'failure');
+    ReturnJason(false,'failure');
 }
 function ReturnJason(bool $test,string $message){
 $myObj->status = $test;

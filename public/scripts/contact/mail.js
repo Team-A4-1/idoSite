@@ -3,10 +3,17 @@ let contactMessage = document.getElementsByClassName("contact-textarea");
 
 let submit = document.getElementsByClassName("contact-btn")[0]; 
 
-submit.onClick= function(){ mailSend(
-  contactInput[1],contactInput[0],contactMessage[0]
-   )
-};
+submit.addEventListener('click', function(){
+  if(contactInput[0].value!=""&&contactInput[1].value!=""&&contactMessage[0].value!=""){
+
+      mailSend(contactInput[1].value,contactInput[0].value,contactMessage[0].value)
+     }
+  
+  else{
+  window.alert("please fill in all the fields");
+  }
+  }
+);
 
 
 
@@ -15,7 +22,6 @@ submit.onClick= function(){ mailSend(
 
 function mailSend(clientAdress,clientName,clientMessage){
 
-  console.log('test');
 
 
 var xhttp = new XMLHttpRequest();
