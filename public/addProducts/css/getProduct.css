@@ -1,0 +1,47 @@
+/* body {
+    padding: 30px;
+} */
+
+.product-details tr td {
+  padding: 5px;
+}
+
+.product-details .label {
+  font-weight: 700;
+}
+
+.product-images img {
+  max-width: 400px;
+  width: 80%;
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "book-details-left book-details-right"
+    "book-details-bottom book-details-bottom";
+    padding: 50px;
+}
+
+.book-details-left {
+  grid-area: book-details-left;
+  border: 1px solid black;
+  height: auto;
+  width: 100%;
+}
+
+.book-details-right {
+  grid-area: book-details-right;
+  border: 1px solid black;
+}
+
+.book-details-bottom {
+  grid-area: book-details-bottom;
+  border: 1px solid black;
+}
