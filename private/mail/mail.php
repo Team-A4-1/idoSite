@@ -6,13 +6,13 @@ header("Content-Type: application/json; charset=UTF-8");
 
 //email 
 $mailadres = "florian.tjeertes@ziggo.nl";
-// if (!filter_var($_POST["ca"], FILTER_VALIDATE_EMAIL)) {
-//    ReturnJason(false,"Invalid email format");
+if (!filter_var($_POST["ca"], FILTER_VALIDATE_EMAIL)) {
+   ReturnJason(false,"Invalid email format");
     
-//   }
-//   else{
-// $clientAdres =$_POST["ca"];
-//   }
+  }
+  else{
+$clientAdres =$_POST["ca"];
+  }
 
 
 
