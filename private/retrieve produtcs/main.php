@@ -1,16 +1,17 @@
 <?php
 namespace products{
 class main{
+    private $search;
     private $sort;
-    private $lastName;
-    private $emailAddress;
 
-    function __construct($name) {
-        $this->name = $name;
+    function __construct($search,$sort) {
+        $this->search = $_POST[''];
+        $this->sort = $_POST[''];
+
       }
       function __destruct() {
-
-
+        $this-> search=null;
+        $this-> sort=null;
     }
 
 }
