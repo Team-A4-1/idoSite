@@ -1,9 +1,9 @@
 <?php
-namespace products{
+namespace products;
 class getData{
 
 
-    function  text(string $search){
+    function  text(string $search,$sort = ['asc'=>true,'price'=>null]){
 
         $result = null;
         
@@ -19,5 +19,5 @@ class getData{
  
 
 }    
-}
+
 ?>
