@@ -15,16 +15,17 @@ class conection {
      die("Connection failed: " . $conn->connect_error);
    }
 
-$stmt = $conn->prepare("SELECT products.id, products.name , products.text ,
-product_atributes.height,product_atributes.width,
-product_atributes.depth,product_atributes.price, 
-images.imageHIGHres,images.imageLOWres
+$stmt = $conn->prepare("SELECT products.id, products.name , products.text , 
+product_atributes.height,product_atributes.width, 
+product_atributes.depth,product_atributes.price,
+ images.imageHIGHres,images.imageLOWres 
 from products 
 Inner JOIN product_atributes on products.atributes=product_atributes.id 
-Inner JOIN images on products.image=images.id
+Inner JOIN images on products.image=images.id 
+WHERE products.id = ? OR products.name = ? 
  ");
 
- $stmt->bind_param("ss", $username, $password);
+ $stmt->bind_param("is", $id, $name);
 
 
  $stmt->execute();
