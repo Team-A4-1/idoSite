@@ -137,12 +137,11 @@ if (!isset($_GET['id']) || empty($_GET['id']) || !is_numeric($_GET['id'])) {
         <div class="book-details-right">
         <table class="product-details">
                 <tr>
-                    <td class="label">Name</td>
-                    <td><?php echo $productName; ?></td>
+                    <td class="label-detail"><?php echo $productName; ?></td>
                 </tr>
                 <tr>
-                    <td class="label">Quantity</td>
-                    <td><?php echo $productQuantity; ?></td>
+                    <td class="label">In stock</td>
+                    <td class="label-detail"><?php echo $productQuantity; ?></td>
                 </tr>
             </table>
         </div>

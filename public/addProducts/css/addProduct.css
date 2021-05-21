@@ -1,0 +1,50 @@
+
+
+.form-container {
+    /* margin-left: 80px; */
+    padding: 50px;
+}
+
+.form-container .messages {
+    margin-bottom: 15px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    display: block;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+.form-container input[type="file"] {
+    margin-bottom: 15px;
+}
+
+.form-container label {
+    display: inline-block;
+    float: left;
+    width: 100px;
+}
+
+.form-container button {
+    display: block;
+    padding: 5px 25px;
+    background-color: #346dbb;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.form-container .link-to-product-details {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.book-input {
+    border: solid 2px #346dbb;
+    background-color: #FFF;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+}
