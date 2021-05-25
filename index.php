@@ -7,11 +7,11 @@ $router = new AltoRouter();
 // map pages
 
 $router->addRoutes(array(
-	array('GET', '/', function() {require __DIR__ . '\public\views\home.php';}),
-	array('GET', '/books', function() {require __DIR__ . '\public\views\books.php';}),
-	array('GET', '/info', function() {require __DIR__ . '\public\views\info.php';}),
-	array('GET', '/about', function() {require __DIR__ . '\public\views\about.php';}),
-	array('GET', '/contact', function() {require __DIR__ . '\public\views\contact.php';}),
+	array('GET', '/', function() {require __DIR__ . '/public/views/home.php';}),
+	array('GET', '/books', function() {require __DIR__ . '/public/views/books.php';}),
+	array('GET', '/info', function() {require __DIR__ . '/public/views/info.php';}),
+	array('GET', '/about', function() {require __DIR__ . '/public/views/about.php';}),
+	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
 ));
 
 
