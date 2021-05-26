@@ -8,6 +8,7 @@
     <meta name="Author" content="Blen Michil">
     <link rel="stylesheet" href="public\css\home.css">
     <link rel="stylesheet" href="public\css\about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
 </head>
 <?php
@@ -22,7 +23,7 @@ require_once('header-footer/header.php');
                     <ul class="banner__list">
                         <li class="banner__item">
                             <div class="banner__title">
-                                <h2>Collection Sale</h2>
+                                <h2 style="font-weight: 400;">Collection Sale</h2>
                             </div>
                             <div class="banner__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Sed
                                 convallis, justo sit.</div>
@@ -35,7 +36,88 @@ require_once('header-footer/header.php');
                 </div>
             </div>
         </section>
-        <section class="banner">best-sellers</section>
+        <section class="best-sellers">
+            <div class="best-sellers__wrapper">
+                <div class="best-sellers__content">
+                    <div class="best-sellers__top">
+                        <h2>Best-sellers</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac Leo sit ame.</p>
+                    </div>
+                </div>
+                <div class="best-sellers__bottom">
+                    <ul class="best-sellers__list">
+                        <li class="best-sellers__item">
+                            <div class="best-sellers__card">
+                                <div class="best-sellers__card-content">
+                                    <div class="best-sellers__card-img">
+                                        <img src="/public/assets/cover.jpg" alt="Book-cover">
+                                    </div>
+                                    <div class="best-sellers__title">Test boek 5</div>
+                                    <div class="best-sellers__stars"><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></div>
+                                    <div class="best-sellers__price">$12,40,-</div>
+                                    <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="best-sellers__item">
+                            <div class="best-sellers__card">
+                                <div class="best-sellers__card-content">
+                                    <div class="best-sellers__card-img">
+                                        <img src="/public/assets/cover.jpg" alt="Book-cover">
+                                    </div>
+                                    <div class="best-sellers__title">Test boek 5</div>
+                                    <div class="best-sellers__stars"><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></div>
+                                    <div class="best-sellers__price">$12,40,-</div>
+                                    <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="best-sellers__item">
+                            <div class="best-sellers__card">
+                                <div class="best-sellers__card-content">
+                                    <div class="best-sellers__card-img">
+                                        <img src="/public/assets/cover.jpg" alt="Book-cover">
+                                    </div>
+                                    <div class="best-sellers__title">Test boek 5</div>
+                                    <div class="best-sellers__stars"><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></div>
+                                    <div class="best-sellers__price">$12,40,-</div>
+                                    <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="best-sellers__item">
+                            <div class="best-sellers__card">
+                                <div class="best-sellers__card-content">
+                                    <div class="best-sellers__card-img">
+                                        <img src="/public/assets/cover.jpg" alt="Book-cover">
+                                    </div>
+                                    <div class="best-sellers__title">Test boek 5</div>
+                                    <div class="best-sellers__stars"><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></div>
+                                    <div class="best-sellers__price">$12,40,-</div>
+                                    <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section class="advertisment">
             <div class="advertisment__wrapper">
                 <div class="advertisment__content">

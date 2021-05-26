@@ -6,11 +6,16 @@
 .banner {}
 
 .banner__wrapper {
-    background-image: url("../assets/books.jpg");
+    background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.2), 
+          rgba(0, 0, 0, 0.2)
+        ),
+    url("../assets/books.jpg");
     /* The image used */
     background-color: #cccccc;
     /* Used if the image is unavailable */
-    height: 500px;
+    height: 451px;
     /* You must set a specified height */
     background-position: center;
     /* Center the image */
@@ -34,27 +39,113 @@
 }
 
 .banner__title {
-    font-size: 32px;
+    font-size: 45px;
     color: #fff;
     margin-bottom: 10px;
+    font-weight: 400;
 
 }
 
 .banner__text {
-    color: 20px;
+    font-size: 23px;
     color: #fff;
     margin-bottom: 50px;
+    font-weight: 300;
 }
 
 .banner__btn a {
-    padding: 10px 75px;
+    padding: 19px 102px;
     color: #fff;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 21px;
     border: 5px solid #346DBB;
-    border-radius: 22px;
+    border-radius: 36px;
+
 }
 /* BANNER END */
+
+/* Best-sellers BEGIN */
+.checked {
+    color: orange;
+  }
+.best-sellers{
+    
+}
+.best-sellers__wrapper{
+
+}
+.best-sellers__content{
+    
+
+}
+.best-sellers__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.best-sellers__top h2{
+font-weight: 400;
+font-size: 34px;
+}
+
+.best-sellers__top p{
+font-size: 20px;
+color: #5f5f5f;
+font-weight: 400;
+}
+.best-sellers__bottom{
+    
+}
+.best-sellers__list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+}
+.best-sellers__item{
+
+}
+
+.best-sellers__card{
+    border: 1px solid #707070;
+border-radius: 6px;
+box-shadow: 1px 1px 5px gray;
+}
+.best-sellers__card-content{
+padding: 15px 17px;
+}
+.best-sellers__card-img img{
+    height: auto;
+    width: 236px;
+}
+
+.best-sellers__title{
+margin-top: 12px;
+font-weight: 600;
+color: black;
+font-size: 25px;
+}
+.best-sellers__stars{
+    margin-top: 5px;
+}
+.best-sellers__price{
+    margin-top: 12px;
+    font-weight: 500;
+    color: #346DBB;
+    font-size: 23px;
+}
+.best-sellers__btn{
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #346DBB;
+    color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
 
 /* ADVERTISMENT BEGIN */
 
