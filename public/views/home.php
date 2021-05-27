@@ -123,21 +123,140 @@ require_once('header-footer/header.php');
                 <div class="advertisment__content">
                     <ul class="advertisment__list">
                         <li class="advertisment__item advertisment__item--left">
-                            <div class="advertisment__title">
-                                <h2>Collection Sale</h2>
-                            </div>
-                            <div class="advertisment__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
-                                elit. Sed convallis, justo sit.</div>
-                            <div class="advertisment__btn"><a href="#">Buy now!</a></div>
-                        </li>
-                        <li class="advertisment__item">
+                            <div class="advertisment__content">
+                                <div class="advertisment__text">Holiday season sale</div>
+                                <div class="advertisment__title">
+                                    <h2>Off Up To <br> 45% <br> For
+                                        All Books </h2>
+                                </div>
 
+                                <div class="advertisment__btn"><a href="#">Buy now!</a></div>
+                            </div>
+                        </li>
+                        <li class="advertisment__item advertisment__item--right">
+                            <div class="advertisment__content">
+                                <ul class="advertisment__list">
+
+                                    <li class="advertisment__blok advertisment__blok--blue">
+                                        <div class="advertisment__content">
+                                            <h2 class="advertisment__blok--title">Want to <br>
+                                                learn more <br>
+                                                about <br>
+                                                IDO</h2>
+                                            <button type="submit" class="advertisment__blok--btn">Click here</button>
+                                        </div>
+                                    </li>
+                                    <li class="advertisment__blok">
+                                        <div class="advertisment__content advertisment__content--merch">
+                                            <h2 class="advertisment__blok--title">MERCH!</h2>
+                                            <button type="submit" class="advertisment__blok--btn">See more</button>
+                                        </div>
+                                    </li>
+                                    <li class="advertisment__blok ">
+                                        <div class="advertisment__content  advertisment__content--keep">
+                                            <h2 class="advertisment__blok--title">Keep <br>
+                                                reading</h2>
+                                            <p class="advertisment__blok--text">Because by reading <br>
+                                                more you will know <br> more</p>
+                                        </div>
+                                    </li>
+                                    <li class="advertisment__blok advertisment__blok--blue">
+                                        <div class="advertisment__content  advertisment__content--70">
+                                            <p class="advertisment__blok--up">new books</p>
+                                            <h2 class="advertisment__blok--title">70% off</h2>
+                                            <button type="submit" class="advertisment__blok--btn">See more</button>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="banner">random-books</section>
+        <section class="random">
+            <div class="random__wrapper">
+                <div class="random__content">
+                    <div class="random__top">
+                        <h2>Random</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac Leo sit ame.</p>
+                    </div>
+                </div>
+                <div class="random__bottom">
+                    <ul class="random__list">
+                        <li class="random__item">
+                            <div class="random__card">
+                                <div class="random__card-content">
+                                    <div class="random__card-img">
+                                        <img src="/public/assets/cover.jpg" alt="Book-cover">
+                                    </div>
+                                    <div class="random__title">Test boek 5</div>
+                                    <div class="random__stars"><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></div>
+                                    <div class="random__price">$12,40,-</div>
+                                    <button type="submit" class="random__btn">ADD TO CARD</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="random__item">
+                            <div class="random__card">
+                                <div class="random__card-content">
+                                    <div class="random__card-img">
+                                        <img src="/public/assets/cover.jpg" alt="Book-cover">
+                                    </div>
+                                    <div class="random__title">Test boek 5</div>
+                                    <div class="random__stars"><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></div>
+                                    <div class="random__price">$12,40,-</div>
+                                    <button type="submit" class="random__btn">ADD TO CARD</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="random__item">
+                            <div class="random__card">
+                                <div class="random__card-content">
+                                    <div class="random__card-img">
+                                        <img src="/public/assets/cover.jpg" alt="Book-cover">
+                                    </div>
+                                    <div class="random__title">Test boek 5</div>
+                                    <div class="random__stars"><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></div>
+                                    <div class="random__price">$12,40,-</div>
+                                    <button type="submit" class="random__btn">ADD TO CARD</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="random__item">
+                            <div class="random__card">
+                                <div class="random__card-content">
+                                    <div class="random__card-img">
+                                        <img src="/public/assets/cover.jpg" alt="Book-cover">
+                                    </div>
+                                    <div class="random__title">Test boek 5</div>
+                                    <div class="random__stars"><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></div>
+                                    <div class="random__price">$12,40,-</div>
+                                    <button type="submit" class="random__btn">ADD TO CARD</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <!-- <div class="wrap">
         <div class="grid-container">
