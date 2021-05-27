@@ -6,8 +6,10 @@ include "setData.php";
 class main{
     private string $search;
     private int $get;
+    private int $sort;
 
-    function __construct($search,$sort) {
+    function __construct($search,$get,$sort) {
+        $this->search = $_POST['search'];
         $this->search = $_POST['search'];
         $this->get = $_POST['get'];
 
@@ -18,14 +20,17 @@ class main{
         if($this->get){
         $data = new getData;
         $data->text($this->search,);
-        header('Content-Type: application/json');
-        echo $data;
+        $result= $data;
 
 
         }
       elseif(!$this->get){
 
       }
+
+
+      header('Content-Type: application/json');
+        echo $result;
     }
 
 
@@ -36,6 +41,7 @@ class main{
 
       function __destruct() {
         $this-> search=null;
+        $this-> get=null;
         $this-> sort=null;
     }
 
