@@ -16,7 +16,8 @@ class main{
       }
     function main(){
         if($this->get){
-
+        $data = new getData;
+        $data->text();
 
         }
       elseif($this->get){
