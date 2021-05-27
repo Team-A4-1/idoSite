@@ -8,8 +8,8 @@ class main{
     private int $get;
 
     function __construct($search,$sort) {
-        $this->search = $_POST[''];
-        $this->get = $_POST[''];
+        $this->search = $_POST['search'];
+        $this->get = $_POST['get'];
 
         $this -> main();
 
@@ -17,10 +17,13 @@ class main{
     function main(){
         if($this->get){
         $data = new getData;
-        $data->text();
+        $data->text($this->search,);
+        header('Content-Type: application/json');
+        echo $data;
+
 
         }
-      elseif($this->get){
+      elseif(!$this->get){
 
       }
     }
