@@ -150,11 +150,12 @@ font-size: 25px;
 /* ADVERTISMENT BEGIN */
 
 .advertisment {
-    border: 1px solid red;
+    border: 1px solid transparent;
+    padding-top: 40px;
 }
 
 .advertisment__wrapper {
-    height: 500px;
+    height: 437px;
 }
 
 .advertisment__content {
@@ -163,27 +164,49 @@ font-size: 25px;
 
 .advertisment__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .advertisment__item {
     flex: 1 1 50%;
 
 }
+/* ADVERTISMENT LEFT */
 .advertisment__item--left {
     flex: 1 1 50%;
-border: 1px solid green;
+border: 1px solid gray;
+background-image:
+    url("../assets/book3.jpg");
+    /* The image used */
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
 }
-.advertisment__title {
+
+.advertisment__item--left .advertisment__content {
+    height: 355px;
+    width: 325px;
+    padding-top: 33px;
+    text-align: center;
+}
+.advertisment__title h2 {
     font-size: 32px;
-    color: #346DBB;
+    color: #000;
     margin-bottom: 10px;
+    font-weight: 300;
+    margin-bottom: 25px;
 
 }
 
 .advertisment__text {
-    color: 20px;
+  font-size: 20px;
     color: #346DBB;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .advertisment__btn a {
@@ -191,6 +214,239 @@ border: 1px solid green;
     color: #346DBB;
     font-weight: 700;
     font-size: 20px;
-    border: 5px solid #346DBB;
+    border: 2px solid #346DBB;
     border-radius: 22px;
+    
+}
+.advertisment__blok {
+    flex: 1 1 50%;
+    text-align: center;
+    border: 1px solid gray;
+    
+    height: 200px;
+
+    font-weight: 400;
+}
+.advertisment__blok .advertisment__content  {
+    padding: 10px 20px;
+}
+.advertisment__blok--blue {
+    flex: 1 1 50%;
+    text-align: center;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #346DBB;
+}
+/* ADVERTISMENT FOUR BLOKS */
+button.advertisment__blok--btn {
+    padding: 10px;
+    text-transform: uppercase;
+}
+h2.advertisment__blok--title {
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+button.advertisment__blok--btn {
+    padding: 10px;
+    text-transform: uppercase;
+    background: white;
+    border: 1px solid transparent;
+    color: #346eba;
+}
+
+.advertisment__content--merch .advertisment__blok--title {
+    color: #346eba;
+    font-size: 33px;
+    margin-top: 12px;
+    
+}
+.advertisment__content--merch .advertisment__blok--btn {
+    padding: 10px;
+    text-transform: uppercase;
+    background: white;
+    border: 3px solid #346eba;
+    color: #346eba;
+    margin-top: 52px;
+}
+.advertisment__content--keep .advertisment__blok--title {
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 13px;
+    text-transform: uppercase;
+}
+p.advertisment__blok--text {
+    font-weight: 300;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #346eba;
+}
+p.advertisment__blok--up {
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 14px;
+}
+.advertisment__content--70 .advertisment__blok--title {
+    font-weight: 300;
+    font-size: 39px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+.advertisment__content--70 .advertisment__blok--btn {
+    padding: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    background: white;
+    border: 1px solid transparent;
+    color: #346eba;
+}
+
+
+
+
+
+
+
+.banner {}
+
+.banner__wrapper {
+    background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.2), 
+          rgba(0, 0, 0, 0.2)
+        ),
+    url("../assets/books.jpg");
+    /* The image used */
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 451px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.banner__content {
+    padding: 110px 90px;
+}
+
+.banner__list {
+    display: flex;
+}
+
+.banner__item {
+    flex: 1 1 50%;
+
+}
+
+.banner__title {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+}
+
+.banner__text {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.banner__btn a {
+    padding: 19px 102px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 21px;
+    border: 5px solid #346DBB;
+    border-radius: 36px;
+
+}
+/* BANNER END */
+
+/* random BEGIN */
+.checked {
+    color: orange;
+  }
+.random{
+    padding-bottom: 154px;
+}
+.random__wrapper{
+
+}
+.random__content{
+    
+
+}
+.random__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.random__top h2{
+font-weight: 400;
+font-size: 34px;
+}
+
+.random__top p{
+font-size: 20px;
+color: #5f5f5f;
+font-weight: 400;
+}
+.random__bottom{
+    
+}
+.random__list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+}
+.random__item{
+
+}
+
+.random__card{
+    border: 1px solid #707070;
+border-radius: 6px;
+box-shadow: 1px 1px 5px gray;
+}
+.random__card-content{
+padding: 15px 17px;
+}
+.random__card-img img{
+    height: auto;
+    width: 236px;
+}
+
+.random__title{
+margin-top: 12px;
+font-weight: 600;
+color: black;
+font-size: 25px;
+}
+.random__stars{
+    margin-top: 5px;
+}
+.random__price{
+    margin-top: 12px;
+    font-weight: 500;
+    color: #346DBB;
+    font-size: 23px;
+}
+.random__btn{
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #346DBB;
+    color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
 }
