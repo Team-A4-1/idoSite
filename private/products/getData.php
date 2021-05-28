@@ -47,8 +47,5 @@ class getData{
 
 
 }    
-//test
-header('Content-Type: application/json');
-$test = new getData;
-print_r($test->id(null));
+
 ?>

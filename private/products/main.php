@@ -8,19 +8,33 @@ class main{
     private int $get;
     private int $sort;
 
-    function __construct($search,$get,$sort) {
-        $this->search = $_POST['search'];
-        $this->sort = $_POST['sort'];
-        $this->get = $_POST['get'];
- if(  $this->search !=null ||   $this->sort !=null ||  $this->get || null){
+    function __construct() {
+    
 
-        $this -> main();
- }
- else{
-  header('Content-Type: application/json');
-echo $result['status']='failed';
- }
-      }
+  
+
+$required = array('search');
+   
+$error = false;
+foreach($required as $field) {
+  if (empty($_POST[$field])) {
+    $error = true;
+  }
+}
+
+    if ($error) {
+    header('Content-Type: application/json');
+    echo json_encode($result['status']='failed');  
+      }   
+  else {
+    $this->search = $_POST['search'];
+    $this->sort = $_POST['sort'];
+    $this->get = $_POST['get'];
+  $this -> main();
+
+    }
+
+}
     function main(){
         if($this->get){
         $data = new getData;
@@ -51,6 +65,6 @@ echo $result['status']='failed';
     }
 
 }
-
+$main = new main;
 
 ?>
