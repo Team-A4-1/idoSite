@@ -4,10 +4,9 @@ require_once('getData.php');
 
 include "setData.php";
 // $input = $_POST['input'];
-$input = json_decode(stripslashes(file_get_contents("php://input")));
+$input = json_decode(stripslashes(file_get_contents("php://input")),true);
 
 
-$input = null;
 
 class data{
    
@@ -15,10 +14,16 @@ class data{
     function main($search,$get=true){
         if($get){
         $data = new getData;
-        $result= $data->text($search);
 
+     if (isset($search['name'])){
+        $result= $data->text($search['name']);
+        }
+        elseif(isset($$search['id'])){
+        $result= $data->text($search['id']);
+
+        }
         header('Content-Type: application/json');
-        echo $result;
+        echo  $result;
 
         }
       elseif(!$get){
@@ -31,8 +36,7 @@ class data{
     
 
 }
-// $start = new data;
-// $start->main($input);
+$start = new data;
+$start->main($input['data'],$input['post']);
 
-echo json_encode($v->email);
 ?>

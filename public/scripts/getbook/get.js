@@ -11,11 +11,27 @@ function get(){
      
       };
 var data ={
-'post': 'false',
-'data': "",
-'atributes':""
-
+'post': true,
+'data': {
+  'name':'boek',
+   'id':null
+},
+'atributes':{
+  'asc':true,
+  'results':0
+}
 };
+
+// var data ={
+//   'post': 'false',
+//   'data': {
+//     'search':'',
+     
+  
+//   }
+// }
+
+
 
       xhttp.open("POST", "private/products/data.php", true);
       var set = JSON.stringify(data);
