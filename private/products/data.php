@@ -18,7 +18,7 @@ class data{
      if (isset($search['name'])){
         $result= $data->text($search['name']);
         }
-        elseif(isset($$search['id'])){
+        elseif(isset($search['id'])){
         $result= $data->text($search['id']);
 
         }
@@ -27,6 +27,8 @@ class data{
 
         }
       elseif(!$get){
+        header('Content-Type: application/json');
+         echo json_encode($status["status"]="failed pls try post");
 
       }
 

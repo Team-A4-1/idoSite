@@ -14,7 +14,9 @@ $router->addRoutes(array(
 	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
 ));
 
-
+$router->map( 'GET', '/product/[i:id]/', function( $id ) {
+	require __DIR__ . '/public/views/productdetails.php';
+});
 
 // match current request url
 $match = $router->match();
