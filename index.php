@@ -12,11 +12,7 @@ $router->addRoutes(array(
 	array('GET', '/info', function() {require __DIR__ . '/public/views/info.php';}),
 	array('GET', '/about', function() {require __DIR__ . '/public/views/about.php';}),
 	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
-));
-
-$router->map( 'GET', '/product/[i:id]/', function( $id ) {
-	require __DIR__ . '/public/views/productdetails.php';
-});
+	array('GET', '/product/[i:id]/', function($id) {require __DIR__ . '/public/views/productdetails.php';})));
 
 // match current request url
 $match = $router->match();

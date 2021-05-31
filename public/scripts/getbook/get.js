@@ -5,12 +5,12 @@ var status;
     var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          var json = JSON.parse(xhttp.responseText);
-          console.log(json);
-          status = json['status'];
-          delete json['status'];
+           var json = JSON.parse(xhttp.responseText);
+           console.log(json);
+           status = json['status'];
+           delete json['status'];
           
-           for(var i =0;i<Object.keys(json).length;i++){
+         for(var i =0;i<Object.keys(json).length;i++){
             var  element = document.createElement("div");
            
             //title
@@ -30,27 +30,27 @@ var status;
 
            
 
-          //append data to title
+           //append data to title
             var titletext = document.createTextNode(json[i]['name']);
-          //append img to img
+           //append img to img
              img.src=json[i]['imageLOWres'];
           
-          height.innerText="height: "+json[i]['height'];
-          width.innerText="width: "+json[i]['width'];
-          depth.innerText="depth: "+json[i]['depth'];
-          price.innerText="price: "+json[i]['price'];
+           height.innerText="height: "+json[i]['height'];
+           width.innerText="width: "+json[i]['width'];
+           depth.innerText="depth: "+json[i]['depth'];
+           price.innerText="price: "+json[i]['price'];
 
-          //append text
+            //append text
              title.appendChild(titletext)
 
-          //append atributes
-          atributes.appendChild(height); 
-          atributes.appendChild(width); 
-          atributes.appendChild(depth); 
-          atributes.appendChild(price); 
+           //append atributes
+           atributes.appendChild(height); 
+           atributes.appendChild(width); 
+           atributes.appendChild(depth); 
+           atributes.appendChild(price); 
 
 
-          //append to main element
+           //append to main element
             element.appendChild(title); 
             element.appendChild(img); 
             element.appendChild(atributes); 
@@ -60,6 +60,9 @@ var status;
               document.getElementById('test').appendChild(element);
 
            };
+
+
+
 
         }
      
