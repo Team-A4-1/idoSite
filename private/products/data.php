@@ -15,12 +15,15 @@ class data{
         if($get){
         $data = new getData;
 
-     if (isset($search['name'])){
+     if ($search['name']!=null){
         $result= $data->text($search['name']);
         }
-        elseif(isset($search['id'])){
+        elseif($search['id']!=null ){
         $result= $data->text($search['id']);
 
+        }
+        else{
+         $result=json_encode( $status["status"]="fill in either id or name field in json");
         }
         header('Content-Type: application/json');
         echo  $result;

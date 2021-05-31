@@ -26,10 +26,17 @@ $statementExtra = null;
    }
 
     static $prepared  = array(
-     array( 'querry'=> "SELECT  products.id, products.name , products.text , product_atributes.height,product_atributes.width, product_atributes.depth,product_atributes.price, images.imageHIGHres,images.imageLOWres 
-   from products 
-   Inner JOIN product_atributes on products.atributes=product_atributes.id 
-   Inner JOIN images on products.image=images.id",
+     array( 'querry'=> "SELECT products.id, products.name , products.text , 
+     product_atributes.height,product_atributes.width, 
+     product_atributes.depth,product_atributes.price, 
+     product_atributes.amount,product_atributes.weight,
+     images.imageHIGHres,images.imageLOWres,
+     authors.name
+     from products 
+     Inner JOIN product_atributes on products.atributes=product_atributes.id 
+     Inner JOIN images on products.image=images.id
+     Inner JOIN authors on products.author=authors.id
+     ",
    'search'=>"WHERE products.id = ? OR products.name = ?",
    'param'=>"is")
    
