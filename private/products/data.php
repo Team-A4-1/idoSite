@@ -14,7 +14,7 @@ class data{
     function main($search,$get=true){
         if($get){
         $data = new getData;
-
+        $result=null;
      if ($search['name']!=null){
         $result= $data->text($search['name']);
         }
@@ -26,8 +26,7 @@ class data{
          $result=json_encode( $status["status"]="fill in either id or name field in json");
         }
         header('Content-Type: application/json');
-        echo  $result;
-
+        echo $result;
         }
       elseif(!$get){
         header('Content-Type: application/json');

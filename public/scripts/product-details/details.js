@@ -9,10 +9,15 @@ var data ={
       'results':0
     }
     };
-async function F() {
-var  yeet = await get(data);
-return yeet;
-}
 
-var values = F();
 
+let Name = document.getElementById('title');
+
+
+get(data).then(function(result) {
+
+    console.log(result);
+
+})
+
+Name.innerText="test";
