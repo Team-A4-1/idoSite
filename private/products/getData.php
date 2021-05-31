@@ -6,7 +6,7 @@ class getData{
     function  text(string $search =null,bool $asc=true,int $price=null){
        $connection = new conection;
        $conres= $connection->connect($search);      
-       $result = json_decode($conres, true) ;
+       $result = json_decode($conres, true);
        $status = $result['status'];
 
        unset($result['status']);
@@ -44,11 +44,6 @@ class getData{
         return $result;
     }
  
-
-
 }    
-//test
-header('Content-Type: application/json');
-$test = new getData;
-print_r($test->id(null));
+
 ?>
