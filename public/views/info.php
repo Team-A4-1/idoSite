@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Kevin Kranenburg">
+    <meta name="Author" content="Latricha Seym">
     <link rel="stylesheet" href="public\css\info.css">
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
     <title>How does it work?</title>
@@ -15,30 +15,87 @@ require_once('header-footer/header.php');
 ?>
 
 <body>
-    <div class="container">
+    <section>
+        <div class="container">
+            <h1>How it all works</h1>
 
-        <div class="flex-container">
-            <div class="info-block">
-                <h2 class="info-block__header">How does it work?</h2>
-                <div class="info-block__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Fusce gravida enim augue, venenatis commodo est venenatis eget.
-                       Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.
-                    Nullam eget vestibulum urna. Proin hendrerit sapien eu libero lacinia, et lacinia dolor imperdiet. Suspendisse ut maximus turpis. Nulla pharetra tellus egestas quam interdum, et lobortis magna pulvinar. Aliquam auctor sed justo sit amet vestibulum. Morbi odio dolor, hendrerit sed scelerisque nec, condimentum sit amet nibh. Integer egestas laoreet turpis, in aliquam metus. Fusce ullamcorper tincidunt augue sed imperdiet.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim augue, venenatis commodo est venenatis eget. Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex. Nullam eget vestibulum urna. Proin hendrerit sapien eu libero lacinia, et lacinia dolor imperdiet. Suspendisse ut maximus turpis. Nulla pharetra tellus egestas quam interdum, et lobortis magna pulvinar. Aliquam auctor sed justo sit amet vestibulum. Morbi odio dolor, hendrerit sed scelerisque nec, condimentum sit amet nibh. Integer egestas laoreet turpis, in aliquam metus. Fusce ullamcorper tincidunt augue sed imperdiet.</p>
+            <div class="flex-box">
+            <div class="side1">
+<figure>
+    <img src="" alt=""/>
+    <div>Image</div>
+</figure>
 
-                </div>
+
+<div class="text-block">
+    <span class="icon"></span>
+    <h3 class="text-block__title">Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce gravida enim augue, venenatis commodo est venenatis eget.
+        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>         
+</div>
+
+<figure>
+    <img src="" alt=""/>
+    <div>Image</div>
+</figure>
+
+<span class="icon"></span>
+<div class="text-block">
+    <h3 class="text-block__title">Title</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce gravida enim augue, venenatis commodo est venenatis eget.
+        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>         
+</div>
+
+
+</div>
+
+<span class="scrollbar"></span>
+
+<div class="side2">
+
+<div class="text-block">
+    <h3 class="text-block__title">Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce gravida enim augue, venenatis commodo est venenatis eget.
+        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>         
+</div>
+
+<figure>
+    <img src="" alt=""/>
+    <div>Image</div>
+</figure>
+
+
+<div class="text-block">
+    <h3 class="text-block__title">Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce gravida enim augue, venenatis commodo est venenatis eget.
+        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>         
+</div>
+
+<figure>
+    <img src="" alt=""/>
+    <div>Image</div>
+</figure>
+
+
+</div>
+</div>
+            
             </div>
 
-            <div class="info-block">
-                <h2 class="info-block__header">Shipping costs</h2>
-                <div class="info-block__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim augue, venenatis commodo est venenatis eget. Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex. Nullam eget vestibulum urna. Proin hendrerit sapien eu libero lacinia, et lacinia dolor imperdiet. Suspendisse ut maximus turpis. Nulla pharetra tellus egestas quam interdum, et lobortis magna pulvinar. Aliquam auctor sed justo sit amet vestibulum. Morbi odio dolor, hendrerit sed scelerisque nec, condimentum sit amet nibh. Integer egestas laoreet turpis, in aliquam metus. Fusce ullamcorper tincidunt augue sed imperdiet.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim augue, venenatis commodo est venenatis eget. Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex. Nullam eget vestibulum urna. Proin hendrerit sapien eu libero lacinia, et lacinia dolor imperdiet. Suspendisse ut maximus turpis. Nulla pharetra tellus egestas quam interdum, et lobortis magna pulvinar. Aliquam auctor sed justo sit amet vestibulum. Morbi odio dolor, hendrerit sed scelerisque nec, condimentum sit amet nibh. Integer egestas laoreet turpis, in aliquam metus. Fusce ullamcorper tincidunt augue sed imperdiet.</p>
-                </div>
-            </div>        
-        </div>
-    </div>
+ </section>
+
+    <section>
+        <div class="container">
+            <h2>Shipping</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       Fusce gravida enim augue, venenatis commodo est venenatis eget.
+                       Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>
+        <div>
+    </section>
 </body>
 
 <?php
