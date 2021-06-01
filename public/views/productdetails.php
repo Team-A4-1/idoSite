@@ -11,7 +11,7 @@ echo "<script>var id= $id;</script>";
 <div class="side">
 <h1 id="title"></h1>
 <p id="author"></p>
-<div id="amount_togle"></div>
+<div id="amount_togle"><input id="amount" value="1" type="number"></input></div>
 <div id="addCart">add to cart</div>
 <div id="addWishlist">add to wishlist</div>
 </div>
@@ -19,8 +19,9 @@ echo "<script>var id= $id;</script>";
 <div id="tabs"></div>
 <div id="tabdata"></div>
 </div>
-
+<script src="/public/scripts/general/cookie.js"></script>
 <script src="/public/scripts/product-details/details.js"></script>
+
 </body>
 <?php
 require_once('header-footer/footer.php');
