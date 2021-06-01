@@ -11,6 +11,7 @@ $router->addRoutes(array(
 	array('GET', '/books', function() {require __DIR__ . '/public/views/books.php';}),
 	array('GET', '/info', function() {require __DIR__ . '/public/views/info.php';}),
 	array('GET', '/about', function() {require __DIR__ . '/public/views/about.php';}),
+	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';}),
 	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
 	array('GET', '/product/[i:id]/', function($id) {require __DIR__ . '/public/views/productdetails.php';})));
 
