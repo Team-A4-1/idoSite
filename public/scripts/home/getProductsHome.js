@@ -1,7 +1,17 @@
 
-let bestSeller= document.getElementsByClassName('best-sellers__list'); 
+var data ={
+  'post': true,
+  'data': {
+    'name':null,
+     'id':null
+  },
+  'atributes':{
+    'asc':true,
+    'results':0
+  }
+  };
 
-bestSeller.innerHTML =addbook();
+
 
 
 function addbook(img, name,price,id){
@@ -15,16 +25,6 @@ function addbook(img, name,price,id){
                    name+
                 '</div>'+
                 '<div class="best-sellers__stars">'+
-                    '<span class="fa fa-star checked">'+
-                    '</span>'+
-                    '<span class="fa fa-star checked">'+
-                    '</span>'+
-                    '<span class="fa fa-star checked">'+
-                    '</span>'+
-                    '<span class="fa fa-star">'+
-                    '</span>'+
-                    '<span class="fa fa-star">'+
-                    '</span>'+
                     '</div>'+
                     '<div class="best-sellers__price">'+price+',-'+
                     '</div>'+
@@ -37,20 +37,17 @@ function addbook(img, name,price,id){
 
 
 
-var data ={
-    'post': true,
-    'data': {
-      'name':null,
-       'id':2
-    },
-    'atributes':{
-      'asc':true,
-      'results':0
-    }
-    };
 
+function makeRandom(values){
+  let amount =Object.keys(values).length;
+  let random = Math.floor(Math.random() * amount );
+  var i;
+  for( i=0;i<4;i++){
 
-
+  let bestSeller= document.getElementsByClassName('random__list'); 
+  bestSeller.innerHTML=addbook(values[i]['img'],values[i]['name'],value[i]['price'],value[i]['id']);
+  }
+}
 
 
 function get(data){
@@ -59,11 +56,12 @@ function get(data){
         var xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                json = JSON.parse(xhttp.responseText);
+               json = JSON.parse(xhttp.responseText);
                status = json['status'];
                delete json['status'];
-               return json;
-
+               makeRandom(json);
+               
+               
             }
          
           };
@@ -75,5 +73,5 @@ function get(data){
 
         }
 
-
-        
+get(data);
+      

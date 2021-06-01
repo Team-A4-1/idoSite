@@ -70,7 +70,7 @@ var status;
 var data ={
 'post': true,
 'data': {
-  'name':'',
+  'name':'boek',
    'id':null
 },
 'atributes':{

@@ -14,10 +14,10 @@ var data ={
 let Name = document.getElementById('title');
 
 
-get(data).then(function(result) {
+// get(data).then(function(result) {
 
-    console.log(result);
+//     console.log(result);
 
-})
+// })
 
-Name.innerText="test";
+Name.innerText=id;

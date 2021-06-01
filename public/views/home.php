@@ -272,13 +272,9 @@ require_once('header-footer/header.php');
             </section>
         <div>
     </div>
-<<<<<<< HEAD
 </body>
 <script src="public/scripts/home/getProductsHome.js"></script>
 <?php
-=======
-    <?php
->>>>>>> 48d39b7094bb084288580640613782356ba1f4e9
 require_once('header-footer/footer.php');
 ?>
 </body>

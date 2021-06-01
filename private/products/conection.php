@@ -72,5 +72,7 @@ $jason = json_encode($result);
 }
 
 }
+$con = new conection;
+echo $con->connect(2);
 
 ?>

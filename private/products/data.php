@@ -40,7 +40,6 @@ class data{
     
 
 }
-$start = new data;
-$start->main($input['data'],$input['post']);
+
 
 ?>
