@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "product-detail-left product-detail-right"
+    "product-detail-bottom product-detail-bottom";
+}
+
+.product-detail-left {
+  grid-area: product-detail-left;
+  height: auto;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.product-detail-right {
+  grid-area: product-detail-right;
+  height: auto;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.product-detail-bottom {
+  grid-area: product-detail-bottom;
+  height: auto;
+  width: 100%;
+  border: 1px solid black;
+}
