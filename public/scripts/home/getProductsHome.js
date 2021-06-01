@@ -56,7 +56,9 @@ function makeRandom(values){
   random[0].innerHTML=null;
   let amount =Object.keys(values).length;
 
-  var i;
+  if(amount>10){
+    amount=10;
+  }
   for( i=0;i<amount;i++){
     var randomnum = Math.floor(Math.random() * (amount - 0)+0);
     console.log(randomnum);
