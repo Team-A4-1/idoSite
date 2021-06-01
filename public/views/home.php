@@ -14,7 +14,6 @@
 <?php
 require_once('header-footer/header.php');
 ?>
-
 <body>
     <div class="wrapper">
         <div class="sidebar">
@@ -272,6 +271,7 @@ require_once('header-footer/header.php');
         <div>
     </div>
 </body>
+<script src="public/scripts/home/getProductsHome.js"></script>
 <?php
 require_once('header-footer/footer.php');
 ?>
