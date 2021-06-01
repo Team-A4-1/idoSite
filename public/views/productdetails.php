@@ -20,7 +20,6 @@ echo "<script>var id= $id;</script>";
 <div id="tabdata"></div>
 </div>
 
-<script src="/public/scripts/general/getProductgeneral.js"></script>
 <script src="/public/scripts/product-details/details.js"></script>
 </body>
 <?php
