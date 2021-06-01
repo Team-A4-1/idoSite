@@ -31,7 +31,7 @@ $statementExtra = null;
      product_atributes.depth,product_atributes.price, 
      product_atributes.amount,product_atributes.weight,
      images.imageHIGHres,images.imageLOWres,
-     authors.name
+     authors.author
      from products 
      Inner JOIN product_atributes on products.atributes=product_atributes.id 
      Inner JOIN images on products.image=images.id
@@ -72,7 +72,6 @@ $jason = json_encode($result);
 }
 
 }
-$con = new conection;
-echo $con->connect(2);
+
 
 ?>

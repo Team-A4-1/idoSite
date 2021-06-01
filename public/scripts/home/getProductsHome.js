@@ -36,16 +36,31 @@ function addbook(img, name,price,id){
 }
 
 
+function makeBestcell(values){
+  let bestSeller= document.getElementsByClassName('best-sellers__list'); 
+  let amount =Object.keys(values).length;
+  bestSeller[0].innerHTML=null;
+  if(amount>10){
+    amount=10;
+  }
+  for( i=0;i<amount;i++){
+    console.log(values);
+    bestSeller[0].innerHTML+=addbook(values[i]['imageHIGHres'],values[i]['name'],values[i]['price'],values[i]['id']);
+  }
+}
 
 
 function makeRandom(values){
+  //
+  let random= document.getElementsByClassName('random__list'); 
+  random[0].innerHTML=null;
   let amount =Object.keys(values).length;
-  let random = Math.floor(Math.random() * amount );
-  var i;
-  for( i=0;i<4;i++){
 
-  let bestSeller= document.getElementsByClassName('random__list'); 
-  bestSeller.innerHTML=addbook(values[i]['img'],values[i]['name'],value[i]['price'],value[i]['id']);
+  var i;
+  for( i=0;i<amount;i++){
+    var randomnum = Math.floor(Math.random() * (amount - 0)+0);
+    console.log(randomnum);
+  random[0].innerHTML+=addbook(values[randomnum]['imageHIGHres'],values[randomnum]['name'],values[randomnum]['price'],values[randomnum]['id']);
   }
 }
 
@@ -60,7 +75,7 @@ function get(data){
                status = json['status'];
                delete json['status'];
                makeRandom(json);
-               
+               makeBestcell(json);
                
             }
          

@@ -1,11 +1,13 @@
 <?php
 namespace products;
+
+use Attribute;
+
 require_once('getData.php');
 
 include "setData.php";
 // $input = $_POST['input'];
 $input = json_decode(stripslashes(file_get_contents("php://input")),true);
-
 
 
 class data{
@@ -23,7 +25,7 @@ class data{
 
         }
         else{
-         $result=json_encode( $status["status"]="fill in either id or name field in json");
+          $result= $data->text(null);
         }
         header('Content-Type: application/json');
         echo $result;
@@ -40,6 +42,7 @@ class data{
     
 
 }
-
+$data = new data;
+$data->main($input['data'],$input['atributes']['asc']);
 
 ?>
