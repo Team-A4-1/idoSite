@@ -28,7 +28,7 @@ function addbook(img, name,price,id){
                     '</div>'+
                     '<div class="best-sellers__price">'+price+',-'+
                     '</div>'+
-                    '<button type="submit" id="button'+id+'" class="best-sellers__btn">ADD TO CARD</button>'+
+                    '<a href="/product/'+id+'/" type="submit" id="button'+id+'" class="best-sellers__btn">ADD TO CARD</a>'+
                     '</div>'+
                     '</div>'+
                     '</li>';
