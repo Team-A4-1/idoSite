@@ -1,0 +1,80 @@
+.wrapper{
+
+}
+.main{
+max-width: 70%;
+margin: 0 auto;
+padding: 150px 0;
+}
+.main__title{
+    font-weight: 400;
+    padding-left: 10px;
+}
+.books{
+
+}
+.books__list{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.books__item{
+    border: 1px solid red;
+    flex: 1 1 21%;
+    margin: 10px;
+}
+.books__content{
+display: flex;
+flex-direction: column;
+}
+.books__img{
+    height: 298px;
+    width: auto;
+}
+.books__title{}
+.books__author{}
+.books__price {
+    font-size: 21px;
+    color: #346DBB;
+}
+.books__btn{
+    background-color: #346DBB;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 26px;
+    padding: 7px 20px;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .main {
+        padding: 46px 0;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+    .main {
+        padding: 89px 0;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width:1025px) and (max-width: 1440px) {
+   
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 2560px) {}
