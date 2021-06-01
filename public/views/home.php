@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
 </head>
+
+
+<body>
 <?php
 require_once('header-footer/header.php');
 ?>
-
-<body>
     <div class="wrapper">
         <div class="sidebar">
             <ul class="sidebar__list">
@@ -271,9 +272,10 @@ require_once('header-footer/header.php');
             </section>
         <div>
     </div>
-</body>
-<?php
+    <?php
 require_once('header-footer/footer.php');
 ?>
+</body>
+
 
 </html>
