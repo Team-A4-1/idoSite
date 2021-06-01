@@ -19,12 +19,14 @@
   grid-template-areas:
     "product-detail-left product-detail-right"
     "product-detail-bottom product-detail-bottom";
+    padding: 50px;
 }
 
 .product-detail-left {
   grid-area: product-detail-left;
   height: auto;
   border: 1px solid black;
+
 }
 
 .product-detail-right {
@@ -37,6 +39,39 @@
   grid-area: product-detail-bottom;
   height: auto;
   border: 1px solid black;
+}
+
+#title {
+    font-size: 45px;
+}
+
+#author {
+    font-size: 30px;
+}
+
+#addCart {
+    background-color: #346dbb;
+    color: white;
+    width: 220px;
+    height: 75px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#amount_togle {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: #346dbb;
+    height: 75px;
+    width: 100px;
+}
+
+#image {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 </style>
@@ -58,11 +93,10 @@ echo "<script>var id= $id;</script>";
 
             <div class="product-detail-right">
                 <div class="side">
-                    <h1 id="title"></h1>
+                    <p id="title"></p>
                     <p id="author"></p>
-                    <div id="amount_togle"></div>
-                    <div id="addCart">add to cart</div>
-                    <div id="addWishlist">add to wishlist</div>
+                    <input type="number" id="amount_togle" name="quantity" placeholder="1" min="1" max="10">
+                    <button id="addCart">ADD TO CART</button>
                 </div>
             </div>
 
