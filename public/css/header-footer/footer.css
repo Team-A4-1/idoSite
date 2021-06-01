@@ -15,6 +15,9 @@ footer {
   background-color: #346dbb;
   color: white;
   line-height: 1.5;
+  position: absolute;
+  left: 0;
+   width: 100%;
 }
 footer a {
   text-decoration: none;
