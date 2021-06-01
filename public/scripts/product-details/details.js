@@ -12,6 +12,10 @@ var data ={
 
 
 let Name = document.getElementById('title');
+let author = document.getElementById('author');
+let tabdata = document.getElementById('tabdata');
+let img = document.getElementById('image');
+let tumb = document.getElementsByClassName('thumbnails');
 
 function get(data){
    
@@ -22,8 +26,11 @@ function get(data){
               json = JSON.parse(xhttp.responseText);
              status = json['status'];
              delete json['status'];
-             return json;
-
+             console.log(json);
+              Name.innerText=json[0]['name'];
+              author.innerText=json[0]['author'];
+              tabdata.innerText=json[0]['text'];
+              img.src=json[0]['imageHIGHres'];
           }
        
         };
@@ -34,3 +41,4 @@ function get(data){
         xhttp.send(set); 
 
       }
+      get(data);
