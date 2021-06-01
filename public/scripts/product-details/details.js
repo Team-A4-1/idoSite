@@ -43,21 +43,23 @@ addCart.addEventListener('click',function(){
     var decoded = JSON.parse(cookie);
     console.log(decoded);
     var size = Object.keys(decoded).length;
-    var New = true;
+    var New = false;
     var objId =0;
+    console.log(id);
 for(j=0;j<size;j++){
-  if(decoded[j]['id']=id){
-      New=false;
+  console.log(decoded[j]['id']);
+  if(decoded[j]['id']!=id){
+      New=true;
       objId=j;
   }
+
 }
 if(New){
-  decoded[size+1]={'id':id,'amount':inputVal};
-    
+  console.log(size);
+  decoded[size]={'id':id,'amount':inputVal};
 }
 else{
   var value = decoded[objId]['amount'];
-console.log(inputVal+"  "+value);
   decoded[objId]['amount']=value+inputVal;
 }
 
