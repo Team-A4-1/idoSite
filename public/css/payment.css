@@ -2,20 +2,118 @@
 
 }
 .main{
-
+    
+    max-width: 97%;
+    margin: 0 auto;
+}
+.main-content{
+    display: flex;
 }
 .payment-details{
-
+    flex: 1 1 50%;
 }
 .payment-details__title{
     
 }
-.payment-details__form{}
+.payment-details__form {
+    border: 1px solid #346dbb;
+    padding: 8px 25px;
+    border-radius: 12px;
+}
 .payment__title{
-
+    padding: 30px 0;
+    color: #346dbb;
 }
 .payment__content{
+display: flex;
+flex-direction: column;
+}
 
+.payment__one{
+    display: flex;
+}
+.payment__one label {
+    color: #346dbb;
+}
+.payment__one input {
+    border-radius: 6px;
+    border: 1px solid #A0C3ED !important;
+}
+.payment__fn {
+    flex: 1 1 50%;
+    padding-right: 10px;
+}
+.payment__ln {
+    flex: 1 1 50%;
+    padding-left: 10px;
+}
+
+.payment__two{
+    display: flex;
+}
+.payment__two label {
+    color: #346dbb;
+}
+.payment__two input {
+    border-radius: 6px;
+    border: 1px solid #A0C3ED !important;
+}
+.payment__adress {
+    flex: 1 1 60%;
+    padding-right: 10px;
+}
+.payment__postcode {
+    flex: 1 1 40%;
+    padding-left: 10px;
+}
+
+.payment__three{
+    display: flex;
+}
+.payment__three label {
+    color: #346dbb;
+}
+.payment__three input {
+    border-radius: 6px;
+    border: 1px solid #A0C3ED !important;
+}
+.payment__city {
+    flex: 1 1 60%;
+    padding-right: 10px;
+}
+.payment__nummer {
+    flex: 1 1 40%;
+    padding-left: 10px;
+}
+.payment__four label {
+    color: #346dbb;
+}
+.payment__four input {
+    border-radius: 6px;
+    background-color: #F2F2F2;
+    border: 1px solid #A0C3ED !important;
+}
+
+.payment__methode{
+    padding-bottom: 25px;
+}
+.h3-pay{
+    padding: 31px 0;
+    color: #346dbb;
+}
+.payment__choice {
+    display: flex;
+    justify-content: space-between;
+}
+.payment__choice button {
+    padding: 20px 15px;
+    border: 1px solid #707070;
+    background-color: white;
+    color: #346dbb;
+    font-weight: bold;
+    font-size: 18px;
+    flex: 0 1 31%;
+    border-radius: 12px;
 }
 
 
@@ -23,7 +121,30 @@
 
 
 
-
-
-
-.order-summary{}
+.order-summary{
+    border: 1px solid red;
+    flex: 1 1 50%;
+}
+.order__wrapper{
+max-width: 80%;
+margin: 0 auto;
+border: 1px solid green;
+}
+.order__top{
+    
+}
+.order__content{
+    border: 1px solid purple;
+}
+.order__list {
+    display: flex;
+}
+.order__extra {
+    display: flex;
+}
+.order__total {
+    display: flex;
+}
+.order__bottom{
+    text-align: center;
+}
