@@ -25,28 +25,28 @@
 .product-detail-left {
   grid-area: product-detail-left;
   height: auto;
-  border: 1px solid black;
 
 }
 
 .product-detail-right {
   grid-area: product-detail-right;
   height: auto;
-  border: 1px solid black;
 }
 
 .product-detail-bottom {
   grid-area: product-detail-bottom;
-  height: auto;
-  border: 1px solid black;
+  height: fit-content;
 }
 
 #title {
     font-size: 45px;
+    padding-bottom: 10px;
 }
 
 #author {
-    font-size: 30px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-style: italic;
 }
 
 #addCart {
@@ -65,13 +65,30 @@
     color: #346dbb;
     height: 75px;
     width: 100px;
+    font-size: 25px;
+    text-align: center;
 }
 
 #image {
-    width: 65%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding-bottom: 25px;
+}
+
+.side {
+    padding: 50px;
+}
+
+#tabdata {
+    font-size: 20px;
+    padding: 25px;
+}
+
+.bottom_window {
+    border: 1px solid lightgray;
+    width: fit-content;
 }
 
 </style>
@@ -105,7 +122,7 @@ echo "<script>var id= $id;</script>";
 
 
             <div class="product-detail-bottom">
-                <div class="botom_window">
+                <div class="bottom_window">
                 <div id="tabs"></div>
                 <div id="tabdata"></div>
             </div>
