@@ -3,6 +3,7 @@ p {
 }
 
 
+
 .container {
     max-width: 912px;
     margin: 0 auto;
@@ -26,22 +27,15 @@ h1, h2 {
 
 
 
-.scrollbar {
-    width: 15px;
-    background-color: #b9b9b9;
-    display: block;
-}
+
 
 .side1  .text-block {
     text-align: right;
 }
 
-.text-block {
-    padding: 20px;
-}
 
-.icon {
-    padding: 20px;
+.circle {
+    padding: 12px;
     background: #346DBA;
     display: block;
     color: #fff;
@@ -49,7 +43,24 @@ h1, h2 {
     height: 50px;
     width: 50px;
     font-size: 25px;
+    text-align: center;
 }
+
+
+.side1 .circle {
+    margin-left: auto;
+}
+
+.text-block {
+    padding: 20px;
+}
+
+
+.text-block__title {
+    padding: 20px 0;
+}
+
+
 
 figure {
     max-width: 200px;
@@ -59,17 +70,29 @@ figure {
 
 
 .button {
+    display: block;
     padding: 15px 30px;
     border: 5px solid #346DBA;
     color:#346DBA;
     font-weight: bold;
     background-color: transparent;
-    margin: 0 auto;
+    margin: 25px auto;
     font-size: 20px;
     max-width: 250px;
     border-radius: 25px;
     text-align: center;
+    
 }
+
+
+
+
+.scrollbar {
+    width: 10px;
+    background-color: #b9b9b9;
+    display: block;
+}
+
 
 
 @media screen and (min-width: 1024px) {

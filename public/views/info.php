@@ -71,7 +71,7 @@ require_once('header-footer/header.php');
 
 
 <div class="text-block">
-    <span class="icon">2</span>
+    <div class="circle">2</div>
     <h3 class="text-block__title">Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Fusce gravida enim augue, venenatis commodo est venenatis eget.
@@ -132,7 +132,7 @@ require_once('header-footer/header.php');
 
 
 <div class="text-block">
-    <span class="icon">4</span>
+    <div class="circle">4</div>
     <h3 class="text-block__title">Title</h3>
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Fusce gravida enim augue, venenatis commodo est venenatis eget.
@@ -142,12 +142,14 @@ require_once('header-footer/header.php');
 
 </div>
 
-<span class="scrollbar"></span>
+<div class="scrollbar">
+
+</div>
 
 <div class="side2">
 
 <div class="text-block">
-<span class="icon">1</span>
+<div class="circle">1</div>
     <h3 class="text-block__title">Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Fusce gravida enim augue, venenatis commodo est venenatis eget.
@@ -162,7 +164,7 @@ require_once('header-footer/header.php');
 
 
 <div class="text-block">
-    <span class="icon">3</span>
+    <div class="circle">3</div>
     <h3 class="text-block__title">Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Fusce gravida enim augue, venenatis commodo est venenatis eget.
@@ -232,7 +234,7 @@ require_once('header-footer/header.php');
                        Fusce gravida enim augue, venenatis commodo est venenatis eget.
                        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>
 
-            <div class="button">Need help?  &#62; </div>
+            <a class="button" href="">Need help?  &#62; </a>
         <div>
     </section>
 </body>
