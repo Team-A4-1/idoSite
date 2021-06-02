@@ -17,7 +17,7 @@ let tabdata = document.getElementById('tabdata');
 let img = document.getElementById('image');
 let tumb = document.getElementsByClassName('thumbnails');
 let addCart = document.getElementById('addCart');
-let input = document.getElementById('amount');
+let input = document.getElementById('amount_togle');
 
 var inputVal=1;
 console.log(inputVal);
@@ -43,14 +43,18 @@ addCart.addEventListener('click',function(){
     var decoded = JSON.parse(cookie);
     console.log(decoded);
     var size = Object.keys(decoded).length;
-    var New = false;
+    var New = true;
     var objId =0;
     console.log(id);
 for(j=0;j<size;j++){
-  console.log(decoded[j]['id']);
-  if(decoded[j]['id']!=id){
-      New=true;
+  console.log(decoded[j]['id']+" "+id);
+  if(decoded[j]['id']==id){
+      New=false;
       objId=j;
+  }
+  else{
+    New=true;
+    objId=j;
   }
 
 }
