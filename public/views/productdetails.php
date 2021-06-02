@@ -25,28 +25,28 @@
 .product-detail-left {
   grid-area: product-detail-left;
   height: auto;
-  border: 1px solid black;
 
 }
 
 .product-detail-right {
   grid-area: product-detail-right;
   height: auto;
-  border: 1px solid black;
 }
 
 .product-detail-bottom {
   grid-area: product-detail-bottom;
-  height: auto;
-  border: 1px solid black;
+  height: fit-content;
 }
 
 #title {
     font-size: 45px;
+    padding-bottom: 10px;
 }
 
 #author {
-    font-size: 30px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-style: italic;
 }
 
 #addCart {
@@ -65,13 +65,47 @@
     color: #346dbb;
     height: 75px;
     width: 100px;
+    font-size: 25px;
+    text-align: center;
 }
 
 #image {
-    width: 65%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding-bottom: 25px;
+}
+
+.side {
+    padding: 50px;
+}
+
+#tabdata {
+    font-size: 20px;
+    padding: 25px;
+}
+
+.bottom_window {
+    border: 1px solid lightgray;
+    width: fit-content;
+}
+
+.tab-button {
+    height: 60px;
+    width: 125px;
+    background-color: #346dbb;
+    border: none;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.tab-button:hover {
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    color: #346dbb;
+    transform: translateY(-2px);
 }
 
 </style>
@@ -81,6 +115,9 @@ require_once('header-footer/header.php');
 echo "<script>var id= $id;</script>";
 ?>
 <body>
+
+
+
     <div id="product">
         
         <div class="grid-container">
@@ -102,19 +139,42 @@ echo "<script>var id= $id;</script>";
 
 
             <div class="product-detail-bottom">
-                <div class="botom_window">
+                <div class="bottom_window">
                 <div id="tabs"></div>
-                <div id="tabdata"></div>
+                
+
+
+                <div class="w3-bar w3-black">
+  <button class="tab-button" onclick="openCity('London')">Preview</button>
+  <button class="tab-button" onclick="openCity('Paris')">Details</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <div id="tabdata"></div>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <p>Placeholder text.</p> 
+</div>
+
             </div>
         </div>
 
     </div>
 
+    <script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
 
-
-    
-
-    <script src="/public/scripts/product-details/details.js"></script>
+<script src="/public/scripts/general/cookie.js"></script>
+<script src="/public/scripts/product-details/details.js"></script>
 </body>
 
 <?php

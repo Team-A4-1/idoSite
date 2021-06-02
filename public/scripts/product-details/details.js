@@ -16,6 +16,60 @@ let author = document.getElementById('author');
 let tabdata = document.getElementById('tabdata');
 let img = document.getElementById('image');
 let tumb = document.getElementsByClassName('thumbnails');
+let addCart = document.getElementById('addCart');
+let input = document.getElementById('amount_togle');
+
+var inputVal=1;
+console.log(inputVal);
+
+input.addEventListener("input",function(){
+ inputVal = parseInt(input.value);
+ console.log(inputVal);
+}
+);
+
+addCart.addEventListener('click',function(){
+  var cookie =getCookie('products');
+  var cookielist = [{
+    'id':id,
+    'amount':inputVal
+  } 
+];
+  if(cookie ==""){
+  var json = JSON.stringify(cookielist);
+  setCookie('products',json,10);
+  }
+  else{
+    var decoded = JSON.parse(cookie);
+    console.log(decoded);
+    var size = Object.keys(decoded).length;
+    var New = true;
+    var objId =0;
+    console.log(id);
+for(j=0;j<size;j++){
+  console.log(decoded[j]['id']+" "+id);
+  if(decoded[j]['id']==id){
+      New=false;
+      objId=j;
+  }
+  else{
+    New=true;
+    objId=j;
+  }
+
+}
+if(New){
+  console.log(size);
+  decoded[size]={'id':id,'amount':inputVal};
+}
+else{
+  var value = decoded[objId]['amount'];
+  decoded[objId]['amount']=value+inputVal;
+}
+
+    setCookie('products',JSON.stringify(decoded),10);  
+  }
+});
 
 function get(data){
    

@@ -44,7 +44,6 @@ function makeBestcell(values){
     amount=10;
   }
   for( i=0;i<amount;i++){
-    console.log(values);
     bestSeller[0].innerHTML+=addbook(values[i]['imageHIGHres'],values[i]['name'],values[i]['price'],values[i]['id']);
   }
 }
@@ -61,7 +60,6 @@ function makeRandom(values){
   }
   for( i=0;i<amount;i++){
     var randomnum = Math.floor(Math.random() * (amount - 0)+0);
-    console.log(randomnum);
   random[0].innerHTML+=addbook(values[randomnum]['imageHIGHres'],values[randomnum]['name'],values[randomnum]['price'],values[randomnum]['id']);
   }
 }
