@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'f3439a36fb9f20d45846599a03149e931beaad5d',
+    'reference' => '51c377b3387478928e7e6133c06c83d1a5b7da58',
     'name' => '__root__',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'f3439a36fb9f20d45846599a03149e931beaad5d',
+      'reference' => '51c377b3387478928e7e6133c06c83d1a5b7da58',
     ),
     'altorouter/altorouter' => 
     array (
