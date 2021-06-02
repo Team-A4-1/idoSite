@@ -91,6 +91,23 @@
     width: fit-content;
 }
 
+.tab-button {
+    height: 60px;
+    width: 125px;
+    background-color: #346dbb;
+    border: none;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.tab-button:hover {
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    color: #346dbb;
+    transform: translateY(-2px);
+}
+
 </style>
 
 <?php
@@ -124,13 +141,39 @@ echo "<script>var id= $id;</script>";
             <div class="product-detail-bottom">
                 <div class="bottom_window">
                 <div id="tabs"></div>
-                <div id="tabdata"></div>
+                
+
+
+                <div class="w3-bar w3-black">
+  <button class="tab-button" onclick="openCity('London')">Preview</button>
+  <button class="tab-button" onclick="openCity('Paris')">Details</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <div id="tabdata"></div>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <p>Placeholder text.</p> 
+</div>
+
             </div>
         </div>
 
     </div>
 
-    <script src="/public/scripts/general/cookie.js"></script>
+    <script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+<script src="/public/scripts/general/cookie.js"></script>
 <script src="/public/scripts/product-details/details.js"></script>
 </body>
 
