@@ -94,3 +94,27 @@
     color: #346dbb;
     transform: translateY(-2px);
 }
+
+@media only screen and (max-width: 950px) {
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "product-detail-left" "product-detail-right"
+    "product-detail-bottom" "product-detail-bottom";
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    }
+
+    #image {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 25px;
+}
+  }
