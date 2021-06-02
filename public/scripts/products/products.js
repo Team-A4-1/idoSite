@@ -14,16 +14,16 @@ var data ={
   
   let list = document.getElementsByClassName('books__list')[0];
   
-  function addbook(img, name,author,price){
+  function addbook(img, name,author,price,id){
       let html=  '<li class="books__item">'+
       '<div class="books__content">'+
           '<img class="books__img" src="'+img+'" alt="Book-cover">'+
           '<div class="books__title"><h2>'+name+'</h2></div>'+
           '<div class="books__author">'+author+'</div>'+
           '<div class="books__price">$'+price+'</div>'+
-          '<button type="submit" class="books__btn">'+
+          '<a href=/product/'+id+'/ type="submit" class="books__btn">'+
            'ADD TO CARD'+
-          '</button>'+
+          '</a>'+
       '</div>'+
   '</li>';
                       return html;
@@ -45,10 +45,8 @@ var data ={
                  json = JSON.parse(xhttp.responseText);
                  status = json['status'];
                  delete json['status'];
-                 console.log(json[0]);
                  for( i=0;i<Object.keys(json).length;i++){
-                    console.log(addbook(json[i]['imageHIGHres'],json[i]['name'],json[i]['author'],json[i]['price']));
-                list.innerHTML+=addbook(json[i]['imageHIGHres'],json[i]['name'],json[i]['author'],json[i]['price']);
+                list.innerHTML+=addbook(json[i]['imageHIGHres'],json[i]['name'],json[i]['author'],json[i]['price'],json[i]['id']);
                 }
               }
            
