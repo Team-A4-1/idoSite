@@ -29,7 +29,9 @@ input.addEventListener("input",function(){
 );
 
 addCart.addEventListener('click',function(){
+
   var cookie =getCookie('products');
+
   var cookielist = [{
     'id':id,
     'amount':inputVal
@@ -43,19 +45,18 @@ addCart.addEventListener('click',function(){
     var decoded = JSON.parse(cookie);
     console.log(decoded);
     var size = Object.keys(decoded).length;
+    var a=size;
     var New = true;
     var objId =0;
     console.log(id);
-for(j=0;j<size;j++){
+for(j=0;j<a;j++){
   console.log(decoded[j]['id']+" "+id);
   if(decoded[j]['id']==id){
       New=false;
-      objId=j;
+      a=j;
   }
-  else{
-    New=true;
     objId=j;
-  }
+
 
 }
 if(New){
@@ -64,11 +65,12 @@ if(New){
 }
 else{
   var value = decoded[objId]['amount'];
-  decoded[objId]['amount']=value+inputVal;
+  decoded[objId]['amount']=inputVal;
 }
 
     setCookie('products',JSON.stringify(decoded),10);  
   }
+  // window.location.href = "/shoppingcart";  
 });
 
 function get(data){
@@ -83,8 +85,15 @@ function get(data){
              console.log(json);
               Name.innerText=json[0]['name'];
               author.innerText=json[0]['author'];
+              price.innerText=json[0]['price'];
+              height.innerText=json[0]['height'];
+              amount.innerText=json[0]['amount'];
+              weight.innerText=json[0]['weight'];
+              width.innerText=json[0]['width'];
+              depth.innerText=json[0]['depth'];
               tabdata.innerText=json[0]['text'];
               img.src=json[0]['imageHIGHres'];
+              input.max=json[0]['amount'];
           }
        
         };
