@@ -234,7 +234,7 @@ require_once('header-footer/header.php');
                        Fusce gravida enim augue, venenatis commodo est venenatis eget.
                        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>
 
-            <a class="button" href="">Need help?  &#62; </a>
+            <a class="button" href="/contact">Need help?  &#62; </a>
         <div>
     </section>
 </body>
