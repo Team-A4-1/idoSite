@@ -33,7 +33,7 @@
                 </li>
                 <ul>
                 <li>
-                    <i class="icon-header fas fa-shopping-cart"></i>
+                   <a href="/shoppingcart"> <i class="icon-header fas fa-shopping-cart"></i></a>
 
                     <button class="header-button" onclick="document.getElementById('id01').style.display='block'"><i class="icon-header fas fa-user"></i></button>
 
