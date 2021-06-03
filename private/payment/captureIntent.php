@@ -1,10 +1,11 @@
 <?php
 
-namespace Sample\CaptureIntentExamples;
+namespace payment\CaptureIntentExamples;
 
-require __DIR__ . '/vendor/autoload.php';
+require '../../vendor/autoload.php';
+
 //1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
-use Sample\PayPalClient;
+use payment\PayPalClient;
 use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
 
 class CreateOrder
@@ -20,8 +21,22 @@ class CreateOrder
     $request = new OrdersCreateRequest();
     $request->prefer('return=representation');
     $request->body = self::buildRequestBody();
+
+
+    $ini = parse_ini_file('../../settings.ini');
+    $clientId = $ini['id'];
+    $clientSecret = $ini['secret'];
+
+$clientId=
+$clientSecret=
+$envirement = new SandboxEnvironment($clientId, $clientSecret);
+$client= new PayPalHttpClient($envirement);
+
+
+
+
+
    // 3. Call PayPal to set up a transaction
-    $client = PayPalClient::client();
     $response = $client->execute($request);
     if ($debug)
     {
@@ -36,7 +51,7 @@ class CreateOrder
       }
 
       // To print the whole response body, uncomment the following line
-      // echo json_encode($response->result, JSON_PRETTY_PRINT);
+      echo json_encode($response->result, JSON_PRETTY_PRINT);
     }
 
     // 4. Return a successful response to the client.
