@@ -1,6 +1,5 @@
 <?php
 namespace payment;
-require '../../vendor/autoload.php';
 use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Core\SandboxEnvironment;
 
@@ -30,8 +29,9 @@ class PayPalClient
     {
         $ini = parse_ini_file('../../settings.ini');
 
-        $clientId = $ini['id'];
-        $clientSecret = $ini['ENrYAkxpMDnpFA0smb2I37c5MYUpAhhy-4jMl9qnY9Ra7FAXnJ__oYiJDMlfuyBb1YYCE71MIa-TpBH3'];
+     
+        echo $clientId;
         return new SandboxEnvironment($clientId, $clientSecret);
     }
 }
+

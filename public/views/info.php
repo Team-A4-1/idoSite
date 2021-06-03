@@ -227,14 +227,14 @@ require_once('header-footer/header.php');
 
  </section>
 
-    <section>
+    <section id="shipping">
         <div class="container">
             <h2>Shipping</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                        Fusce gravida enim augue, venenatis commodo est venenatis eget.
                        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>
 
-            <a class="button" href="">Need help?  &#62; </a>
+            <a class="button" href="/contact">Need help?  &#62; </a>
         <div>
     </section>
 </body>

@@ -14,7 +14,9 @@ $router->addRoutes(array(
 	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';}),
 	array('GET', '/shoppingcart', function() {require __DIR__ . '/public/views/shopcart.php';}),
 	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
-	array('GET', '/product/[i:id]/', function($id) {require __DIR__ . '/public/views/productdetails.php';})));
+	array('GET', '/product/[i:id]/', function($id) {require __DIR__ . '/public/views/productdetails.php';}),
+	array('GET', '/payment', function($id) {require __DIR__ . '/public/views/payment.php';})
+));
 
 // match current request url
 $match = $router->match();
