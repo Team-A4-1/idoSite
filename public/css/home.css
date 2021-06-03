@@ -26,7 +26,6 @@
 .sidebar__item {
     border: 1px solid #346DBB;
     color: black;
-    padding: 10px;
     border-top: none;
     border-right: none;
     font-weight: 400;
@@ -36,13 +35,13 @@
 
 .sidebar__item a {
     color: black;
+    padding: 10px;
+    display: block;
 }
 
-.sidebar__item a:hover {
-    color: #346DBB;
-}
 
-li.sidebar__item.active {
+
+li.sidebar__item.active a, .sidebar__item a:hover{
     color: #fff;
     background-color: #346DBB;
 }
