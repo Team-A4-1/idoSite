@@ -89,13 +89,15 @@
 
             <section class="order-summary">
                 <div class="order__wrapper">
-                <div class="order__top">top</div>
+                <div class="order__top"></div>
                     <div class="order__content">
                         <div class="order__title"><h2>Order Summary</h2></div>
                         <div class="order__nr"><p>Order reference: 129291120</p></div>
                         
                         <div class="order__list">
-                            <div class="order__left"><img class="order__img" src="/public/assets/cover.jpg" alt="Book-cover"></div>
+                            <div class="order__left">
+                                <img class="order__img" src="/public/assets/cover.jpg" alt="Book-cover">
+                            </div>
                             <div class="order__center">
                                 <p>IDO What is IT?</p>
                                 <p>X 1</p>
@@ -104,8 +106,22 @@
                             <div class="order__right">
                                 <p>$ 11.40</p>
                             </div>
-                       
                         </div>
+                        
+                        <div class="order__list">
+                            <div class="order__left">
+                                <img class="order__img" src="/public/assets/cover.jpg" alt="Book-cover">
+                            </div>
+                            <div class="order__center">
+                                <p>IDO What is IT?</p>
+                                <p>X 1</p>
+                                <p>Weight: 100gr</p>
+                            </div>
+                            <div class="order__right">
+                                <p>$ 11.40</p>
+                            </div>
+                        </div>
+
                         <div class="order__extra">
                             <div class="order__left">
                                 <p>Shipping cost</p>
