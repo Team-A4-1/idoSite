@@ -174,7 +174,7 @@ echo "<script>var id= $id;</script>";
 
                     <h3>Depth:</h3>
                     <p id="depth"></p>
-                    <input type="number" id="amount_togle" name="quantity" placeholder="1" min="1" max="10">
+                    <input type="number"  id="amount_togle" name="quantity" placeholder="1" min="1" max="10">
                     <button id="addCart" href="/shopcart">ADD TO CART</button>
                 </div>
             </div>

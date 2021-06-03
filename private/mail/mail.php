@@ -1,11 +1,11 @@
 <?php
 
-
+$ini = parse_ini_file('../../settings.ini');
 
 header("Content-Type: application/json; charset=UTF-8");
 
 //email 
-$mailadres = "florian.tjeertes@ziggo.nl";
+$mailadres=$ini['mailadressCeller'];
 if (!filter_var($_POST["ca"], FILTER_VALIDATE_EMAIL)) {
    ReturnJason(false,"Invalid email format");
     
@@ -23,9 +23,7 @@ $clientMessage =$_POST["cn"];
 $htmlSearch = array('<','>');
 $htmlreplace = array('&lt;','&gt;');
 
-//test
-$clientMessage="habahabbahabßß";
-//
+
 
 $clientMessage = str_replace($htmlSearch,$htmlreplace,$clientMessage);
 

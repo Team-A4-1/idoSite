@@ -121,13 +121,15 @@
 
             </div>
             <div>
-
+        
 
             </div>
-
+      
 
             <?php require_once('header-footer/footer.php');?>
 </body>
 
-
 </html>
+<script src="public/scripts/general/cookie.js"></script>
+
+<script src="public/scripts/shoppingcart/cart.js"></script>
