@@ -57,6 +57,14 @@
     border: none;
     font-weight: 600;
     font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+#addCart:hover {
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    color: #346dbb;
+    border: 2px solid #346dbb;
 }
 
 #amount_togle {
@@ -105,7 +113,12 @@
     background-color: white;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     color: #346dbb;
-    transform: translateY(-2px);
+    border: 2px solid #346dbb;
+}
+
+.details {
+  padding: 25px;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -156,24 +169,17 @@ echo "<script>var id= $id;</script>";
                 <div class="side">
                     <p id="title"></p>
                     <p id="author"></p>
-
+                    <br>
                     <h3>Price:</h3>
                     <p id="price"></p>
-
-                    <h3>Height:</h3>
-                    <p id="height"></p>
-
+                    <br>
                     <h3>In stock:</h3>
                     <p id="amount"></p>
-
+                    <br>
                     <h3>Weight:</h3>
                     <p id="weight"></p>
-
-                    <h3>Width:</h3>
-                    <p id="width"></p>
-
-                    <h3>Depth:</h3>
-                    <p id="depth"></p>
+                    <br>
+                    
                     <input type="number" id="amount_togle" name="quantity" placeholder="1" min="1" max="10">
                     <button id="addCart" href="/shopcart">ADD TO CART</button>
                 </div>
@@ -196,7 +202,16 @@ echo "<script>var id= $id;</script>";
 </div>
 
 <div id="Paris" class="w3-container city" style="display:none">
-  <p>Placeholder text.</p> 
+  <div class="details">
+    <h3>Height:</h3>
+    <p id="height"></p>
+    <br>
+    <h3>Width:</h3>
+    <p id="width"></p>
+    <br>
+    <h3>Depth:</h3>
+    <p id="depth"></p>
+  </div>
 </div>
 
             </div>
