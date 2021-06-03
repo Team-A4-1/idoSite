@@ -8,9 +8,7 @@
     <meta name="Author" content="Blen Michil">
     <link rel="stylesheet" href="public/css/payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-    src="https://www.paypal.com/sdk/js?client-id=ATIze1Bn3XV7CGpYFs0zJjEgj48rO9Y8XF6NVTMhmFKSvK2E1I_o31ZT7GldihdgLl7_HLcs-JXghCTW"> // Required. Replace YOUR_CLIENT_ID with your sandbox client ID.
-  </script>
+   
     <title>Payment</title>
 </head>
 
@@ -81,7 +79,11 @@
                                         <div class="payment__choice">
                                         <div id="smart-button-container">
                                         <div style="text-align: center;">
-                                        <div id="paypal-button-container"></div>
+                                       
+                                        <div id="paypal-custom"></div>
+                                            <script
+                                            src="https://www.paypal.com/sdk/js?client-id=ATIze1Bn3XV7CGpYFs0zJjEgj48rO9Y8XF6NVTMhmFKSvK2E1I_o31ZT7GldihdgLl7_HLcs-JXghCTW"> // Required. Replace YOUR_CLIENT_ID with your sandbox client ID.
+                                            </script>
                                          </div>
                                      </div>
                             </div>
@@ -167,34 +169,31 @@
 <?php require_once('header-footer/footer.php');?>
 </body>
 
-<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
   <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'rect',
-          color: 'gold',
-          layout: 'vertical',
-          label: 'paypal',
-          
-        },
+     paypal.Buttons({
+    createOrder: function(data, actions) {
 
-createOrder: function() {
-  return fetch('/private/payment/captureIntent.php', {
+
+      return fetch('private/payment/captureIntent.php', {
     method: 'post',
     headers: {
       'content-type': 'application/json'
     }
   }).then(function(res) {
-    return res.json();
-  }).then(function(data) {
-    return data.id; // Use the key sent by your server's response, ex. 'id' or 'token'
-  });
-}
 
-      }).render('#paypal-button-container');
+    return res.json();
+  }).then(function(orderData) {
+    return orderData.id; // Use the key sent by your server's response, ex. 'id' or 'token'
+  });
+    },
+    onApprove: function(data, actions) {
+      // This function captures the funds from the transaction.
+      return actions.order.capture().then(function(details) {
+        // This function shows a transaction success message to your buyer.
+        alert('Transaction completed by ' + details.payer.name.given_name);
+      });
     }
-    initPayPalButton();
+  }).render('#paypal-custom');
   </script>
 </html>
 

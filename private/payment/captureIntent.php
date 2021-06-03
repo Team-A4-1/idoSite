@@ -5,9 +5,9 @@ namespace payment\CaptureIntentExamples;
 require '../../vendor/autoload.php';
 
 //1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
-use payment\PayPalClient;
 use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
-
+use PayPalCheckoutSdk\Core\PayPalHttpClient;
+use PayPalCheckoutSdk\Core\SandboxEnvironment;
 class CreateOrder
 {
 
@@ -26,11 +26,8 @@ class CreateOrder
     $ini = parse_ini_file('../../settings.ini');
     $clientId = $ini['id'];
     $clientSecret = $ini['secret'];
-
-$clientId=
-$clientSecret=
-$envirement = new SandboxEnvironment($clientId, $clientSecret);
-$client= new PayPalHttpClient($envirement);
+    $envirement = new SandboxEnvironment($clientId, $clientSecret);
+    $client= new PayPalHttpClient($envirement);
 
 
 
@@ -38,21 +35,10 @@ $client= new PayPalHttpClient($envirement);
 
    // 3. Call PayPal to set up a transaction
     $response = $client->execute($request);
-    if ($debug)
-    {
-      print "Status Code: {$response->statusCode}\n";
-      print "Status: {$response->result->status}\n";
-      print "Order ID: {$response->result->id}\n";
-      print "Intent: {$response->result->intent}\n";
-      print "Links:\n";
-      foreach($response->result->links as $link)
-      {
-        print "\t{$link->rel}: {$link->href}\tCall Type: {$link->method}\n";
-      }
-
+    
       // To print the whole response body, uncomment the following line
       echo json_encode($response->result, JSON_PRETTY_PRINT);
-    }
+    
 
     // 4. Return a successful response to the client.
     return $response;
@@ -65,94 +51,43 @@ $client= new PayPalHttpClient($envirement);
      */
     private static function buildRequestBody()
     {
-        return array(
-            'intent' => 'CAPTURE',
-            'application_context' =>
+         return array(
+
+          'intent' => 'CAPTURE',
+
+          'application_context' =>
+
               array(
-                'brand_name' => 'EXAMPLE INC',
-                'locale' => 'en-US',
-                'landing_page' => 'BILLING',
-                'shipping_preference' => 'SET_PROVIDED_ADDRESS',
-                'user_action' => 'PAY_NOW',
+
+                  'return_url' => 'localhost:90/',
+
+                  'cancel_url' => 'localhost:90/books'
+
               ),
-            'purchase_units' =>
+
+          'purchase_units' =>
+
               array(
-                0 =>
-                  array(
-                    'reference_id' => 'PUHF',
-                    'description' => 'Sporting Goods',
-                    'custom_id' => 'CUST-HighFashions',
-                    'soft_descriptor' => 'HighFashions',
-                    'amount' =>
+
+                  0 =>
+
                       array(
-                        'currency_code' => 'USD',
-                        'value' => '220.00',
-                        'breakdown' =>
-                          array(
-                            'item_total' =>
+
+                          'amount' =>
+
                               array(
-                                'currency_code' => 'USD',
-                                'value' => '180.00',
-                              ),
-                            'shipping' =>
-                              array(
-                                'currency_code' => 'USD',
-                                'value' => '20.00',
-                              ),
-                            'handling' =>
-                              array(
-                                'currency_code' => 'USD',
-                                'value' => '10.00',
-                              ),
-                            'tax_total' =>
-                              array(
-                                'currency_code' => 'USD',
-                                'value' => '20.00',
-                              ),
-                            'shipping_discount' =>
-                              array(
-                                'currency_code' => 'USD',
-                                'value' => '10.00',
-                              ),
-                          ),
-                      ),
-                    'items' =>
-                      array(
-                        0 =>
-                          array(
-                            'name' => 'T-Shirt',
-                            'description' => 'Green XL',
-                            'sku' => 'sku01',
-                            'unit_amount' =>
-                              array(
-                                'currency_code' => 'USD',
-                                'value' => '90.00',
-                              ),
-                            'tax' =>
-                              array(
-                                'currency_code' => 'USD',
-                                'value' => '10.00',
-                              ),
-                            'quantity' => '1',
-                            'category' => 'PHYSICAL_GOODS',
-                          )
-                      ),
-                    'shipping' =>
-                      array(
-                        'method' => 'post NL',
-                        'address' =>
-                          array(
-                            'address_line_1' => '123 Townsend St',
-                            'address_line_2' => 'Floor 6',
-                            'admin_area_2' => 'San Francisco',
-                            'admin_area_1' => 'CA',
-                            'postal_code' => '94107',
-                            'country_code' => 'US',
-                          ),
-                      ),
-                  ),
-              ),
-          );
+
+                                  'currency_code' => 'USD',
+
+                                  'value' => '220.00'
+
+                              )
+
+                      )
+
+              )
+
+      );
     }
 }
 
