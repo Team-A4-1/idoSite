@@ -22,6 +22,10 @@ var cookie =getCookie('products');
     '</div>';
                     return html;
 }
+
+var totalweight;
+
+
 let cart = document.getElementsByClassName('list')[0];
 cart.innerHTML=null;
 function get(data,value){
@@ -32,9 +36,9 @@ function get(data,value){
               json = JSON.parse(xhttp.responseText);
              status = json['status'];
              delete json['status'];
-             console.log(amount);
+             totalweight+=parseInt(json[0]['price']);
+
              let html =addbook(json[0]['imageLOWres'],json[0]['name'],json[0]['price'],json[0]['weight'],value,json[0]['amount']);
-           
              cart.innerHTML+= html;
          
        
@@ -50,7 +54,6 @@ function get(data,value){
 
 
 
-      
 
 for(i=0;i< Object.keys(decoded).length;i++){
     var id=decoded[i]['id'];
