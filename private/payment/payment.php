@@ -10,6 +10,7 @@ ini_set('display_startup_errors', '1');
 
 class PayPalClient
 {
+
     /**
      * Returns PayPal HTTP client instance with environment that has access
      * credentials context. Use this instance to invoke PayPal APIs, provided the
@@ -27,10 +28,10 @@ class PayPalClient
      */
     public static function environment()
     {
-        $clientId = getenv("CLIENT_ID") ?: "PAYPAL-SANDBOX-CLIENT-ID";
-        $clientSecret = getenv("CLIENT_SECRET") ?: "PAYPAL-SANDBOX-CLIENT-SECRET";
+        $ini = parse_ini_file('../../settings.ini');
+
+        $clientId = $ini['id'];
+        $clientSecret = $ini['ENrYAkxpMDnpFA0smb2I37c5MYUpAhhy-4jMl9qnY9Ra7FAXnJ__oYiJDMlfuyBb1YYCE71MIa-TpBH3'];
         return new SandboxEnvironment($clientId, $clientSecret);
     }
 }
-$test = new PayPalClient;
-print_r( $test->environment());
