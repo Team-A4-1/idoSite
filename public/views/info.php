@@ -227,7 +227,7 @@ require_once('header-footer/header.php');
 
  </section>
 
-    <section>
+    <section id="shipping">
         <div class="container">
             <h2>Shipping</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
