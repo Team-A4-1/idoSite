@@ -1,7 +1,6 @@
 <?php
 namespace payment;
-require __DIR__ . '/vendor/autoload.php';
-
+require '../../vendor/autoload.php';
 use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Core\SandboxEnvironment;
 
@@ -33,3 +32,5 @@ class PayPalClient
         return new SandboxEnvironment($clientId, $clientSecret);
     }
 }
+$test = new PayPalClient;
+print_r( $test->environment());
