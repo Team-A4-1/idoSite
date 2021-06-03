@@ -13,6 +13,7 @@ $router->addRoutes(array(
 	array('GET', '/about', function() {require __DIR__ . '/public/views/about.php';}),
 	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';}),
 	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
+	array('GET', '/login', function() {require __DIR__ . '/public/views/login.php';}),
 	array('GET', '/product/[i:id]/', function($id) {require __DIR__ . '/public/views/productdetails.php';}),
 	array('GET', '/payment', function($id) {require __DIR__ . '/public/views/payment.php';})
 ));
