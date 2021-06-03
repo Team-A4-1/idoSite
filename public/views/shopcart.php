@@ -25,7 +25,7 @@
                 <section class="cart">
                     <form class="cart__content">
                         <h2 class="cart__title">Shopping Cart</h2>
-
+                        <div class='list'>
                         <div class="cart__list">
                             <div class="cart__left">
                                 <img class="cart__img" src="/public/assets/cover.jpg" alt="Book-cover">
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <hr>
-
+                        </div>
                         <div class="cart__total">
                             <div class="cart__left">
                                 <h2>Total:</h2>

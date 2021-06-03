@@ -1,3 +1,7 @@
+var cookie =getCookie('products');
+
+      var decoded = JSON.parse(cookie);
+
 
   function addbook(img,name,price,weight,amount,maxamount){
     let html=   
@@ -9,21 +13,18 @@
         '<p>'+name+'</p>'+
 
         '<label for="cars">Choose amount:</label>'+
-        '<select name="amount" id="amount">'+
-            '<option value="volvo">1</option>+
-            '<option value="saab">2</option>'+
-            '<option value="opel">3</option>'+
-            '<option value="audi">4</option>'+
-        '</select>'+
-        '<p>Weight: 100gr</p>'+
+        '<input type="number" min=1  max='+maxamount+ ' value='+amount+' id="amount">'+
+        '<p>Weight: '+weight+'</p>'+
     '</div>'+
     '<div class="cart__right">'+
-        '<p><i class="fas fa-trash-alt"></i>$ 11.40</p>'+
+        '<p><i class="fas fa-trash-alt"></i>€'+price+'</p>'+
     '</div>'+
     '</div>';
                     return html;
 }
-function get(data){
+let cart = document.getElementsByClassName('list')[0];
+cart.innerHTML=null;
+function get(data,value){
    
       var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -31,9 +32,10 @@ function get(data){
               json = JSON.parse(xhttp.responseText);
              status = json['status'];
              delete json['status'];
-             let cart = document.getElementsByClassName['cart__content'];
-             let html =addbook();
-            cart.innerHTML+= html;
+             console.log(amount);
+             let html =addbook(json[0]['imageLOWres'],json[0]['name'],json[0]['price'],json[0]['weight'],value,json[0]['amount']);
+           
+             cart.innerHTML+= html;
          
        
          }
@@ -48,13 +50,11 @@ function get(data){
 
 
 
-      var cookie =getCookie('products');
-
-      var decoded = JSON.parse(cookie);
+      
 
 for(i=0;i< Object.keys(decoded).length;i++){
     var id=decoded[i]['id'];
-
+var amount = decoded[i]['amount'];
     var data ={
         'post': true,
         'data': {
@@ -66,7 +66,7 @@ for(i=0;i< Object.keys(decoded).length;i++){
           'results':0
         }
         };
-      get(data);
+      get(data,amount);
 
 }
 
