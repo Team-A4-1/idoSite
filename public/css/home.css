@@ -34,6 +34,14 @@
 
 }
 
+.sidebar__item a {
+    color: black;
+}
+
+.sidebar__item a:hover {
+    color: #346DBB;
+}
+
 li.sidebar__item.active {
     color: #fff;
     background-color: #346DBB;

@@ -21,10 +21,10 @@ require_once('header-footer/header.php');
         <div class="sidebar">
             <ul class="sidebar__list">
                 <li class="sidebar__item active">Home</li>
-                <li class="sidebar__item">Shop</li>
-                <li class="sidebar__item">How does It work</li>
-                <li class="sidebar__item">About us</li>
-                <li class="sidebar__item">Contact</li>
+                <li class="sidebar__item"><a href="/books">Shop</a></li>
+                <li class="sidebar__item"><a href="/info">How does It work</a></li>
+                <li class="sidebar__item"><a href="about">About us</a></li>
+                <li class="sidebar__item"><a href="contact">Contact</a></li>
             </ul>
         </div>
         <div class="main">
@@ -71,7 +71,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="best-sellers__price">$12,40,-</div>
-                                        <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
+                                        <button type="submit" class="best-sellers__btn">ADD TO CARD></button>
                                     </div>
                                 </div>
                             </li>
