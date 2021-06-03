@@ -156,8 +156,26 @@ echo "<script>var id= $id;</script>";
                 <div class="side">
                     <p id="title"></p>
                     <p id="author"></p>
+
+                    <h3>Price:</h3>
+                    <p id="price"></p>
+
+                    <h3>Height:</h3>
+                    <p id="height"></p>
+
+                    <h3>In stock:</h3>
+                    <p id="amount"></p>
+
+                    <h3>Weight:</h3>
+                    <p id="weight"></p>
+
+                    <h3>Width:</h3>
+                    <p id="width"></p>
+
+                    <h3>Depth:</h3>
+                    <p id="depth"></p>
                     <input type="number" id="amount_togle" name="quantity" placeholder="1" min="1" max="10">
-                    <button id="addCart">ADD TO CART</button>
+                    <button id="addCart" href="/shopcart">ADD TO CART</button>
                 </div>
             </div>
 

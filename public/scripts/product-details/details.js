@@ -83,6 +83,12 @@ function get(data){
              console.log(json);
               Name.innerText=json[0]['name'];
               author.innerText=json[0]['author'];
+              price.innerText=json[0]['price'];
+              height.innerText=json[0]['height'];
+              amount.innerText=json[0]['amount'];
+              weight.innerText=json[0]['weight'];
+              width.innerText=json[0]['width'];
+              depth.innerText=json[0]['depth'];
               tabdata.innerText=json[0]['text'];
               img.src=json[0]['imageHIGHres'];
           }
