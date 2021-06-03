@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13427c65cf83a393ef92e115a201ec5e",
+    "content-hash": "7e7de0185fb38c44c60cf318c8f86313",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -115,6 +115,57 @@
             "time": "2019-11-07T23:16:44+00:00"
         },
         {
+            "name": "paypal/paypal-payouts-sdk",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paypal/Payouts-PHP-SDK.git",
+                "reference": "45558e007569bd5b1967c07abc6505a58b8d9672"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paypal/Payouts-PHP-SDK/zipball/45558e007569bd5b1967c07abc6505a58b8d9672",
+                "reference": "45558e007569bd5b1967c07abc6505a58b8d9672",
+                "shasum": ""
+            },
+            "require": {
+                "paypal/paypalhttp": "~1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PaypalPayoutsSDK\\": "lib/PaypalPayoutsSDK",
+                    "Sample\\": "samples/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PayPal",
+                    "homepage": "https://github.com/paypal/PAYOUTS-PHP-SDK/contributors"
+                }
+            ],
+            "description": "PayPal's PHP SDK for Payouts REST APIs",
+            "homepage": "http://github.com/paypal/PAYOUTS-PHP-SDK/",
+            "keywords": [
+                "payouts",
+                "paypal",
+                "rest",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/paypal/Payouts-PHP-SDK/issues",
+                "source": "https://github.com/paypal/Payouts-PHP-SDK/tree/v1.0.0"
+            },
+            "time": "2020-02-07T10:48:57+00:00"
+        },
+        {
             "name": "paypal/paypalhttp",
             "version": "1.0.0",
             "source": {
@@ -155,6 +206,7 @@
                 "issues": "https://github.com/paypal/paypalhttp_php/issues",
                 "source": "https://github.com/paypal/paypalhttp_php/tree/1.0.0"
             },
+            "abandoned": true,
             "time": "2019-11-06T21:27:12+00:00"
         }
     ],

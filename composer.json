@@ -1,7 +1,8 @@
 {
     "require": {
         "altorouter/altorouter": "1.1.0",
-        "paypal/paypal-checkout-sdk": "1.0.1"
+        "paypal/paypal-checkout-sdk": "1.0.1",
+        "paypal/paypal-payouts-sdk": "~1.0.0"
 
     }
 }

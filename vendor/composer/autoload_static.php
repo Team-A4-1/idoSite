@@ -13,6 +13,7 @@ class ComposerStaticInitb61fc62a81fe38d4d1299ebc877591af
         ),
         'P' => 
         array (
+            'PaypalPayoutsSDK\\' => 17,
             'PayPalHttp\\' => 11,
             'PayPalCheckoutSdk\\' => 18,
         ),
@@ -22,6 +23,11 @@ class ComposerStaticInitb61fc62a81fe38d4d1299ebc877591af
         'Sample\\' => 
         array (
             0 => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples',
+            1 => __DIR__ . '/..' . '/paypal/paypal-payouts-sdk/samples',
+        ),
+        'PaypalPayoutsSDK\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paypal/paypal-payouts-sdk/lib/PaypalPayoutsSDK',
         ),
         'PayPalHttp\\' => 
         array (

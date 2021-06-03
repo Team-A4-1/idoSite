@@ -132,6 +132,6 @@
 
 <?php require_once('header-footer/footer.php'); ?>
 </body>
-
+<script src="public/scripts/products/products.js"></script>
 
 </html>

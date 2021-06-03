@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '69b3096c571eb01239203a5698343c69c0fb28cd',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '69b3096c571eb01239203a5698343c69c0fb28cd',
     ),
     'altorouter/altorouter' => 
     array (
@@ -37,6 +37,15 @@
       array (
       ),
       'reference' => 'ed6a55075448308b87a8b59dcb7fedf04a048cb1',
+    ),
+    'paypal/paypal-payouts-sdk' => 
+    array (
+      'pretty_version' => 'v1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '45558e007569bd5b1967c07abc6505a58b8d9672',
     ),
     'paypal/paypalhttp' => 
     array (
