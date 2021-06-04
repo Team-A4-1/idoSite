@@ -3,9 +3,18 @@ var cookie =getCookie('products');
 var decoded = JSON.parse(cookie);
 
 let money = document.getElementsByClassName('summary__right')[0];
-
+let Continue = document.getElementsByClassName('summary__btn')[0];
 let weightTag =document.getElementsByClassName('summary_weight')[0];
 let priceTotalTaxtag =document.getElementsByClassName('totaltax');
+let itemsAmount =document.getElementsByClassName('summary__left');
+
+
+Continue.addEventListener('click',function (){
+document.location='/payment';
+});
+
+
+
 
 function deletecookie(id){
     var decoded = JSON.parse(cookie);
@@ -54,9 +63,8 @@ function taxcalc(total){
 }
 
 var totalweight=0;
-
 var totalprice=0;
-
+var totalamount=0;
 
 let cart = document.getElementsByClassName('list')[0];
 cart.innerHTML=null;
@@ -68,8 +76,8 @@ function get(data,value,j){
               json = JSON.parse(xhttp.responseText);
              status = json['status'];
              delete json['status'];
-             totalweight+=parseInt(json[0]['weight']);
-             totalprice+=parseInt(json[0]['price']);
+             totalweight+=parseInt((json[0]['weight'])*value);
+             totalprice+=(parseInt(json[0]['price'])*value);
 
 
              let html =addbook(json[0]['imageLOWres'],json[0]['name'],json[0]['price'],json[0]['weight'],value,json[0]['amount'],j);
@@ -108,6 +116,8 @@ var amount = decoded[i]['amount'];
           'results':0
         }
         };
+        totalamount+=amount;
+        itemsAmount[0].innerHTML='Subtotal: '+totalamount+' items';
       get(data,amount,i);
 }
 }
