@@ -1,0 +1,104 @@
+.orderlist-box {
+    border: 1px solid lightgray;
+    margin: 50px;
+    padding: 50px;
+    width: 100%;
+  }
+  
+  .order-image-box {
+    border: 1px solid lightgray;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: white;
+  }
+  
+  .order-image-box-invisible {
+      border: 1px solid white;
+      height: 25px;
+      width: 65px;
+      display: inline-block;
+      background-color: white;
+    }
+  
+  .order-list {
+    /* border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+  }
+  
+  .order-list-top-under {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    border-bottom: 3px solid lightgray;
+  }
+  
+  .order-list-top-under p{
+      text-decoration: underline;
+    }
+  
+  .list-background {
+    background-color: #b3ccef;
+  }
+  
+  .order-list p {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(+50%);
+    -ms-transform: translateY(+50%);
+    transform: translateY(+50%);
+  }
+  
+  .order-list-check {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .user-select {
+      background-color: white;
+      border: 1px solid black;
+      width: 200px;
+      height: 40px;
+      font-size: 16px;
+      padding: 10px;
+  }
+  
+  .user-search {
+      background-color: white;
+      border: 1px solid black;
+      height: 40px;
+      width: 350px;
+      font-size: 16px;
+      color: black;
+      padding: 10px;
+  }
+  
+  .user-search-button {
+      height: 40px;
+      width: 100px;
+      background-color: #346dbb;
+      color: white;
+      border: none;
+      border-radius: 50px;
+  }
+  
+  .user-form {
+      display: inline-block;
+  }
+  
+  .user-form-right {
+      display: inline-block;
+      float: right;
+  }
