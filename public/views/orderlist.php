@@ -28,6 +28,34 @@ require_once('header-footer/header.php');
         
     <div class="orderlist-box">
         <ul>
+        <li class="order-list-top">
+            <form class="user-form" action="">
+                <select class="user-select" name="users" id="users">
+                    <option value="user">User</option>
+                    <option value="user">User</option>
+                    <option value="user">User</option>
+                    <option value="user">User</option>
+                </select>
+            </form>
+            
+            <form class="user-form-right" id="form"> 
+                <input class="user-search" type="search" id="query" name="q" placeholder="Search...">
+                <button class="user-search-button">Search</button>
+            </form>
+        </li>
+
+        <li class="order-list-top-under">
+                <div class="order-image-box-invisible"></div>
+                <div class="order-image-box-invisible"></div>
+                <p>Name</p>
+                <p>Adress</p>
+                <p>Mail</p>
+                <p>Product</p>
+                <p>Weight</p>
+                <p>Price</p>
+            </li>
+
+
             <li class="order-list">
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
