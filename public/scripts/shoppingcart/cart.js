@@ -12,9 +12,21 @@ function deletecookie(id){
     console.log(decoded);
     var size = Object.keys(decoded).length;
     console.log(id);
-    delete decoded[id];
-    setCookie('products',JSON.stringify(decoded),10);  
+    decoded.splice(id, 1);
+
+    console.log(decoded);
+
+    if(empty(decoded)){
+        setCookie('products',JSON.stringify(decoded),0);  
+
+    }
+    else{
+        setCookie('products',JSON.stringify(decoded),10);  
+
+    }
 document.getElementById(id).remove;
+
+getall();
 }
 
 function taxcalc(total){
@@ -81,7 +93,7 @@ function get(data,value,j){
 
 
 
-
+function getall (){
 for(i=0;i< Object.keys(decoded).length;i++){
     var id=decoded[i]['id'];
 var amount = decoded[i]['amount'];
@@ -98,4 +110,5 @@ var amount = decoded[i]['amount'];
         };
       get(data,amount,i);
 }
-
+}
+getall();
