@@ -39,7 +39,7 @@ require_once('header-footer/header.php');
                 <p>Price</p>
             </li>
 
-            <li class="order-list">
+            <li class="order-list list-background">
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
                 <p>Name</p>
@@ -51,6 +51,39 @@ require_once('header-footer/header.php');
             </li>
 
             <li class="order-list">
+                <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
+                <div class="order-image-box"></div>
+                <p>Name</p>
+                <p>Adress</p>
+                <p>Mail</p>
+                <p>Product</p>
+                <p>Weight</p>
+                <p>Price</p>
+            </li>
+
+            <li class="order-list list-background">
+                <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
+                <div class="order-image-box"></div>
+                <p>Name</p>
+                <p>Adress</p>
+                <p>Mail</p>
+                <p>Product</p>
+                <p>Weight</p>
+                <p>Price</p>
+            </li>
+
+            <li class="order-list">
+                <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
+                <div class="order-image-box"></div>
+                <p>Name</p>
+                <p>Adress</p>
+                <p>Mail</p>
+                <p>Product</p>
+                <p>Weight</p>
+                <p>Price</p>
+            </li>
+
+            <li class="order-list list-background">
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
                 <p>Name</p>

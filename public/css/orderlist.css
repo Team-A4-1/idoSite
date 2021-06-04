@@ -1,30 +1,46 @@
 .orderlist-box {
-    border: 1px solid lightgray;
-    margin: 50px;
-    padding: 50px;
-    width: 100%;
+  border: 1px solid lightgray;
+  margin: 50px;
+  padding: 50px;
+  width: 100%;
 }
 
 .order-image-box {
-    border: 1px solid lightgray;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
+  border: 1px solid lightgray;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background-color: white;
 }
 
 .order-list {
-    
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
 }
 
-.order-list p{
-    display: inline-block;
-    padding-left: auto;
+.list-background {
+  background-color: #b3ccef;
+}
 
+.order-list p {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(+50%);
+  -ms-transform: translateY(+50%);
+  transform: translateY(+50%);
 }
 
 .order-list-check {
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    padding-right: 50px;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
