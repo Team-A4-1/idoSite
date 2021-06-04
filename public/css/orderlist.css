@@ -1,0 +1,30 @@
+.orderlist-box {
+    border: 1px solid lightgray;
+    margin: 50px;
+    padding: 50px;
+    width: 100%;
+}
+
+.order-image-box {
+    border: 1px solid lightgray;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.order-list {
+    
+}
+
+.order-list p{
+    display: inline-block;
+    padding-left: auto;
+
+}
+
+.order-list-check {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    padding-right: 50px;
+}
