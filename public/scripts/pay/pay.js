@@ -1,5 +1,9 @@
 let name = document.getElementById('fname');
+var cookie =getCookie('products');
 
+var decoded = JSON.parse(cookie);
+
+let orderlist = document.getElementById('orders');
 
 function addbook(img, name,price,amount,weight){
     let html= ' <div class="order__list">'+
@@ -21,9 +25,9 @@ function addbook(img, name,price,amount,weight){
 
 
 
+var priceTotal= 0;
 
-
-function get(data){
+function get(data,amount){
    
     var status;
         var xhttp = new XMLHttpRequest();
@@ -33,7 +37,10 @@ function get(data){
                status = json['status'];
                delete json['status'];
                console.log(json);
-              
+               priceTotal+=(json[0]['weight']*amount);
+                var weight = json[0]['weight']*amount;
+                orderlist.innerHTML+= addbook(json[0]['imageLOWres'], json[0]['name'],json[0]['price'],amount,weight);
+            
             }
          
           };
@@ -44,7 +51,11 @@ function get(data){
           xhttp.send(set); 
   
         }
+
+     
         function getall (){
+            orderlist.innerHTML= "";
+
             for(i=0;i< Object.keys(decoded).length;i++){
                 var id=decoded[i]['id'];
             var amount = decoded[i]['amount'];
@@ -59,7 +70,7 @@ function get(data){
                       'results':0
                     }
                     };
-                  get(data);
+                  get(data,amount);
             }
-            }
+         }
             getall();
