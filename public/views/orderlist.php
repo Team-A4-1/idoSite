@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="public/css/home.css">
     <link rel="stylesheet" href="public/css/orderlist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Orders</title>
+    <title>CMS | Orders</title>
 </head>
 
 
@@ -21,8 +21,8 @@ require_once('header-footer/header.php');
         <div class="sidebar">
             <ul class="sidebar__list">
                 <li class="sidebar__item"><a href="/userlist">Users</a></li>
-                <li class="sidebar__item"><a href="">Products</a></li>
-                <li class="sidebar__item active"><a href="/orderlist">Orders</a></li>
+                <li class="sidebar__item"><a href="/productlist">Products</a></li>
+                <li class="sidebar__item active">Orders</li>
             </ul>
         </div>
         
@@ -31,10 +31,10 @@ require_once('header-footer/header.php');
         <li class="order-list-top">
             <form class="user-form" action="">
                 <select class="user-select" name="users" id="users">
-                    <option value="user">User</option>
-                    <option value="user">User</option>
-                    <option value="user">User</option>
-                    <option value="user">User</option>
+                <option value="user">A-Z</option>
+                    <option value="user">Z-A</option>
+                    <option value="user">Price High-Low</option>
+                    <option value="user">Price Low-Heigh</option>
                 </select>
             </form>
             
@@ -45,7 +45,7 @@ require_once('header-footer/header.php');
         </li>
 
         <li class="order-list-top-under">
-                <div class="order-image-box-invisible"></div>
+        <div class="box-trash"><i class="fas fa-trash-alt"></i></div>
                 <div class="order-image-box-invisible"></div>
                 <p>Name</p>
                 <p>Adress</p>

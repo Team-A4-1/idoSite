@@ -32,12 +32,12 @@
 }
 
 .order-list-top-under {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 100%;
-  justify-content: space-evenly;
-  display: flex;
-  border-bottom: 3px solid lightgray;
+  padding-top: 50px;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    border-bottom: 3px solid lightgray;
 }
 
 .order-list-top-under p{
@@ -102,3 +102,54 @@
     display: inline-block;
     float: right;
 }
+@media (max-width: 767px) {
+  .orderlist-box {
+    border: 1px solid #707070;
+    margin: 3px;
+    padding: 17px;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    box-sizing: border-box;
+    list-style: none;
+}
+.order-list p {
+  display: inline-block;
+  position: relative;
+  padding: 0 23px;
+  top: 50%;
+  -webkit-transform: translateY(+50%);
+  -ms-transform: translateY(+50%);
+  transform: translateY(+50%);
+}
+  
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+  .user-select {
+    background-color: white;
+    border: 1px solid black;
+    width: 106px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width:1025px) and (max-width: 1440px) {
+  
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 2560px) {}
