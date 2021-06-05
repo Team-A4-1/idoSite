@@ -70,7 +70,7 @@ else{
 
     setCookie('products',JSON.stringify(decoded),10);  
   }
-  // window.location.href = "/shoppingcart";  
+  window.location.href = "/shoppingcart";  
 });
 
 function get(data){

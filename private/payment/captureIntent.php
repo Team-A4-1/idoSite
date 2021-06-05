@@ -16,7 +16,7 @@ class CreateOrder
    *This is the sample function to create an order. It uses the
    *JSON body returned by buildRequestBody() to create an order.
    */
-  public static function createOrder($debug=false)
+  public static function createOrder()
   {
     $request = new OrdersCreateRequest();
     $request->prefer('return=representation');
@@ -51,6 +51,11 @@ class CreateOrder
      */
     private static function buildRequestBody()
     {
+
+
+
+
+
          return array(
 
           'intent' => 'CAPTURE',
@@ -77,9 +82,9 @@ class CreateOrder
 
                               array(
 
-                                  'currency_code' => 'USD',
+                                  'currency_code' => 'eur',
 
-                                  'value' => '220.00'
+                                  'value' => '220'
 
                               )
 

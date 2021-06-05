@@ -50,7 +50,7 @@
                             </div>
 
                             <div class="payment__postcode">
-                                <label for="lname">Postcode:</label>
+                                <label for="lname">Postalcode/Zipcode:</label>
                                 <input type="text" id="postcode" name="postcode"><br><br>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                                        
                                         <div id="paypal-custom"></div>
                                             <script
-                                            src="https://www.paypal.com/sdk/js?client-id=ATIze1Bn3XV7CGpYFs0zJjEgj48rO9Y8XF6NVTMhmFKSvK2E1I_o31ZT7GldihdgLl7_HLcs-JXghCTW"> // Required. Replace YOUR_CLIENT_ID with your sandbox client ID.
+                                            src="https://www.paypal.com/sdk/js?client-id=ATIze1Bn3XV7CGpYFs0zJjEgj48rO9Y8XF6NVTMhmFKSvK2E1I_o31ZT7GldihdgLl7_HLcs-JXghCTW&currency=EUR"> // Required. Replace YOUR_CLIENT_ID with your sandbox client ID.
                                             </script>
                                          </div>
                                      </div>
@@ -99,8 +99,7 @@
                 <div class="order__top"></div>
                     <div class="order__content">
                         <div class="order__title"><h2>Order Summary</h2></div>
-                        <div class="order__nr"><p>Order reference: 129291120</p></div>
-                        
+                        <div id="orders">
                         <div class="order__list">
                             <div class="order__left">
                                 <img class="order__img" src="/public/assets/cover.jpg" alt="Book-cover">
@@ -128,7 +127,7 @@
                                 <p>$ 11.40</p>
                             </div>
                         </div>
-
+                        </div>
                         <div class="order__extra">
                             <div class="order__left">
                                 <p>Shipping cost</p>
@@ -168,8 +167,12 @@
 
 <?php require_once('header-footer/footer.php');?>
 </body>
+<script src=public/scripts/general/cookie.js></script>
 
+<script src=public/scripts/pay/payvalues.js></script>
+<script src=public/scripts/pay/pay.js></script>
   <script>
+  var cookie = getCookie('products');
      paypal.Buttons({
     createOrder: function(data, actions) {
 
@@ -178,7 +181,8 @@
     method: 'post',
     headers: {
       'content-type': 'application/json'
-    }
+    },
+    body: JSON.stringify(values())
   }).then(function(res) {
 
     return res.json();

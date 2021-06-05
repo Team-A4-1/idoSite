@@ -74,7 +74,7 @@
                                 <h2>Total:</h2>
                             </div>
                             <div class="cart__right">
-                                <h2>$13.50</h2>
+                                <h2 class="totaltax">$13.50</h2>
                             </div>
                         </div>
 
@@ -103,7 +103,7 @@
                                 <h2>Total:</h2>
                             </div>
                             <div class="summary__right">
-                                <h2>$13.50</h2>
+                                <h2 class="totaltax">$13.50</h2>
                             </div>
                         </div>
                         <hr>
