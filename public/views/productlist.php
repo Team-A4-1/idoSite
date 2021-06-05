@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Kevin Kranenburg">
+    <meta name="Author" content="Blen Michil">
     <link rel="stylesheet" href="public/css/home.css">
-    <link rel="stylesheet" href="public/css/userlist.css">
+    <link rel="stylesheet" href="public/css/productlist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Users</title>
+    <title>CMS | Products</title>
 </head>
 
 
@@ -20,8 +20,8 @@ require_once('header-footer/header.php');
     <div class="wrapper">
         <div class="sidebar">
             <ul class="sidebar__list">
-                <li class="sidebar__item active">Users</li>
-                <li class="sidebar__item"><a href="/productlist">Products</a></li>
+            <li class="sidebar__item"><a href="/userlist">Users</a></li>
+                <li class="sidebar__item active">Products</li>
                 <li class="sidebar__item"><a href="/orderlist">Orders</a></li>
             </ul>
         </div>
@@ -33,9 +33,9 @@ require_once('header-footer/header.php');
                 <select class="user-select" name="users" id="users">
                     <option value="user">A-Z</option>
                     <option value="user">Z-A</option>
-                    <option value="user">When Joined</option>
-                    <option value="user">Last Joined</option>
-                    <option value="user">When Destroyed</option>
+                    <option value="user">Time Bought</option>
+                    <option value="user">Price High-Low</option>
+                    <option value="user">Price Low-Heigh</option>
                 </select>
             </form>
             
@@ -48,11 +48,11 @@ require_once('header-footer/header.php');
         <li class="order-list-top-under">
                 <div class="box-trash"><i class="fas fa-trash-alt"></i></div>
                 <div class="order-image-box-invisible"></div>
-                <p>Name</p>
-                <p>Mail</p>
-                <p>Created</p>
-                <p>Destroyed</p>
-                <p>Pruchases</p>
+                <p>Products</p>
+                <p>Amount</p>
+                <p>Description</p>
+                <p>Weight</p>
+                <p>Price</p>
             </li>
 
 
@@ -60,60 +60,60 @@ require_once('header-footer/header.php');
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
                 <p>Name</p>
-                <p>Mail</p>
-                <p>Created</p>
-                <p>Destroyed</p>
-                <p>Pruchases</p>
+                <p>Amount</p>
+                <p>Description</p>
+                <p>Weight</p>
+                <p>Price</p>
             </li>
 
             <li class="order-list list-background">
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
                 <p>Name</p>
-                <p>Mail</p>
-                <p>Created</p>
-                <p>Destroyed</p>
-                <p>Pruchases</p>
+                <p>Amount</p>
+                <p>Description</p>
+                <p>Weight</p>
+                <p>Price</p>
             </li>
 
             <li class="order-list">
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
                 <p>Name</p>
-                <p>Mail</p>
-                <p>Created</p>
-                <p>Destroyed</p>
-                <p>Pruchases</p>
+                <p>Amount</p>
+                <p>Description</p>
+                <p>Weight</p>
+                <p>Price</p>
             </li>
 
             <li class="order-list list-background">
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
                 <p>Name</p>
-                <p>Mail</p>
-                <p>Created</p>
-                <p>Destroyed</p>
-                <p>Pruchases</p>
+                <p>Amount</p>
+                <p>Description</p>
+                <p>Weight</p>
+                <p>Price</p>
             </li>
 
             <li class="order-list">
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
                 <p>Name</p>
-                <p>Mail</p>
-                <p>Created</p>
-                <p>Destroyed</p>
-                <p>Pruchases</p>
+                <p>Amount</p>
+                <p>Description</p>
+                <p>Weight</p>
+                <p>Price</p>
             </li>
 
             <li class="order-list list-background">
                 <input class="order-list-check" type="checkbox" id="check" name="check" value="check">
                 <div class="order-image-box"></div>
                 <p>Name</p>
-                <p>Mail</p>
-                <p>Created</p>
-                <p>Destroyed</p>
-                <p>Pruchases</p>
+                <p>Amount</p>
+                <p>Description</p>
+                <p>Weight</p>
+                <p>Price</p>
             </li>
         </ul>
     </div>
