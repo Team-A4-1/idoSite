@@ -168,9 +168,9 @@
 <?php require_once('header-footer/footer.php');?>
 </body>
 <script src=public/scripts/general/cookie.js></script>
+<script src=public/scripts/pay/pay.js></script>
 
 <script src=public/scripts/pay/payvalues.js></script>
-<script src=public/scripts/pay/pay.js></script>
   <script>
   var cookie = getCookie('products');
      paypal.Buttons({
@@ -181,8 +181,8 @@
     method: 'post',
     headers: {
       'content-type': 'application/json'
-    },
-    body: JSON.stringify(values())
+    }
+    // ,body: JSON.stringify(values())
   }).then(function(res) {
 
     return res.json();
