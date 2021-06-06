@@ -43,7 +43,7 @@
                                 <p>Weight: 100gr</p>
                             </div>
                             <div class="cart__right">
-                                <p><i class="fas fa-trash-alt"></i>$ 11.40</p>
+                                <p><i class="fas fa-trash-alt"></i>&euro; 11.40</p>
                             </div>
                         </div>
                         <hr>
@@ -64,7 +64,7 @@
                                 <p>Weight: 100gr</p>
                             </div>
                             <div class="cart__right">
-                                <p><i class="fas fa-trash-alt"></i>$ 11.40</p>
+                                <p><i class="fas fa-trash-alt"></i>&euro; 11.40</p>
                             </div>
                         </div>
                         <hr>
@@ -74,7 +74,7 @@
                                 <h2>Total:</h2>
                             </div>
                             <div class="cart__right">
-                                <h2 class="totaltax">$13.50</h2>
+                                <h2 class="totaltax">&euro;13.50</h2>
                             </div>
                         </div>
 
@@ -88,14 +88,14 @@
                         <h2 class="summary__title">Shopping summary</h2>
                         <div class="summary__list">
                             <div class="summary__left">Subtotal: 4 items</div>
-                            <div class="summary__right">$ 20.30</div>
+                            <div class="summary__right">&euro; 20.30</div>
                         </div>
 
                         <p class="summary_weight">Total weight: 538 Grams</p>
 
                         <div class="summary__list">
                             <div class="summary__left">Delivery Fee</div>
-                            <div class="summary__right">$ 2.30</div>
+                            <div class="summary__right">&euro; 2.30</div>
                         </div>
 
                         <div class="summary__total">
@@ -103,13 +103,13 @@
                                 <h2>Total:</h2>
                             </div>
                             <div class="summary__right">
-                                <h2 class="totaltax">$13.50</h2>
+                                <h2 class="totaltax">&euro;13.50</h2>
                             </div>
                         </div>
                         <hr>
 
                         <div class="summary__bottom">
-                            <button class="summary__btn" type="submit">Continue</button>
+                            <button class="summary__btn" type="submit"><a href="/payment">Continue</a></button>
                             <p>Cancel payment</p>
                         </div>
 

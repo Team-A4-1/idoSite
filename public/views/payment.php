@@ -110,7 +110,7 @@
                                 <p>Weight: 100gr</p>
                             </div>
                             <div class="order__right">
-                                <p>$ 11.40</p>
+                                <p>&euro; 11.40</p>
                             </div>
                         </div>
                         
@@ -124,7 +124,7 @@
                                 <p>Weight: 100gr</p>
                             </div>
                             <div class="order__right">
-                                <p>$ 11.40</p>
+                                <p>&euro; 11.40</p>
                             </div>
                         </div>
                         </div>
@@ -136,7 +136,7 @@
                             </div>
                             <div class="order__right">
                                 <p>Free</p>
-                                <p>$2.50</p>
+                                <p>&euro;2.50</p>
                                 <p>1300gr</p>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                                 <h2>Total:</h2>
                             </div>
                             <div class="order__right">
-                                <h2>$13.50</h2>
+                                <h2>&euro;13.50</h2>
                             </div>
                         </div>
                         <div class="order__bottom">

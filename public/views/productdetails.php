@@ -149,7 +149,7 @@
 
 <?php
 require_once('header-footer/header.php');
-echo "<script>var id= $id;</script>";
+echo "<script>var id= &euro;id;</script>";
 ?>
 <body>
 

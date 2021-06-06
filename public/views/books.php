@@ -29,7 +29,7 @@
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
                             <div class="books__title"><h2>Overeen weg</h2></div>
                             <div class="books__author">Willem Blue</div>
-                            <div class="books__price">$12.20</div>
+                            <div class="books__price">&euro;12.20</div>
                             <button type="submit" class="books__btn">
                                 ADD TO CARD
                             </button>
@@ -41,7 +41,7 @@
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
                             <div class="books__title"><h2>Overeen weg</h2></div>
                             <div class="books__author">Willem Blue</div>
-                            <div class="books__price">$12.20</div>
+                            <div class="books__price">&euro;12.20</div>
                             <button type="submit" class="books__btn">
                                 ADD TO CARD
                             </button>
@@ -53,7 +53,7 @@
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
                             <div class="books__title"><h2>Overeen weg</h2></div>
                             <div class="books__author">Willem Blue</div>
-                            <div class="books__price">$12.20</div>
+                            <div class="books__price">&euro;12.20</div>
                             <button type="submit" class="books__btn">
                                 ADD TO CARD
                             </button>
@@ -65,7 +65,7 @@
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
                             <div class="books__title"><h2>Overeen weg</h2></div>
                             <div class="books__author">Willem Blue</div>
-                            <div class="books__price">$12.20</div>
+                            <div class="books__price">&euro;12.20</div>
                             <button type="submit" class="books__btn">
                                 ADD TO CARD
                             </button>
@@ -79,7 +79,7 @@
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
                             <div class="books__title"><h2>Overeen weg</h2></div>
                             <div class="books__author">Willem Blue</div>
-                            <div class="books__price">$12.20</div>
+                            <div class="books__price">&euro;12.20</div>
                             <button type="submit" class="books__btn">
                                 ADD TO CARD
                             </button>
@@ -91,7 +91,7 @@
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
                             <div class="books__title"><h2>Overeen weg</h2></div>
                             <div class="books__author">Willem Blue</div>
-                            <div class="books__price">$12.20</div>
+                            <div class="books__price">&euro;12.20</div>
                             <button type="submit" class="books__btn">
                                 ADD TO CARD
                             </button>
@@ -103,7 +103,7 @@
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
                             <div class="books__title"><h2>Overeen weg</h2></div>
                             <div class="books__author">Willem Blue</div>
-                            <div class="books__price">$12.20</div>
+                            <div class="books__price">&euro;12.20</div>
                             <button type="submit" class="books__btn">
                                 ADD TO CARD
                             </button>
@@ -115,7 +115,7 @@
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
                             <div class="books__title"><h2>Overeen weg</h2></div>
                             <div class="books__author">Willem Blue</div>
-                            <div class="books__price">$12.20</div>
+                            <div class="books__price">&euro;12.20</div>
                             <button type="submit" class="books__btn">
                                 ADD TO CARD
                             </button>

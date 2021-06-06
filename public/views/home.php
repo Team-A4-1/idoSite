@@ -23,8 +23,8 @@ require_once('header-footer/header.php');
                 <li class="sidebar__item active">Home</li>
                 <li class="sidebar__item"><a href="/books">Shop</a></li>
                 <li class="sidebar__item"><a href="/info">How does It work</a></li>
-                <li class="sidebar__item"><a href="about">About us</a></li>
-                <li class="sidebar__item"><a href="contact">Contact</a></li>
+                <li class="sidebar__item"><a href="/about">About us</a></li>
+                <li class="sidebar__item"><a href="/contact">Contact</a></li>
             </ul>
         </div>
         <div class="main">
@@ -39,7 +39,7 @@ require_once('header-footer/header.php');
                                 <div class="banner__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.
                                     Sed
                                     convallis, justo sit.</div>
-                                <div class="banner__btn"><a href="#">Buy now!</a></div>
+                                <div class="banner__btn"><a href="/books">Buy now!</a></div>
                             </li>
                             <li class="banner__item banner__item--right">
 
@@ -70,7 +70,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="best-sellers__price">$12,40,-</div>
+                                        <div class="best-sellers__price">&euro;12,40,-</div>
                                         <button type="submit" class="best-sellers__btn">ADD TO CARD></button>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="best-sellers__price">$12,40,-</div>
+                                        <div class="best-sellers__price">&euro;12,40,-</div>
                                         <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="best-sellers__price">$12,40,-</div>
+                                        <div class="best-sellers__price">&euro;12,40,-</div>
                                         <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="best-sellers__price">$12,40,-</div>
+                                        <div class="best-sellers__price">&euro;12,40,-</div>
                                         <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@ require_once('header-footer/header.php');
                                             All Books </h2>
                                     </div>
 
-                                    <div class="advertisment__btn"><a href="#">Buy now!</a></div>
+                                    <div class="advertisment__btn"><a href="/books">Buy now!</a></div>
                                 </div>
                             </li>
                             <li class="advertisment__item advertisment__item--right">
@@ -155,14 +155,14 @@ require_once('header-footer/header.php');
                                                     learn more <br>
                                                     about <br>
                                                     IDO</h2>
-                                                <button type="submit" class="advertisment__blok--btn">Click
-                                                    here</button>
+                                                <button type="submit" class="advertisment__blok--btn"><a href="/about">Click
+                                                    here</a></button>
                                             </div>
                                         </li>
                                         <li class="advertisment__blok">
                                             <div class="advertisment__content advertisment__content--merch">
                                                 <h2 class="advertisment__blok--title">MERCH!</h2>
-                                                <button type="submit" class="advertisment__blok--btn">See more</button>
+                                                <button type="submit" class="advertisment__blok--btn"><a href="/books">See more</a></button>
                                             </div>
                                         </li>
                                         <li class="advertisment__blok ">
@@ -177,7 +177,7 @@ require_once('header-footer/header.php');
                                             <div class="advertisment__content  advertisment__content--70">
                                                 <p class="advertisment__blok--up">new books</p>
                                                 <h2 class="advertisment__blok--title">70% off</h2>
-                                                <button type="submit" class="advertisment__blok--btn">See more</button>
+                                                <button type="submit" class="advertisment__blok--btn"><a href="/books">See more</a></button>
                                             </div>
                                         </li>
 
@@ -210,7 +210,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="random__price">$12,40,-</div>
+                                        <div class="random__price">&euro;12,40,-</div>
                                         <button type="submit" class="random__btn">ADD TO CARD</button>
                                     </div>
                                 </div>
@@ -227,7 +227,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="random__price">$12,40,-</div>
+                                        <div class="random__price">&euro;12,40,-</div>
                                         <button type="submit" class="random__btn">ADD TO CARD</button>
                                     </div>
                                 </div>
@@ -244,7 +244,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="random__price">$12,40,-</div>
+                                        <div class="random__price">&euro;12,40,-</div>
                                         <button type="submit" class="random__btn">ADD TO CARD</button>
                                     </div>
                                 </div>
@@ -261,7 +261,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="random__price">$12,40,-</div>
+                                        <div class="random__price">&euro;12,40,-</div>
                                         <button type="submit" class="random__btn">ADD TO CARD</button>
                                     </div>
                                 </div>
