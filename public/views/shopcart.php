@@ -110,7 +110,7 @@
 
                         <div class="summary__bottom">
                             <button class="summary__btn" type="submit"><a href="/payment">Continue</a></button>
-                            <p>Cancel payment</p>
+                            <p><a href="/home">Cancel payment</a></p>
                         </div>
 
                     </div>

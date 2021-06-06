@@ -151,7 +151,7 @@
                         </div>
                         <div class="order__bottom">
                             <button class="order__btn" type="submit">Continue</button>
-                            <p>Cancel payment</p>
+                            <p><a href="/home">Cancel payment</a></p>
                         </div>
                     </div>
                 </div>
