@@ -182,7 +182,7 @@
     headers: {
       'content-type': 'application/json'
     }
-    // ,body: JSON.stringify(values())
+    ,body: JSON.stringify(values())
   }).then(function(res) {
 
     return res.json();
@@ -194,7 +194,7 @@
       // This function captures the funds from the transaction.
       return actions.order.capture().then(function(details) {
         // This function shows a transaction success message to your buyer.
-        alert('Transaction completed by ' + details.payer.name.given_name);
+        alert('Transaction completed by ' + details);
       });
     }
   }).render('#paypal-custom');

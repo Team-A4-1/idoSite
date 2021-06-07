@@ -95,21 +95,23 @@ private static function make($currCode,$name,$description,$price,$tax,$amount){
 
     );
 }
-private static function makeDestination(){
+public static function makeDestination(){
+  $input = json_decode(stripslashes(file_get_contents("php://input")),true);
 
   return array(
-      
-    'address_line_1' => '123 Townsend St',
 
-    'address_line_2' => 'Floor 6',
+      
+    'address_line_1' => '',
+
+    'address_line_2' => ' ',
 
     'admin_area_2' => 'San Francisco',
 
     'admin_area_1' => 'CA',
 
-    'postal_code' => '94107',
+    'postal_code' => $input->Postcode,
 
-    'country_code' => 'US');
+    'country_code' => $input->country);
 
 }
 
@@ -255,7 +257,7 @@ $items[$i]=CreateOrder::make($countryCode,$decodedproduct->{0}->name,$decodedpro
       
                 array(
       
-                  'method' => 'United States Postal Service',
+                  'method' => 'Post nl',
       
                   'address' =>
                   CreateOrder::makeDestination(),
@@ -282,7 +284,7 @@ $items[$i]=CreateOrder::make($countryCode,$decodedproduct->{0}->name,$decodedpro
  */
 if (!count(debug_backtrace()))
 {
-  CreateOrder::createOrder(true);
+  // CreateOrder::createOrder(true);
 }
-
+print_r(CreateOrder::makeDestination());
 ?>
