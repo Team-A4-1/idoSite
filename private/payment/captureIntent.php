@@ -109,9 +109,9 @@ public static function makeDestination(){
 
     'admin_area_1' => 'CA',
 
-    'postal_code' => $input->Postcode,
+    'postal_code' => "",
 
-    'country_code' => $input->country);
+    'country_code' => "";
 
 }
 
