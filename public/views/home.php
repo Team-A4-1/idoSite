@@ -53,7 +53,7 @@ require_once('header-footer/header.php');
                     <div class="best-sellers__content">
                         <div class="best-sellers__top">
                             <h2>Best-sellers</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac Leo sit ame.</p>
+                            <p>Zie al onze meest populaire boeken</p>
                         </div>
                     </div>
                     <div class="best-sellers__bottom">
@@ -193,7 +193,7 @@ require_once('header-footer/header.php');
                     <div class="random__content">
                         <div class="random__top">
                             <h2>Random</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac Leo sit ame.</p>
+                            <p>Hier is een selectie van een paar boeken.</p>
                         </div>
                     </div>
                     <div class="random__bottom">
