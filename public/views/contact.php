@@ -30,7 +30,7 @@
     </div>
     <br>
     <div class="icon-box">
-        <a href="https://www.facebook.com/" class="contact-icon fab fa-facebook-square"></a>
+        <a href="https://www.facebook.com/Librerio-Tia-Libro-110014134251724" class="contact-icon fab fa-facebook-square"></a>
         <p class="icon-text">Librerio Tia Libro</p>
     </div>
 </div>
