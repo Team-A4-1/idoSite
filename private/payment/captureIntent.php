@@ -95,14 +95,29 @@ private static function make($currCode,$name,$description,$price,$tax,$amount){
 
     );
 }
+private static function makeDestination(){
+
+  return array(
+      
+    'address_line_1' => '123 Townsend St',
+
+    'address_line_2' => 'Floor 6',
+
+    'admin_area_2' => 'San Francisco',
+
+    'admin_area_1' => 'CA',
+
+    'postal_code' => '94107',
+
+    'country_code' => 'US');
+
+}
 
 
-
-    private static function buildRequestBody()
+    public static function buildRequestBody()
     {
       require_once('../../private/products/getData.php');
       $data = new getData;
-      // echo $data->id(2);
 
     $countryCode="eur";
     $totalproducts=0;
@@ -111,7 +126,7 @@ private static function make($currCode,$name,$description,$price,$tax,$amount){
     $tax=0;
     $items =array();
     $cookies ;
-
+    $totalPrice=0;
     
     if(!isset($_COOKIE['products'])) {
         echo 'help';
@@ -124,16 +139,31 @@ private static function make($currCode,$name,$description,$price,$tax,$amount){
 
 
 
-     $decoded =json_decode ($cookies);
-         //add products to list
-    for($i=0;$i<count($decoded);$i++){
-      $taxproduct =1*$decoded[$i]->amount;
-      $tax += $taxproduct;
-$totalproducts +=$decoded[$i]->amount;
-$items[$i]=CreateOrder::make($countryCode,$decoded[$i]->id,"description",$decoded[$i]->amount,$taxproduct,1);
-    }   
+     $decodedcookie =json_decode ($cookies);
 
-    $totalValuewhitTax=$tax+$handling+$shippingcost+$totalproducts;
+         //add products to list
+    for($i=0;$i<count($decodedcookie);$i++){
+
+//get product data
+$test =  $data->id($decodedcookie[$i]->id);
+$amount = $decodedcookie[$i]->amount;
+$decodedproduct = json_decode($test);
+
+
+//calculate the numbers
+      $taxproduct =1*$amount;
+      $tax += $taxproduct;
+$totalproducts += $amount;
+
+$price = ($decodedproduct->{0}->price)*$decodedcookie[$i]->amount;
+$totalPrice +=$price*$amount;
+
+
+
+$items[$i]=CreateOrder::make($countryCode,$decodedproduct->{0}->name,$decodedproduct->{0}->text,$price,$taxproduct,$decodedcookie[$i]->amount);
+}   
+
+    $totalValuewhitTax=$tax+$handling+$shippingcost+$totalPrice;
 
 
          return array(
@@ -167,7 +197,8 @@ $items[$i]=CreateOrder::make($countryCode,$decoded[$i]->id,"description",$decode
                   'currency_code' => $countryCode,
       
                   'value' => $totalValuewhitTax,
-      
+
+
                   'breakdown' =>
       
                     array(
@@ -178,7 +209,7 @@ $items[$i]=CreateOrder::make($countryCode,$decoded[$i]->id,"description",$decode
       
                           'currency_code' => $countryCode,
       
-                          'value' => $totalproducts,
+                          'value' => $totalPrice,
       
                         ),
       
@@ -227,22 +258,7 @@ $items[$i]=CreateOrder::make($countryCode,$decoded[$i]->id,"description",$decode
                   'method' => 'United States Postal Service',
       
                   'address' =>
-      
-                    array(
-      
-                      'address_line_1' => '123 Townsend St',
-      
-                      'address_line_2' => 'Floor 6',
-      
-                      'admin_area_2' => 'San Francisco',
-      
-                      'admin_area_1' => 'CA',
-      
-                      'postal_code' => '94107',
-      
-                      'country_code' => 'US',
-      
-                    ),
+                  CreateOrder::makeDestination(),
       
                 ),
       
@@ -268,6 +284,5 @@ if (!count(debug_backtrace()))
 {
   CreateOrder::createOrder(true);
 }
-
 
 ?>
