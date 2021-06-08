@@ -97,21 +97,21 @@ private static function make($currCode,$name,$description,$price,$tax,$amount){
 }
 public static function makeDestination(){
   $input = json_decode(stripslashes(file_get_contents("php://input")),true);
-
+print_r($input['Postcode']);
   return array(
 
       
-    'address_line_1' => '',
+    'address_line_1' => $input['Adress'],
 
-    'address_line_2' => ' ',
+    // 'address_line_2' => $input['Adress'],
 
-    'admin_area_2' => 'San Francisco',
+    'admin_area_2' => $input['City'],
 
-    'admin_area_1' => 'CA',
+    // 'admin_area_1' => 'CA',
 
-    'postal_code' => "",
+    'postal_code' => $input['Postcode'],
 
-    'country_code' => "";
+    'country_code' =>$input['country']
 
 }
 
@@ -153,7 +153,7 @@ $decodedproduct = json_decode($test);
 
 
 //calculate the numbers
-$producttax = $decodedproduct->{1}->tax
+$producttax = $decodedproduct->{1}->tax;
       $taxproduct =$producttax*$amount;
       $tax += $taxproduct;
 $totalproducts += $amount;
