@@ -19,9 +19,9 @@
     <div class="wrapper">
     <aside class="sidebar">
         <ul>
-            <li class="sidebar__item active"><a href="#">Home</a></li>
-            <li class="sidebar__item"><a href="#">Users</a></li>
-            <li class="sidebar__item"><a href="#">Products</a></li>
+            <li class="sidebar__item active"><a href="/addbooks">Product Change</a></li>
+            <li class="sidebar__item"><a href="/userlist">Users</a></li>
+            <li class="sidebar__item"><a href="/productlist">Products</a></li>
         </ul>
     </aside>
    
@@ -30,9 +30,9 @@
             
             <section class="section-bread">
                 <ul class="breadcrumbs">
-                    <li><a href="#">CMS</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Product change</a></li>
+                    <li><a href="/userlist">CMS</a></li>
+                    <li><a href="/addbooks">Products</a></li>
+                    <li><a href="/addbooks">Product change</a></li>
                 </ul>
                 <div></div>
             </section>
