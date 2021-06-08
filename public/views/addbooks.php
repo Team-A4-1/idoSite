@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Latricha Seym">
-    <link rel="stylesheet" href="public\css\addbooks.css">
+    <link rel="stylesheet" href="/public\css\addbooks.css">
     <title>CMS - Add books</title>
 </head>
 
@@ -19,9 +19,9 @@
     <div class="wrapper">
     <aside class="sidebar">
         <ul>
-            <li class="sidebar__item active"><a href="#">Home</a></li>
-            <li class="sidebar__item"><a href="#">Users</a></li>
-            <li class="sidebar__item"><a href="#">Products</a></li>
+            <li class="sidebar__item active"><a href="/acount/add">Home</a></li>
+            <li class="sidebar__item"><a href="/acount/users">Users</a></li>
+            <li class="sidebar__item"><a href="/acount/products">Products</a></li>
         </ul>
     </aside>
    

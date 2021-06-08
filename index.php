@@ -3,7 +3,8 @@
 
 require 'vendor/autoload.php';
 $router = new AltoRouter();
-
+// Start the session
+session_start();
 // map pages
 
 $router->addRoutes(array(
@@ -15,14 +16,46 @@ $router->addRoutes(array(
 	array('GET', '/shoppingcart', function() {require __DIR__ . '/public/views/shopcart.php';}),
 	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
 	//user cms
-	array('GET', '/acount/products', function() {require __DIR__ . '/public/views/productlist.php';}),
-	array('GET', '/acount/users', function() {require __DIR__ . '/public/views/userlist.php';}),
-	array('GET', '/acount/add', function() {require __DIR__ . '/public/views/productlist.php';}),
+	array('GET', '/acount/products', function() {
+		if(isset($_SESSION['userid'])){
+		require __DIR__ . '/public/views/productlist.php';
+		}
+		else{
+			header('Location:/');
+			die();
+		}
+	}),
+	array('GET', '/acount/users', function() {
+		if(isset($_SESSION['userid'])){
+
+		require __DIR__ . '/public/views/userlist.php';
+		}
+		else{
+			header('Location:/');
+			die();
+		}
+	}),
+	array('GET', '/acount/add', function() {
+		if(isset($_SESSION['userid'])){
+
+		require __DIR__ . '/public/views/addbooks.php';
+		}
+			else{
+				echo $_SESSION['userid'];
+					}
+	}),
+	array('GET', '/acount/orderlist', function() {
+		if(isset($_SESSION['userid'])){
+
+			require __DIR__ . '/public/views/orderlist.php';
+	}
+	else{
+		header('Location:/');
+		die();
+	}
+	}),
 
 	//
-	array('GET', '/orderlist', function() {require __DIR__ . '/public/views/orderlist.php';}),
-	array('GET', '/userlist', function() {require __DIR__ . '/public/views/userlist.php';}),
-	array('GET', '/addbooks', function() {require __DIR__ . '/public/views/addbooks.php';}),
 	array('GET', '/product/[i:id]/', function($id) {require __DIR__ . '/public/views/productdetails.php';}),
 	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';})
 ));

@@ -35,15 +35,17 @@
         if($result =! null){
         session_start();
         $_SESSION['userid'] = $result;
+        header('Location:/acount/add');
+        die();
+
         }
+
       }
 }
 
 //test
  $Login = new Login;
- $Login->sesionStart("John","Pass123");
+ $Login->sesionStart($_POST['uname'],$_POST['psw']);
  //delete this echo
 
- echo $_POST['uname']." ".$_POST['psw'];
-  echo $_SESSION['userid'];
 ?>
