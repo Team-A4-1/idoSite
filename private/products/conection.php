@@ -30,6 +30,7 @@ $statementExtra = null;
      product_atributes.height,product_atributes.width, 
      product_atributes.depth,product_atributes.price, 
      product_atributes.amount,product_atributes.weight,
+     product_atributes.tax,
      images.imageHIGHres,images.imageLOWres,
      authors.author
      from products 

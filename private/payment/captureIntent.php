@@ -153,7 +153,8 @@ $decodedproduct = json_decode($test);
 
 
 //calculate the numbers
-      $taxproduct =1*$amount;
+$producttax = $decodedproduct->{1}->tax
+      $taxproduct =$producttax*$amount;
       $tax += $taxproduct;
 $totalproducts += $amount;
 
