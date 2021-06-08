@@ -200,6 +200,19 @@ main {
 
 
 @media (max-width: 767px) {
+    .section-bread{
+       
+            display: none;
+   
+    }
+    main {
+        list-style-type: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+        box-sizing: border-box;
+        list-style: none;
+    }
     .container {
       display: flex;
       list-style-type: none;
@@ -210,3 +223,11 @@ main {
       list-style: none;
   }
 }
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+    .image-block__thumbs {
+        display: none;
+    }
+    .product-order__title h2 {
+        font-size: 23px;
+    }
+  }

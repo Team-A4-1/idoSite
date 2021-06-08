@@ -28,7 +28,7 @@
     <main>
         <div class="container">
             
-            <section>
+            <section class="section-bread">
                 <ul class="breadcrumbs">
                     <li><a href="#">CMS</a></li>
                     <li><a href="#">Products</a></li>
