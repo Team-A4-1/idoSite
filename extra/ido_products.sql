@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Gegenereerd op: 01 jun 2021 om 15:47
--- Serverversie: 10.4.18-MariaDB
--- PHP-versie: 8.0.3
+-- Host: localhost
+-- Gegenereerd op: 08 jun 2021 om 15:55
+-- Serverversie: 10.1.37-MariaDB
+-- PHP-versie: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ido products`
+-- Database: `ido_products`
 --
 
 -- --------------------------------------------------------
@@ -69,8 +70,8 @@ CREATE TABLE `products` (
   `name` text NOT NULL,
   `atributes` int(11) NOT NULL,
   `text` text NOT NULL,
-  `image` int(11) NOT NULL DEFAULT 0,
-  `author` int(11) NOT NULL DEFAULT 1
+  `image` int(11) NOT NULL DEFAULT '0',
+  `author` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -92,10 +93,11 @@ INSERT INTO `products` (`id`, `name`, `atributes`, `text`, `image`, `author`) VA
 
 CREATE TABLE `product_atributes` (
   `id` int(11) NOT NULL,
-  `height` int(11) NOT NULL DEFAULT 0,
-  `width` int(11) NOT NULL DEFAULT 0,
-  `depth` int(11) NOT NULL DEFAULT 0,
-  `price` int(11) NOT NULL DEFAULT 0,
+  `height` int(11) NOT NULL DEFAULT '0',
+  `width` int(11) NOT NULL DEFAULT '0',
+  `depth` int(11) NOT NULL DEFAULT '0',
+  `price` int(11) NOT NULL DEFAULT '0',
+  `tax` int(11) NOT NULL,
   `amount` int(11) NOT NULL,
   `weight` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -104,9 +106,9 @@ CREATE TABLE `product_atributes` (
 -- Gegevens worden geëxporteerd voor tabel `product_atributes`
 --
 
-INSERT INTO `product_atributes` (`id`, `height`, `width`, `depth`, `price`, `amount`, `weight`) VALUES
-(1, 0, 0, 0, 0, 1, 0),
-(2, 100, 100, 50, 20, 0, 0);
+INSERT INTO `product_atributes` (`id`, `height`, `width`, `depth`, `price`, `tax`, `amount`, `weight`) VALUES
+(1, 0, 0, 0, 0, 0, 1, 0),
+(2, 100, 100, 50, 20, 0, 0, 0);
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -153,7 +155,7 @@ ALTER TABLE `authors`
 -- AUTO_INCREMENT voor een tabel `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT voor een tabel `products`
@@ -165,7 +167,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT voor een tabel `product_atributes`
 --
 ALTER TABLE `product_atributes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Beperkingen voor geëxporteerde tabellen
