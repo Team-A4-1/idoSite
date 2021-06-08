@@ -1,6 +1,8 @@
 var cookie =getCookie('products');
-
-var decoded = JSON.parse(cookie);
+if(cookie!=null||!empty||cookie!="")
+{
+    var decoded = JSON.parse(cookie);
+}
 
 let money = document.getElementsByClassName('summary__right')[0];
 let Continue = document.getElementsByClassName('summary__btn')[0];

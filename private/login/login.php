@@ -43,5 +43,7 @@
  $Login = new Login;
  $Login->sesionStart("John","Pass123");
  //delete this echo
+
+ echo $_POST['uname']." ".$_POST['psw'];
   echo $_SESSION['userid'];
 ?>
