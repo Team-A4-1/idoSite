@@ -199,3 +199,14 @@ main {
 }
 
 
+@media (max-width: 767px) {
+    .container {
+      display: flex;
+      list-style-type: none;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      position: relative;
+      box-sizing: border-box;
+      list-style: none;
+  }
+}
