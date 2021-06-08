@@ -200,7 +200,7 @@ main {
 
 
 @media (max-width: 767px) {
-    .orderlist-box {
+    .container {
       display: flex;
       list-style-type: none;
       overflow-x: scroll;
