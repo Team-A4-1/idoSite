@@ -17,7 +17,7 @@ $router->addRoutes(array(
 	//user cms
 	array('GET', '/acount/products', function() {require __DIR__ . '/public/views/productlist.php';}),
 	array('GET', '/acount/users', function() {require __DIR__ . '/public/views/userlist.php';}),
-	// array('GET', '/acount', function() {require __DIR__ . '/public/views/productlist.php';}),
+	array('GET', '/acount/add', function() {require __DIR__ . '/public/views/productlist.php';}),
 
 	//
 	array('GET', '/orderlist', function() {require __DIR__ . '/public/views/orderlist.php';}),
