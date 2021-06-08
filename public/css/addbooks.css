@@ -48,10 +48,10 @@ ul {
 
 
 aside {
-    width: 15%;
+    flex: 1 1 15%;
 }
 main {
-    width: 85%;
+    flex: 1 1 85%;
 }
 
 
