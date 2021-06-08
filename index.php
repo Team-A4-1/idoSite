@@ -24,7 +24,7 @@ $router->addRoutes(array(
 	array('GET', '/userlist', function() {require __DIR__ . '/public/views/userlist.php';}),
 	array('GET', '/addbooks', function() {require __DIR__ . '/public/views/addbooks.php';}),
 	array('GET', '/product/[i:id]/', function($id) {require __DIR__ . '/public/views/productdetails.php';}),
-	array('GET', '/payment', function($id) {require __DIR__ . '/public/views/payment.php';})
+	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';})
 ));
 
 // match current request url
