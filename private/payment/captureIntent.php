@@ -97,7 +97,6 @@ private static function make($currCode,$name,$description,$price,$tax,$amount){
 }
 public static function makeDestination(){
   $input = json_decode(stripslashes(file_get_contents("php://input")),true);
-print_r($input['Postcode']);
   return array(
 
       
@@ -112,6 +111,7 @@ print_r($input['Postcode']);
     'postal_code' => $input['Postcode'],
 
     'country_code' =>$input['country']
+  );
 
 }
 
@@ -153,7 +153,7 @@ $decodedproduct = json_decode($test);
 
 
 //calculate the numbers
-$producttax = $decodedproduct->{1}->tax;
+$producttax = $decodedproduct->{0}->tax;
       $taxproduct =$producttax*$amount;
       $tax += $taxproduct;
 $totalproducts += $amount;
@@ -285,7 +285,7 @@ $items[$i]=CreateOrder::make($countryCode,$decodedproduct->{0}->name,$decodedpro
  */
 if (!count(debug_backtrace()))
 {
-  // CreateOrder::createOrder(true);
+  CreateOrder::createOrder(true);
 }
-print_r(CreateOrder::makeDestination());
+// print_r(CreateOrder::makeDestination());
 ?>
