@@ -25,12 +25,12 @@
     nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
     pretium quis, sem. Nulla consequat massa quis enim.</p>
     <div class="icon-box">
-        <a href="#" class="contact-icon fas fa-envelope"></a>
+        <a href="mailto: abc@example.com" class="contact-icon fas fa-envelope"></a>
         <p class="icon-text">example@mail.com</p>
     </div>
     <br>
     <div class="icon-box">
-        <a href="#" class="contact-icon fab fa-facebook-square"></a>
+        <a href="https://www.facebook.com/Librerio-Tia-Libro-110014134251724" class="contact-icon fab fa-facebook-square"></a>
         <p class="icon-text">Librerio Tia Libro</p>
     </div>
 </div>

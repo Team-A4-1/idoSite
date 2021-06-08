@@ -1,34 +1,33 @@
 
+
+
+
+
+
 // cookie;
  function values(){
+let Fnamefield= document.getElementById("fname");
+let Lnamefield= document.getElementById("lname");
+let adressfield= document.getElementById("fname");
+let postcodefield= document.getElementById("postcode");
+let cityfield= document.getElementById("city");
+let nummerfield= document.getElementById("nummer");
+let country = document.getElementById("country");
 
 
-var products = {
-  "name": "",
-  "value": 0,
-  "quantity": 0,
-  "weight": 0
+  var send={
+    "Fname": "test",
+    "Lname": "asdadad",
+    "Adress": adressfield.values,
+    "Postcode": "1606DD",
+    "City": "adads",
+    "Nummer": nummerfield.values,
+    "country": "adasd",
+    "tax": "ads"
 };
 
 
-   var data={
-    "userData": {
-      "Fname": "",
-      "Lname": "",
-      "Adress": "",
-      "Postcode": "",
-      "City": "",
-      "Nummer": "",
-      "country": "",
-      "tax": ""
-    },
-    "products": [
-     
-    ]
-  };
-  data['products'][0]=products;
-console.log(data['products']);
+console.log(send);
 
-
-    return data;
+    return send;
   };

@@ -14,7 +14,12 @@ $router->addRoutes(array(
 	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';}),
 	array('GET', '/shoppingcart', function() {require __DIR__ . '/public/views/shopcart.php';}),
 	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
-	array('GET', '/login', function() {require __DIR__ . '/public/views/login.php';}),
+	//user cms
+	array('GET', '/acount/products', function() {require __DIR__ . '/public/views/productlist.php';}),
+	array('GET', '/acount/users', function() {require __DIR__ . '/public/views/userlist.php';}),
+	// array('GET', '/acount', function() {require __DIR__ . '/public/views/productlist.php';}),
+
+	//
 	array('GET', '/orderlist', function() {require __DIR__ . '/public/views/orderlist.php';}),
 	array('GET', '/userlist', function() {require __DIR__ . '/public/views/userlist.php';}),
 	array('GET', '/addbooks', function() {require __DIR__ . '/public/views/addbooks.php';}),

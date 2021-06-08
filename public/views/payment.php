@@ -110,7 +110,7 @@
                                 <p>Weight: 100gr</p>
                             </div>
                             <div class="order__right">
-                                <p>$ 11.40</p>
+                                <p>&euro; 11.40</p>
                             </div>
                         </div>
                         
@@ -124,7 +124,7 @@
                                 <p>Weight: 100gr</p>
                             </div>
                             <div class="order__right">
-                                <p>$ 11.40</p>
+                                <p>&euro; 11.40</p>
                             </div>
                         </div>
                         </div>
@@ -136,7 +136,7 @@
                             </div>
                             <div class="order__right">
                                 <p>Free</p>
-                                <p>$2.50</p>
+                                <p>&euro;2.50</p>
                                 <p>1300gr</p>
                             </div>
                         </div>
@@ -146,12 +146,12 @@
                                 <h2>Total:</h2>
                             </div>
                             <div class="order__right">
-                                <h2>$13.50</h2>
+                                <h2>&euro;13.50</h2>
                             </div>
                         </div>
                         <div class="order__bottom">
                             <button class="order__btn" type="submit">Continue</button>
-                            <p>Cancel payment</p>
+                            <p><a href="/home">Cancel payment</a></p>
                         </div>
                     </div>
                 </div>
@@ -168,9 +168,9 @@
 <?php require_once('header-footer/footer.php');?>
 </body>
 <script src=public/scripts/general/cookie.js></script>
+<script src=public/scripts/pay/pay.js></script>
 
 <script src=public/scripts/pay/payvalues.js></script>
-<script src=public/scripts/pay/pay.js></script>
   <script>
   var cookie = getCookie('products');
      paypal.Buttons({
@@ -181,8 +181,8 @@
     method: 'post',
     headers: {
       'content-type': 'application/json'
-    },
-    body: JSON.stringify(values())
+    }
+    ,body: JSON.stringify(values())
   }).then(function(res) {
 
     return res.json();
@@ -194,7 +194,7 @@
       // This function captures the funds from the transaction.
       return actions.order.capture().then(function(details) {
         // This function shows a transaction success message to your buyer.
-        alert('Transaction completed by ' + details.payer.name.given_name);
+        alert('Transaction completed by ' + details);
       });
     }
   }).render('#paypal-custom');

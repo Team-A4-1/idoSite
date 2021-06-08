@@ -39,6 +39,7 @@
       }
 }
 
+//test
  $Login = new Login;
  $Login->sesionStart("John","Pass123");
  //delete this echo
