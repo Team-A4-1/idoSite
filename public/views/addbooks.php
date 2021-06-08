@@ -19,9 +19,9 @@
     <div class="wrapper">
     <aside class="sidebar">
         <ul>
-            <li class="sidebar__item active"><a href="">Home</a></li>
-            <li class="sidebar__item"><a href="">Users</a></li>
-            <li class="sidebar__item"><a href="">Products</a></li>
+            <li class="sidebar__item active"><a href="#">Home</a></li>
+            <li class="sidebar__item"><a href="#">Users</a></li>
+            <li class="sidebar__item"><a href="#">Products</a></li>
         </ul>
     </aside>
    
@@ -40,11 +40,16 @@
 
             <section>
                 <div class="flex-container">
-                    <div class="product-images">
-                        <img class="one" src="" alt=""/>
-                        <img class="two" src="" alt="">
-                        <img class="three" src="" alt="">  
-                        <img class="four" src="" alt=""> 
+                    <div class="image-block">
+                        <div class="image-block__thumbs">
+                            <img src="" alt=""></img>
+                            <img src="" alt=""></img>
+                            <img src="" alt=""></img>
+                        </div>
+                        <div class="image-block__main">
+                            <img src="" alt=""></img>
+                            <span class="image-block__placeholder">Drag JPEG, PNG, SVG here</span>
+                        </div>
                     </div>
 
                     <div class="product-order">
@@ -63,6 +68,7 @@
                         </div>
                         <div class="product-order__status">
                             <h3>Op voorraad: <span>54</span></h3>
+                            <a href="#">Share</a>
                             <a class="button" href="#">Change</a> 
                         </div>
                         <div class="product-order__weight">
@@ -70,8 +76,8 @@
                             <a class="button" href="#">Change</a> 
                         </div>
 
-                        <a class="" href="#">Save</a>
-                        <a class="" href="#">Preview</a>
+                        <a class="edit-btn" href="#">Save</a>
+                        <a class="edit-btn" href="#">Preview</a>
 
                     </div>
 
@@ -84,9 +90,9 @@
                 <div class="description-box">
                     <div class="preview-tab">Preview</div>
                     <div class="details-tab">Details</div>
-                    <div class="description-box__text">
-                    
-                    </div>
+                    <form method="post" action="" class="description-box__text">
+                        <textarea placeholder="Type here..." ></textarea>
+                    </form>
                 </div>
         
             </section>
