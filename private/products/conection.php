@@ -25,7 +25,7 @@ $statementExtra = null;
      die("Connection failed: " . $conn->connect_error);
    }
 
-    static $prepared  = array(
+     $prepared  = array(
      array( 'querry'=> "SELECT products.id, products.name , products.text , 
      product_atributes.height,product_atributes.width, 
      product_atributes.depth,product_atributes.price, 

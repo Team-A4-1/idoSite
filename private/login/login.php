@@ -7,6 +7,7 @@
         $db_password   =    $ini['db_password'];
         $dbname     =    $ini['db_name']; 
 
+        
         $conn = new mysqli($servername, $db_username, $db_password, $dbname);
 
         if ($conn->connect_error) {
