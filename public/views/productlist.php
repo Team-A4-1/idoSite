@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Blen Michil">
-    <link rel="stylesheet" href="public/css/home.css">
-    <link rel="stylesheet" href="public/css/productlist.css">
+    <link rel="stylesheet" href="/public/css/home.css">
+    <link rel="stylesheet" href="/public/css/productlist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>CMS | Products</title>
 </head>
@@ -20,9 +20,9 @@ require_once('header-footer/header.php');
     <div class="wrapper">
         <div class="sidebar">
             <ul class="sidebar__list">
-            <li class="sidebar__item"><a href="/userlist">Users</a></li>
+            <li class="sidebar__item"><a href="/acount/users">Users</a></li>
                 <li class="sidebar__item active">Products</li>
-                <li class="sidebar__item"><a href="/orderlist">Orders</a></li>
+                <li class="sidebar__item"><a href="/acount/orderlist">Orders</a></li>
             </ul>
         </div>
         
