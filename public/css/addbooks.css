@@ -217,6 +217,7 @@ main {
       display: flex;
       list-style-type: none;
       overflow-x: scroll;
+      
       overflow-y: hidden;
       position: relative;
       box-sizing: border-box;
