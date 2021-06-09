@@ -7,7 +7,7 @@
     <meta name="Author" content="Latricha Seym">
     <link rel="stylesheet" href="public\css\info.css">
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
-    <title>How does it work?</title>
+    <title>Quale funcionas</title>
 </head>
 
 <?php
@@ -17,7 +17,7 @@ require_once('header-footer/header.php');
 <body>
     <section>
         <div class="container">
-            <h1>How it all works</h1>
+            <h1>Quale funcionas</h1>
 
             <div class="flex-box">
             <div class="side1">
@@ -72,10 +72,8 @@ require_once('header-footer/header.php');
 
 <div class="text-block">
     <div class="circle">2</div>
-    <h3 class="text-block__title">Title</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Fusce gravida enim augue, venenatis commodo est venenatis eget.
-        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>         
+    <h3 class="text-block__title">Selekto</h3>
+    <p>Selektez la libro quan vu preferas. <br> La libro automate esos kargat aden la charioteto.</p>         
 </div>
 
 <figure>
@@ -133,10 +131,8 @@ require_once('header-footer/header.php');
 
 <div class="text-block">
     <div class="circle">4</div>
-    <h3 class="text-block__title">Title</h3>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Fusce gravida enim augue, venenatis commodo est venenatis eget.
-        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>         
+    <h3 class="text-block__title">Lando</h3>
+     <p>Indikez la lando quan vu habitas.<br> L’afranko-tarifo esos automate adjustigat a pezo di la komendo.<br> Povas esar ke restas sat multa spaco por adjuntar altra<br> titulo ante ke vu transiras la pezo-limito e ke l’afranko-tarifo chanjas.</p>         
 </div>
 
 
@@ -150,10 +146,8 @@ require_once('header-footer/header.php');
 
 <div class="text-block">
 <div class="circle">1</div>
-    <h3 class="text-block__title">Title</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Fusce gravida enim augue, venenatis commodo est venenatis eget.
-        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>         
+    <h3 class="text-block__title">Regardo</h3>
+    <p>Regardez en la libri qui esas en stoko.</p>         
 </div>
 
 <figure>
@@ -165,10 +159,8 @@ require_once('header-footer/header.php');
 
 <div class="text-block">
     <div class="circle">3</div>
-    <h3 class="text-block__title">Title</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Fusce gravida enim augue, venenatis commodo est venenatis eget.
-        Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>         
+    <h3 class="text-block__title">Charioteto</h3>
+    <p>Verifikez la korekteso di la tituli o nombro de libri.</p>         
 </div>
 
 <figure>
@@ -229,12 +221,10 @@ require_once('header-footer/header.php');
 
     <section id="shipping">
         <div class="container">
-            <h2>Shipping</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Fusce gravida enim augue, venenatis commodo est venenatis eget.
-                       Pellentesque sit amet orci maximus, vehicula nisl nec, condimentum ex.</p>
+            <h2>Sendo</h2>
+            <p>La libri esas sendata per la maxim chipa tarifo. Konseque la sendo-fristo povas durar plu longe kam expektite. Kontaktez ni se vu deziras plu rapida sendo di la libri (kontre plu alta kusti).</p>
 
-            <a class="button" href="/contact">Need help?  &#62; </a>
+            <a class="button" href="/contact">Ka helpo bezonata?  &#62; </a>
         <div>
     </section>
 </body>

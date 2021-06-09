@@ -7,7 +7,7 @@
     <meta name="Author" content="Kevin Kranenburg">
     <link rel="stylesheet" href="public\css\contact.css">
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
-    <title>Contact</title>
+    <title>Kontakto</title>
 </head>
 
 <?php require_once('header-footer/header.php'); ?>
@@ -17,13 +17,9 @@
 <div class="grid-container">
   <div class="contact-page-left">
       <div class="contact-info">
-    <p class="title-contact">GET IN TOUCH</p>
+    <p class="title-contact">KONTAKTEZ NI</p>
     <br>
-    <p class="contact-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aenean commodo ligula eget dolor. Aenean massa. 
-    Cum sociis natoque penatibus et magnis dis parturient montes, 
-    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-    pretium quis, sem. Nulla consequat massa quis enim.</p>
+    <p class="contact-text">Se vu havas questioni, remarki o sugesti, kontaktez ni per e-posto, vizitez ni che Facebook o simple plenigez la kontakto-formulario.</p>
     <div class="icon-box">
         <a href="mailto: Ido.info@hetnet.nl" class="contact-icon fas fa-envelope"></a>
         <p class="icon-text">Ido.info@hetnet.nl</p>
@@ -39,13 +35,13 @@
   <div class="contact-page-right">
 
     <div class="contact-form-box">
-        <p class="title-contact">SAY SOMETHING</p>
-        <input class="contact-input" type="text" placeholder="Your Name..."><br>
-        <input class="contact-input" type="text" placeholder="Your Email..."><br>
-        <p class="contact-text-2">Your Message</p>
+        <p class="title-contact">DICEZ ULO</p>
+        <input class="contact-input" type="text" placeholder="Vua nomo..."><br>
+        <input class="contact-input" type="text" placeholder="Vua e-posto..."><br>
+        <p class="contact-text-2">Vua mesajo</p>
         <textarea class="contact-textarea" type="text" rows="8" cols="50" placeholder="..."></textarea><br>
         <div class="contact-btn-box">
-            <input class="contact-btn" type="button" value="SEND">
+            <input class="contact-btn" type="button" value="Sendez">
         </div>
     </div>
   </div>
@@ -58,26 +54,21 @@
         <img class="logo-footer" src="public\assets\header-footer\logo-middle.png" alt="logo">
     </div>
     <div class="footer-left-text">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-        Aenean commodo ligula eget dolor. Aenean massa. 
-        Cum sociis natoque penatibus et magnis dis parturient montes, 
-        nascetur ridiculus mus. Donec quam felis, 
-        ultricies nec, pellentesque eu, 
-        pretium quis, sem. Nulla consequat massa quis enim.</p>
+        <p>Vendeyo interretala di Ido-libri e produkturi. Kontaktez ni por plusa informi.</p>
     </div>
 
 </div>
 <div class="bottom-menu">
     <ul>
-        <li><a href="/">HOME</a></li>
-        <li><a href="/books">SHOP</a></li>
-        <li><a href="/about">ABOUT US</a></li>
-        <li><a href="/info">HOW DOES IT WORK</a></li>
-        <li><a href="/contact">CONTACT</a></li>
+        <li><a href="/">Hemo</a></li>
+        <li><a href="/books">Butiko</a></li>
+        <li><a href="/about">Pri ni</a></li>
+        <li><a href="/info">Quale funcionas</a></li>
+        <li><a href="/contact">Kontakto</a></li>
     </ul>
 
         <div class="copy-bottom">
-            <p>&copy; 2021 Copyright Librerio Tia Libro</p>
+            <p>&copy; 2021 Autor-yuri Librerio Tia Libro</p>
         </div>
     </div>
 </div>

@@ -19,26 +19,23 @@
                 <img class="logo-footer" src="/public/assets/header-footer/logo-middle.png" alt="logo">
             </div>
             <div class="footer-left-text">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor.
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor.</p>
+                <p>Vendeyo interretala di Ido-libri e produkturi. Kontaktez ni por plusa informi.</p>
             </div>
     </div>
 
     <div class="ft-main-item">
-      <h2 class="ft-title">MENU</h2>
+      <h2 class="ft-title">MENUO</h2>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/books">Shop</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/info">How Does It Work</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/">Hemo</a></li>
+        <li><a href="/books">Butiko</a></li>
+        <li><a href="/about">Pri ni </a></li>
+        <li><a href="/info">Quale funcionas</a></li>
+        <li><a href="/contact">Kontakto</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">NEWSLETTER</h2>
-      <p>Subscribe to our newsletter and never miss new books</p>
+      <h2 class="ft-title">LETRO DE NOVAJI</h2>
+      <p>Abonez nia letro de novaji e nulafoye mankas nova libri</p>
       <form>
         <input type="email" name="email" placeholder="Your email address">
         <input type="submit" value="SEND">
@@ -56,9 +53,9 @@
   <!-- Footer legal -->
   <section class="ft-legal">
     <ul class="ft-legal-list">
-      <li><a href="#">Terms &amp; Conditions</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li>&copy; 2021 Copyright Librerio Tia Libro</li>
+      <li><a href="#">Termini e kondicioni</a></li>
+      <li><a href="#">Politiko di Privateso</a></li>
+      <li>&copy; 2021 Autor-yuri Librerio Tia Libro</li>
     </ul>
   </section>
 </footer>
