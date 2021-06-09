@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="public/css/home.css">
     <link rel="stylesheet" href="public/css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Home</title>
+    <title>Hemo</title>
 </head>
 
 
@@ -20,11 +20,11 @@ require_once('header-footer/header.php');
     <div class="wrapper">
         <div class="sidebar">
             <ul class="sidebar__list">
-                <li class="sidebar__item active"><a href="/">Home</a></li>
-                <li class="sidebar__item"><a href="/books">Shop</a></li>
-                <li class="sidebar__item"><a href="/info">How does It work</a></li>
-                <li class="sidebar__item"><a href="/about">About us</a></li>
-                <li class="sidebar__item"><a href="/contact">Contact</a></li>
+                <li class="sidebar__item active"><a href="/">Hemo</a></li>
+                <li class="sidebar__item"><a href="/books">Butiko </a></li>
+                <li class="sidebar__item"><a href="/info">Quale funcionas</a></li>
+                <li class="sidebar__item"><a href="/about">Pri ni</a></li>
+                <li class="sidebar__item"><a href="/contact">Kontakto</a></li>
             </ul>
         </div>
         <div class="main">

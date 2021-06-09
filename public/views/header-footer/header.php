@@ -20,16 +20,16 @@
             </a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="/books" class="nav-link">Shop</a>
+                    <a href="/books" class="nav-link">Butiko</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/info" class="nav-link">How does it work</a>
+                    <a href="/info" class="nav-link">Quale funcionas </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/about" class="nav-link">About us</a>
+                    <a href="/about" class="nav-link">Pri ni</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contact" class="nav-link">Contact</a>
+                    <a href="/contact" class="nav-link">Kontakto</a>
                 </li>
                 <ul>
                 <li>
