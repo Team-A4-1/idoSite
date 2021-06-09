@@ -68,6 +68,9 @@ h1, h2 {
 }
 
 
+.text-block, figure {
+    min-height: 250px;
+}
 
 figure {
     max-width: 200px;
