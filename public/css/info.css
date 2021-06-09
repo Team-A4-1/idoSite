@@ -28,6 +28,10 @@ h1, h2 {
 }
 
 
+.side1, .side2 {
+    width: 50%;
+}
+
 #shipping p {
     text-align: center;
 }
