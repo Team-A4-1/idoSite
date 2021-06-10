@@ -19,7 +19,7 @@ justify-content: space-between;
 flex-wrap: wrap;
 }
 .books__item{
-    border: 1px solid red;
+    border: 1px solid transparent;
     flex: 1 1 21%;
     margin: 10px;
 }
