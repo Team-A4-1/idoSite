@@ -14,6 +14,9 @@ let cityfield= document.getElementById("city");
 let nummerfield= document.getElementById("nummer");
 let country = document.getElementById("country");
 
+
+
+
  console.log(adressfield.value);
   var send={
     "Fname": Fnamefield.value,
@@ -22,7 +25,7 @@ let country = document.getElementById("country");
     "Postcode": postcodefield.value,
     "City": cityfield.value,
     "Nummer": nummerfield.value,
-    "country": country.value,
+    "country":sessionStorage['alpha2Code'],
     "tax": "ads"
 };
 

@@ -72,6 +72,7 @@
                                 <label for="fname">Country:</label>
                                 <input type="text" id="country" name="country">
                             </div>
+                            <div id='sugestion'></div>
                         </div>
 
                         <div class="payment__methode"> 

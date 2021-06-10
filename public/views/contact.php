@@ -50,7 +50,6 @@
     </div>
   </div>
 </div>
-    
 <script src="public\scripts\contact\mail.js"></script>
 <div class="contact-page-bottom">
     <div class="bottom-info-box">

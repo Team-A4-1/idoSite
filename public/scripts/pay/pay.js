@@ -21,11 +21,54 @@ function addbook(img, name,price,amount,weight){
 '</div>';
                     return html;
 }
+let countrysugestion= document.getElementsByClassName('payment__country')[0];
+
+var sugestionElement = document.getElementById('sugestion');  
+
+ function getCountry(CName){
+    
 
 
+  test =  fetch('https://restcountries.eu/rest/v2/name/'+CName)
+    .then(response =>   response.json()) 
+    .then(repos => { 
+    console.log(repos[0]['alpha2Code']);
+    console.log(repos[0]['alpha3Code']);
+    console.log(repos[0]['name']);
+    sessionStorage.alpha2Code=repos[0]['alpha2Code'];
+    sessionStorage.alpha3Code=repos[0]['alpha3Code'];
+
+    sugestionElement.innerHTML="";
+
+    sugestionElement.innerHTML= repos[0]['name'];
 
 
+});
+
+
+};
 var priceTotal= 0;
+country.addEventListener('keyup',  function (){
+  getCountry(country.value);
+  
+ 
+});
+
+country.addEventListener('focusout',  function (){
+if (sugestionElement!=null){
+  sugestionElement.remove();
+}
+
+});
+
+
+
+
+
+
+
+
+
 
 function get(data,amount){
    
