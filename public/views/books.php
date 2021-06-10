@@ -27,48 +27,48 @@
                     <li class="books__item">
                         <div class="books__content">
                             <img class="books__img" src="/public/assets/cover.jpg" alt="Book-cover">
-                            <div class="books__title"><h2>Overeen weg</h2></div>
+                            <div class="books__title"><h2>Girl in red</h2></div>
                             <div class="books__author">Willem Blue</div>
                             <div class="books__price">&euro;12.20</div>
-                            <button type="submit" class="books__btn">
+                            <a type="submit" href="/shoppingcart" class="books__btn">
                                 ADD TO CARD
-                            </button>
+                            </a>
                         </div>
                     </li>
 
                     <li class="books__item">
                         <div class="books__content">
                             <img class="books__img" src="/public/assets/ido-covers/Basisgrammatica foto.jpg" alt="Book-cover">
-                            <div class="books__title"><h2>Overeen weg</h2></div>
+                            <div class="books__title"><h2>Basisgrammatica</h2></div>
                             <div class="books__author">Willem Blue</div>
                             <div class="books__price">&euro;12.20</div>
-                            <button type="submit" class="books__btn">
+                            <a type="submit" href="/shoppingcart" class="books__btn">
                                 ADD TO CARD
-                            </button>
+                            </a>
                         </div>
                     </li>
 
                     <li class="books__item">
                         <div class="books__content">
                             <img class="books__img" src="/public/assets/ido-covers/Dum epoko di kontagio reklamo plus texto.jpg" alt="Book-cover">
-                            <div class="books__title"><h2>Overeen weg</h2></div>
+                            <div class="books__title"><h2>epoko di kontagio</h2></div>
                             <div class="books__author">Willem Blue</div>
                             <div class="books__price">&euro;12.20</div>
-                            <button type="submit" class="books__btn">
+                            <a type="submit" href="/shoppingcart" class="books__btn">
                                 ADD TO CARD
-                            </button>
+                            </a>
                         </div>
                     </li>
 
                     <li class="books__item">
                         <div class="books__content">
                             <img class="books__img" src="/public/assets/ido-covers/Dum epoko di kontagio.jpg" alt="Book-cover">
-                            <div class="books__title"><h2>Overeen weg</h2></div>
+                            <div class="books__title"><h2>epoko di kontagio</h2></div>
                             <div class="books__author">Willem Blue</div>
                             <div class="books__price">&euro;12.20</div>
-                            <button type="submit" class="books__btn">
+                            <a type="submit" href="/shoppingcart" class="books__btn">
                                 ADD TO CARD
-                            </button>
+                            </a>
                         </div>
                     </li>
 
@@ -77,48 +77,48 @@
                     <li class="books__item">
                         <div class="books__content">
                             <img class="books__img" src="/public/assets/ido-covers/Kafka noveleti.jpg" alt="Book-cover">
-                            <div class="books__title"><h2>Overeen weg</h2></div>
+                            <div class="books__title"><h2>Kafka noveleti</h2></div>
                             <div class="books__author">Willem Blue</div>
                             <div class="books__price">&euro;12.20</div>
-                            <button type="submit" class="books__btn">
+                            <a type="submit" href="/shoppingcart" class="books__btn">
                                 ADD TO CARD
-                            </button>
+                            </a>
                         </div>
                     </li>
 
                     <li class="books__item">
                         <div class="books__content">
                             <img class="books__img" src="/public/assets/ido-covers/Kandido.jpg" alt="Book-cover">
-                            <div class="books__title"><h2>Overeen weg</h2></div>
+                            <div class="books__title"><h2>Kandido</h2></div>
                             <div class="books__author">Willem Blue</div>
                             <div class="books__price">&euro;12.20</div>
-                            <button type="submit" class="books__btn">
+                            <a type="submit" href="/shoppingcart" class="books__btn">
                                 ADD TO CARD
-                            </button>
+                            </a>
                         </div>
                     </li>
 
                     <li class="books__item">
                         <div class="books__content">
                             <img class="books__img" src="/public/assets/ido-covers/Kurez kurez ocidero.jpg" alt="Book-cover">
-                            <div class="books__title"><h2>Overeen weg</h2></div>
+                            <div class="books__title"><h2>Kurez ocidero</h2></div>
                             <div class="books__author">Willem Blue</div>
                             <div class="books__price">&euro;12.20</div>
-                            <button type="submit" class="books__btn">
+                            <a type="submit" href="/shoppingcart" class="books__btn">
                                 ADD TO CARD
-                            </button>
+                            </a>
                         </div>
                     </li>
 
                     <li class="books__item">
                         <div class="books__content">
                             <img class="books__img" src="/public/assets/ido-covers/La aboyanta lando.jpg" alt="Book-cover">
-                            <div class="books__title"><h2>Overeen weg</h2></div>
+                            <div class="books__title"><h2>La aboyanta lando</h2></div>
                             <div class="books__author">Willem Blue</div>
                             <div class="books__price">&euro;12.20</div>
-                            <button type="submit" class="books__btn">
+                            <a type="submit" href="/shoppingcart" class="books__btn">
                                 ADD TO CARD
-                            </button>
+                            </a>
                         </div>
                     </li>
 
