@@ -160,30 +160,30 @@ echo "<script>var id=$id;</script>";
         <div class="grid-container">
             <div class="product-detail-left">
                 <div class="thumbnails"></div>
-                    <img id="image"></img>
+                    <img id="image" src="public/assets/ido-covers/Basisgrammatica foto.jpg"></img>
             </div>
             
 
 
             <div class="product-detail-right">
                 <div class="side">
-                    <p id="title"></p>
+                    <p id="title">Basisgrammatica</p>
                     <p id="author"></p>
                     <br>
                     <h3>Price:</h3>
-                    <p id="price"></p>
+                    <p id="price">15,95</p>
                     <br>
                     <h3>In stock:</h3>
-                    <p id="amount"></p>
+                    <p id="amount">4</p>
                     <br>
                     <h3>Weight:</h3>
-                    <p id="weight"></p>
+                    <p id="weight">135</p>
 
                     <h3>Width:</h3>
-                    <p id="width"></p>
+                    <p id="width">16,5</p>
 
                     <h3>Depth:</h3>
-                    <p id="depth"></p>
+                    <p id="depth">4</p>
                     <input type="number"  id="amount_togle" name="quantity" placeholder="1" min="1" max="10">
                     <button id="addCart" href="/shopcart">Charioteto</button>
                 </div>
@@ -202,19 +202,19 @@ echo "<script>var id=$id;</script>";
 </div>
 
 <div id="London" class="w3-container city">
-  <div id="tabdata"></div>
+  <div id="tabdata">Dit is de preview van het boek. De samenvatting op de achterkant van het boek kan hier worden weergegeven.</div>
 </div>
 
 <div id="Paris" class="w3-container city" style="display:none">
   <div class="details">
     <h3>Height:</h3>
-    <p id="height"></p>
+    <p id="height">24</p>
     <br>
     <h3>Width:</h3>
-    <p id="width"></p>
+    <p id="width">16,5</p>
     <br>
     <h3>Depth:</h3>
-    <p id="depth"></p>
+    <p id="depth">4</p>
   </div>
 </div>
 

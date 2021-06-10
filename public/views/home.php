@@ -62,7 +62,7 @@ require_once('header-footer/header.php');
                                 <div class="best-sellers__card">
                                     <div class="best-sellers__card-content">
                                         <div class="best-sellers__card-img">
-                                            <img src="public/assets/ido-covers/Kandido.jpg" alt="Book-cover">
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/Kandido.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="best-sellers__title">Kandido</div>
                                         <div class="best-sellers__stars"><span class="fa fa-star checked"></span>
@@ -71,7 +71,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="best-sellers__price">&euro;12,40,-</div>
-                                        <button type="submit" class="best-sellers__btn">ADD TO CARD></button>
+                                        <a href="/productdetails"><button type="submit" class="best-sellers__btn">ADD TO CARD></button></a>
                                     </div>
                                 </div>
                             </li>
@@ -79,7 +79,7 @@ require_once('header-footer/header.php');
                                 <div class="best-sellers__card">
                                     <div class="best-sellers__card-content">
                                         <div class="best-sellers__card-img">
-                                            <img src="public/assets/ido-covers/Kafka noveleti.jpg" alt="Book-cover">
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/Kafka noveleti.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="best-sellers__title">Kafka noveleti</div>
                                         <div class="best-sellers__stars"><span class="fa fa-star checked"></span>
@@ -88,7 +88,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="best-sellers__price">&euro;12,40,-</div>
-                                        <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
+                                        <a href="/productdetails"><button type="submit" class="best-sellers__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
                             </li>
@@ -96,7 +96,7 @@ require_once('header-footer/header.php');
                                 <div class="best-sellers__card">
                                     <div class="best-sellers__card-content">
                                         <div class="best-sellers__card-img">
-                                            <img src="public/assets/ido-covers/Modern Ido poeti foto.jpg" alt="Book-cover">
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/Modern Ido poeti foto.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="best-sellers__title">Modern Ido poeti</div>
                                         <div class="best-sellers__stars"><span class="fa fa-star checked"></span>
@@ -105,7 +105,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="best-sellers__price">&euro;12,40,-</div>
-                                        <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
+                                        <a href="/productdetails"><button type="submit" class="best-sellers__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
                             </li>
@@ -113,7 +113,7 @@ require_once('header-footer/header.php');
                                 <div class="best-sellers__card">
                                     <div class="best-sellers__card-content">
                                         <div class="best-sellers__card-img">
-                                            <img src="public/assets/ido-covers/Rimbaud foto.jpg" alt="Book-cover">
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/Rimbaud foto.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="best-sellers__title">Rimbaud</div>
                                         <div class="best-sellers__stars"><span class="fa fa-star checked"></span>
@@ -122,7 +122,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="best-sellers__price">&euro;12,40,-</div>
-                                        <button type="submit" class="best-sellers__btn">ADD TO CARD</button>
+                                        <a href="/productdetails"><button type="submit" class="best-sellers__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
                             </li>
@@ -202,7 +202,7 @@ require_once('header-footer/header.php');
                                 <div class="random__card">
                                     <div class="random__card-content">
                                         <div class="random__card-img">
-                                            <img src="public/assets/ido-covers/Revoluciono ed altra esayi.jpg" alt="Book-cover">
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/Revoluciono ed altra esayi.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="random__title">Revoluciono altra</div>
                                         <div class="random__stars"><span class="fa fa-star checked"></span>
@@ -211,7 +211,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="random__price">&euro;12,40,-</div>
-                                        <button type="submit" class="random__btn">ADD TO CARD</button>
+                                        <a href="/productdetails"><button type="submit" class="random__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
                             </li>
@@ -219,7 +219,7 @@ require_once('header-footer/header.php');
                                 <div class="random__card">
                                     <div class="random__card-content">
                                         <div class="random__card-img">
-                                            <img src="public/assets/ido-covers/Ngozi Adichie reklamo.jpg" alt="Book-cover">
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/Ngozi Adichie reklamo.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="random__title">Ngozi Adichie</div>
                                         <div class="random__stars"><span class="fa fa-star checked"></span>
@@ -228,7 +228,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="random__price">&euro;12,40,-</div>
-                                        <button type="submit" class="random__btn">ADD TO CARD</button>
+                                        <a href="/productdetails"><button type="submit" class="random__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
                             </li>
@@ -236,7 +236,7 @@ require_once('header-footer/header.php');
                                 <div class="random__card">
                                     <div class="random__card-content">
                                         <div class="random__card-img">
-                                            <img src="public/assets/ido-covers/La aboyanta lando.jpg" alt="Book-cover">
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/La aboyanta lando.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="random__title">La aboyanta lando</div>
                                         <div class="random__stars"><span class="fa fa-star checked"></span>
@@ -245,7 +245,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="random__price">&euro;12,40,-</div>
-                                        <button type="submit" class="random__btn">ADD TO CARD</button>
+                                        <a href="/productdetails"><button type="submit" class="random__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
                             </li>
@@ -253,7 +253,7 @@ require_once('header-footer/header.php');
                                 <div class="random__card">
                                     <div class="random__card-content">
                                         <div class="random__card-img">
-                                            <img src="public/assets/ido-covers/Dum epoko di kontagio reklamo plus texto.jpg" alt="Book-cover">
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/Dum epoko di kontagio reklamo plus texto.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="random__title">Epoko di kontagio</div>
                                         <div class="random__stars"><span class="fa fa-star checked"></span>
@@ -262,7 +262,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
                                         <div class="random__price">&euro;12,40,-</div>
-                                        <button type="submit" class="random__btn">ADD TO CARD</button>
+                                        <a href="/productdetails"><button type="submit" class="random__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
                             </li>

@@ -14,6 +14,7 @@ $router->addRoutes(array(
 	array('GET', '/about', function() {require __DIR__ . '/public/views/about.php';}),
 	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';}),
 	array('GET', '/shoppingcart', function() {require __DIR__ . '/public/views/shopcart.php';}),
+	array('GET', '/productdetails', function() {require __DIR__ . '/public/views/productdetails.php';}),
 	array('GET', '/contact', function() {require __DIR__ . '/public/views/contact.php';}),
 	//user cms
 	array('GET', '/acount/products', function() {
