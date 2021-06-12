@@ -219,7 +219,7 @@ require_once('header-footer/header.php');
                                 <div class="random__card">
                                     <div class="random__card-content">
                                         <div class="random__card-img">
-                                        <a href="/productdetails"><img src="public/assets/ido-covers/Ngozi Adichie reklamo.jpg" alt="Book-cover"></a>
+                                        <a href="/productdetails"><img src="public/assets/ido-covers/Rimbaud foto.jpg" alt="Book-cover"></a>
                                         </div>
                                         <div class="random__title">Ngozi Adichie</div>
                                         <div class="random__stars"><span class="fa fa-star checked"></span>

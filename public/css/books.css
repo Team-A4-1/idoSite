@@ -27,9 +27,11 @@ flex-wrap: wrap;
 display: flex;
 flex-direction: column;
 }
-.books__img{
-    height: 298px;
-    width: auto;
+.books__img {
+    height: auto;
+    /* max-width: 192px; */
+    width: 228px;
+    max-height: 304px;
 }
 .books__title{}
 .books__author{}

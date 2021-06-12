@@ -162,6 +162,7 @@ li.banner__item.banner__item--right {
 
 .best-sellers__card-img img {
     height: auto;
+    min-height: 382px;
     width: 236px;
 }
 
@@ -472,6 +473,7 @@ p.advertisment__blok--up {
 .random__card {
     border: 1px solid #707070;
     border-radius: 6px;
+    margin: 0 8px;
     box-shadow: 1px 1px 5px gray;
 }
 
@@ -481,6 +483,7 @@ p.advertisment__blok--up {
 
 .random__card-img img {
     height: auto;
+    min-height: 382px;
     width: 236px;
 }
 
@@ -514,6 +517,12 @@ p.advertisment__blok--up {
 }
 
 @media (max-width: 767px) {
+    .best-sellers__card {
+        margin: 0 8px;
+    }
+    .random__card {
+        margin: 0 8px;
+    }
     .best-sellers__list {
         display: flex;
         /* justify-content: space-around; */
@@ -593,6 +602,12 @@ p.advertisment__blok--up {
 
 /* // Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 767px) and (max-width: 768px) {
+    .best-sellers__card {
+        margin: 0 8px;
+    }
+    .random__card {
+        margin: 0 8px;
+    }
     .best-sellers__list {
         display: flex;
         /* justify-content: space-around; */
@@ -662,6 +677,12 @@ p.advertisment__blok--up {
 
 /* // Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .best-sellers__card {
+        margin: 0 8px;
+    }
+    .random__card {
+        margin: 0 8px;
+    }
     .best-sellers__list {
         display: flex;
         /* justify-content: space-around; */

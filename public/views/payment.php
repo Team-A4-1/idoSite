@@ -103,10 +103,10 @@
                         <div id="orders">
                         <div class="order__list">
                             <div class="order__left">
-                                <img class="order__img" src="/public/assets/cover.jpg" alt="Book-cover">
+                                <img class="order__img" src="/public/assets/ido-covers/Kandido.jpg" alt="Book-cover">
                             </div>
                             <div class="order__center">
-                                <p>IDO What is IT?</p>
+                                <p>Kandido</p>
                                 <p>X 1</p>
                                 <p>Weight: 100gr</p>
                             </div>
@@ -117,10 +117,10 @@
                         
                         <div class="order__list">
                             <div class="order__left">
-                                <img class="order__img" src="/public/assets/cover.jpg" alt="Book-cover">
+                                <img class="order__img" src="/public/assets/ido-covers/Kafka noveleti.jpg" alt="Book-cover">
                             </div>
                             <div class="order__center">
-                                <p>IDO What is IT?</p>
+                                <p>Kafka noveleti</p>
                                 <p>X 1</p>
                                 <p>Weight: 100gr</p>
                             </div>

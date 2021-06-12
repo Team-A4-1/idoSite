@@ -25,10 +25,48 @@
                 <section class="cart">
                     <form class="cart__content">
                         <h2 class="cart__title">Charioteto</h2>
-                        <div class='list'>
-                        
-                
+                        <div class="cart__list">
+                            <div class="cart__left">
+                                <img class="cart__img" src="/public/assets/ido-covers/Kandido.jpg" alt="Book-cover">
+                            </div>
+                            <div class="cart__center">
+                                <p>Kandido</p>
+
+                                <label for="cars">Choose amount:</label>
+                                <select name="amount" id="amount">
+                                    <option value="volvo">1</option>
+                                    <option value="saab">2</option>
+                                    <option value="opel">3</option>
+                                    <option value="audi">4</option>
+                                </select>
+                                <p>Weight: 100gr</p>
+                            </div>
+                            <div class="cart__right">
+                                <p><i class="fas fa-trash-alt"></i>$ 11.40</p>
+                            </div>
                         </div>
+                        <hr>
+                        <div class="cart__list">
+                            <div class="cart__left">
+                                <img class="cart__img" src="/public/assets/ido-covers/Kafka noveleti.jpg" alt="Book-cover">
+                            </div>
+                            <div class="cart__center">
+                                <p>Kafka noveleti</p>
+
+                                <label for="cars">Choose amount:</label>
+                                <select name="amount" id="amount">
+                                    <option value="volvo">1</option>
+                                    <option value="saab">2</option>
+                                    <option value="opel">3</option>
+                                    <option value="audi">4</option>
+                                </select>
+                                <p>Weight: 100gr</p>
+                            </div>
+                            <div class="cart__right">
+                                <p><i class="fas fa-trash-alt"></i>$ 11.40</p>
+                            </div>
+                        </div>
+                        <hr>
                         <div class="cart__total">
                             <div class="cart__left">
                                 <h2>Tote:</h2>
