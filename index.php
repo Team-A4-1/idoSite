@@ -12,6 +12,7 @@ $router->addRoutes(array(
 	array('GET', '/books', function() {require __DIR__ . '/public/views/books.php';}),
 	array('GET', '/info', function() {require __DIR__ . '/public/views/info.php';}),
 	array('GET', '/about', function() {require __DIR__ . '/public/views/about.php';}),
+	array('GET', '/login', function() {require __DIR__ . '/public/views/login.php';}),
 	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';}),
 	array('GET', '/shoppingcart', function() {require __DIR__ . '/public/views/shopcart.php';}),
 	array('GET', '/productdetails', function() {require __DIR__ . '/public/views/productdetails.php';}),
