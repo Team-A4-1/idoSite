@@ -188,12 +188,7 @@ echo "<script>var id=$id;</script>";
                     <br>
                     <h3>Weight:</h3>
                     <p id="weight">135</p>
-
-                    <h3>Width:</h3>
-                    <p id="width">16,5</p>
-
-                    <h3>Depth:</h3>
-                    <p id="depth">4</p>
+                    
                     <input type="number"  id="amount_togle" name="quantity" placeholder="1" min="1" max="10">
                     <button id="addCart" href="/shopcart">Charioteto</button>
                 </div>
@@ -212,7 +207,17 @@ echo "<script>var id=$id;</script>";
 </div>
 
 <div id="London" class="w3-container city">
-  <div id="tabdata">Dit is de preview van het boek. De samenvatting op de achterkant van het boek kan hier worden weergegeven.</div>
+  <div id="tabdata">Dit is de preview van het boek. De samenvatting op de achterkant van het boek kan hier worden weergegeven.
+  <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat erat ut purus scelerisque biben
+    dum nec et lorem. In nec nisi vel augue dapibus egestas in eu ligula. Etiam in neque sollicitudin, eleifend turp
+    is sed, tincidunt tellus. Etiam gravida est ac sapien ornare iaculis. Phasellus imperdiet mauris ac metus orn
+    are, eget fermentum diam scelerisque. Vivamus at ex sed justo congue accumsan at ut erat. Pellentesque 
+    suscipit justo felis, at porttitor sem porttitor non. Aenean vel tincidunt ex. Etiam aliquam eleifend justo, 
+    sed cursus ex blandit nec.
+
+
+  </div>
 </div>
 
 <div id="Paris" class="w3-container city" style="display:none">

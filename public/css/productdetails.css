@@ -68,6 +68,11 @@
     padding: 50px;
 }
 
+.side h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
 #tabdata {
     font-size: 20px;
     padding: 25px;
@@ -118,6 +123,14 @@
     padding-bottom: 25px;
     position: relative;
 }
+
+.image-block__thumbs img {
+    padding: 10px;
+    border: solid 1px #7a7979;
+    display: block;
+    padding: 45px !important;
+    margin: 10px;
+}
   }
 
 .image-side-box {
@@ -159,6 +172,23 @@
     padding: 10px;
     border: solid 1px #7a7979;
     display: block;
-    padding: 60px;
+    padding: 75px;
     margin: 10px;
+}
+
+#price {
+    color: #346dbb;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#amount {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#weight {
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 20px;
 }
