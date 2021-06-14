@@ -33,43 +33,43 @@
 
                         <div class="payment__one"> 
                             <div class="payment__fn">
-                                <label for="fname">First name:</label>
+                                <label for="fname">Nom-ar:</label>
                                 <input type="text" id="fname" name="fname">
                             </div>
 
                             <div class="payment__ln">
-                                <label for="lname">Last name:</label>
+                                <label for="lname">Durar nomo:</label>
                                 <input type="text" id="lname" name="lname"><br><br>
                             </div>
                         </div>
 
                         <div class="payment__two"> 
                             <div class="payment__adress">
-                                <label for="fname">Adress:</label>
+                                <label for="fname">Diskursar:</label>
                                 <input type="text" id="adress" name="adress">
                             </div>
 
                             <div class="payment__postcode">
-                                <label for="lname">Postalcode/Zipcode:</label>
+                                <label for="lname">Post-ala/Zipcode:</label>
                                 <input type="text" id="postcode" name="postcode"><br><br>
                             </div>
                         </div>
 
                         <div class="payment__three"> 
                             <div class="payment__city">
-                                <label for="fname">City:</label>
+                                <label for="fname">Civito:</label>
                                 <input type="text" id="city" name="city">
                             </div>
 
                             <div class="payment__nummer">
-                                <label for="lname">Nummer:</label>
+                                <label for="lname">Nombro:</label>
                                 <input type="text" id="nummer" name="nummer"><br><br>
                             </div>
                         </div>
 
                         <div class="payment__four"> 
                             <div class="payment__country">
-                                <label for="fname">Country:</label>
+                                <label for="fname">Komt-io:</label>
                                 <input type="text" id="country" name="country">
                             </div>
                             <div id='sugestion'></div>
@@ -108,7 +108,7 @@
                             <div class="order__center">
                                 <p>Kandido</p>
                                 <p>X 1</p>
-                                <p>Weight: 100gr</p>
+                                <p>Charjar: 100gr</p>
                             </div>
                             <div class="order__right">
                                 <p>&euro; 11.40</p>
@@ -122,7 +122,7 @@
                             <div class="order__center">
                                 <p>Kafka noveleti</p>
                                 <p>X 1</p>
-                                <p>Weight: 100gr</p>
+                                <p>Charjar: 100gr</p>
                             </div>
                             <div class="order__right">
                                 <p>&euro; 11.40</p>
@@ -131,28 +131,28 @@
                         </div>
                         <div class="order__extra">
                             <div class="order__left">
-                                <p>Shipping cost</p>
-                                <p>Taxes</p>
-                                <p>Total weight:</p>
+                                <p>Sendo</p>
+                                <p>taxar</p>
+                                <p>Charjar:</p>
                             </div>
                             <div class="order__right">
-                                <p>Free</p>
+                                <p>&euro;2.50</p>
                                 <p>&euro;2.50</p>
                                 <p>1300gr</p>
                             </div>
-                        </div>
+                        </div> 
 
                         <div class="order__total">
                             <div class="order__left">
-                                <h2>Total:</h2>
+                                <h2>Tote:</h2>
                             </div>
                             <div class="order__right">
                                 <h2>&euro;13.50</h2>
                             </div>
                         </div>
                         <div class="order__bottom">
-                            <button class="order__btn" type="submit">Continue</button>
-                            <p><a href="/home">Cancel payment</a></p>
+                            <button class="order__btn" type="submit">Durez</button>
+                            <p><a href="/home">Abrogez pago</a></p>
                         </div>
                     </div>
                 </div>

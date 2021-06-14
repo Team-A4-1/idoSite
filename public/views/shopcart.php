@@ -32,14 +32,14 @@
                             <div class="cart__center">
                                 <p>Kandido</p>
 
-                                <label for="cars">Choose amount:</label>
+                                <label for="cars">Selektar quanto:</label>
                                 <select name="amount" id="amount">
                                     <option value="volvo">1</option>
                                     <option value="saab">2</option>
                                     <option value="opel">3</option>
                                     <option value="audi">4</option>
                                 </select>
-                                <p>Weight: 100gr</p>
+                                <p>Charjar: 100gr</p>
                             </div>
                             <div class="cart__right">
                                 <p><i class="fas fa-trash-alt"></i>$ 11.40</p>
@@ -53,14 +53,14 @@
                             <div class="cart__center">
                                 <p>Kafka noveleti</p>
 
-                                <label for="cars">Choose amount:</label>
+                                <label for="cars">Selektar quanto:</label>
                                 <select name="amount" id="amount">
                                     <option value="volvo">1</option>
                                     <option value="saab">2</option>
                                     <option value="opel">3</option>
                                     <option value="audi">4</option>
                                 </select>
-                                <p>Weight: 100gr</p>
+                                <p>Charjar: 100gr</p>
                             </div>
                             <div class="cart__right">
                                 <p><i class="fas fa-trash-alt"></i>$ 11.40</p>
