@@ -160,7 +160,17 @@ echo "<script>var id=$id;</script>";
         <div class="grid-container">
             <div class="product-detail-left">
                 <div class="thumbnails"></div>
-                    <img id="image" src="public/assets/ido-covers/Basisgrammatica foto.jpg"></img>
+
+                    <div class="image-block">
+                        <div class="image-block__thumbs">
+                            <img src="" alt=""></img>
+                            <img src="" alt=""></img>
+                            <img src="" alt=""></img>
+                        </div>
+                        <div class="image-block__main">
+                        <img id="image" src="public/assets/ido-covers/Basisgrammatica foto.jpg"></img>
+                        </div>
+                    </div>
             </div>
             
 

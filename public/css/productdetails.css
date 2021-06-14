@@ -114,7 +114,51 @@
     width: 55%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    /* display: block; */
     padding-bottom: 25px;
+    position: relative;
 }
   }
+
+.image-side-box {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.image-side {
+    display: block;
+}
+
+
+
+
+.image-block {
+    display: flex;
+}
+
+.image-block__main {
+    margin: 10px;
+    position: relative;
+}
+
+.image-block__placeholder {
+    position: absolute;
+    color:#7a7979;
+    top: 0px;
+}
+
+.image-block__main img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.image-block__thumbs img {
+    padding: 10px;
+    border: solid 1px #7a7979;
+    display: block;
+    padding: 60px;
+    margin: 10px;
+}
