@@ -20,9 +20,9 @@ require_once('header-footer/header.php');
     <div class="wrapper">
         <div class="sidebar">
             <ul class="sidebar__list">
-            <li class="sidebar__item"><a href="/acount/users">Users</a></li>
-                <li class="sidebar__item active">Products</li>
-                <li class="sidebar__item"><a href="/acount/orderlist">Orders</a></li>
+            <li class="sidebar__item"><a href="/userlist">Users</a></li>
+                <li class="sidebar__item active"><a href="/productlist">Products</a></li>
+                <li class="sidebar__item"><a href="/orderlist">Orders</a></li>
             </ul>
         </div>
         

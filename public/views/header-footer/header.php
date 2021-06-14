@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Kevin Kranenburg">
     <link rel="stylesheet" href="/public/css/header-footer/header.css">
+    <link rel="stylesheet" href="/public/css/special.css">
     <script src="https://kit.fontawesome.com/8ee2ef1015.js" crossorigin="anonymous"></script>
 </head>
 <body>

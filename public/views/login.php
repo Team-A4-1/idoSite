@@ -32,11 +32,11 @@ require_once('header-footer/header.php');
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
 
-                        <button class="loginbtn" type="submit">Login</button>
+                        <button class="loginbtn" type="submit"> <a href="/productlist">Login</a> </button>
                     </div>
 
                     <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"> <a href="/">Cancel</a></button>
                     </div>
             
         
