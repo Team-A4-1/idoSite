@@ -180,15 +180,15 @@ echo "<script>var id=$id;</script>";
                     <p id="title">Basisgrammatica</p>
                     <p id="author"></p>
                     <br>
-                    <h3>Price:</h3>
+                    <h3>Preco:</h3>
                     <p id="price">15,95</p>
                     <br>
-                    <h3>In stock:</h3>
+                    <h3>Furnisar:</h3>
                     <p id="amount">4</p>
                     <br>
-                    <h3>Weight:</h3>
+                    <h3>Pezo:</h3>
                     <p id="weight">135</p>
-                    
+
                     <input type="number"  id="amount_togle" name="quantity" placeholder="1" min="1" max="10">
                     <button id="addCart" href="/shopcart">Charioteto</button>
                 </div>
@@ -203,7 +203,7 @@ echo "<script>var id=$id;</script>";
 
                 <div class="w3-bar w3-black">
   <button class="tab-button" onclick="openCity('London')">Preview</button>
-  <button class="tab-button" onclick="openCity('Paris')">Details</button>
+  <button class="tab-button" onclick="openCity('Paris')">Detal-o</button>
 </div>
 
 <div id="London" class="w3-container city">
@@ -222,13 +222,13 @@ echo "<script>var id=$id;</script>";
 
 <div id="Paris" class="w3-container city" style="display:none">
   <div class="details">
-    <h3>Height:</h3>
+    <h3>Alt-eso:</h3>
     <p id="height">24</p>
     <br>
-    <h3>Width:</h3>
+    <h3>Larj-eso:</h3>
     <p id="width">16,5</p>
     <br>
-    <h3>Depth:</h3>
+    <h3>Profund-eso:</h3>
     <p id="depth">4</p>
   </div>
 </div>
