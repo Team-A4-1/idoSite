@@ -62,6 +62,7 @@ $router->addRoutes(array(
 	array('GET', '/payment', function() {require __DIR__ . '/public/views/payment.php';}),
 	array('GET', '/orderlist', function() {require __DIR__ . '/public/views/orderlist.php';}),
 	array('GET', '/productlist', function() {require __DIR__ . '/public/views/productlist.php';}),
+	array('GET', '/add', function() {require __DIR__ . '/public/views/addbooks.php';}),
 	array('GET', '/userlist', function() {require __DIR__ . '/public/views/userlist.php';})
 ));
 

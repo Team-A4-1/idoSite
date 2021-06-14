@@ -19,9 +19,10 @@
     <div class="wrapper">
     <aside class="sidebar">
         <ul>
-            <li class="sidebar__item active"><a href="/acount/add">Hemo</a></li>
-            <li class="sidebar__item"><a href="/acount/users">Users</a></li>
-            <li class="sidebar__item"><a href="/acount/products">Products</a></li>
+            <li class="sidebar__item active"><a href="/">Add products</a></li>
+            <li class="sidebar__item"><a href="/userlist">Users</a></li>
+            <li class="sidebar__item"><a href="/productlist">Products</a></li>
+            <li class="sidebar__item"><a href="/orderlist">Orders</a></li>
         </ul>
     </aside>
    

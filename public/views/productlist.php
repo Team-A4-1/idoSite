@@ -23,6 +23,7 @@ require_once('header-footer/header.php');
             <li class="sidebar__item"><a href="/userlist">Users</a></li>
                 <li class="sidebar__item active"><a href="/productlist">Products</a></li>
                 <li class="sidebar__item"><a href="/orderlist">Orders</a></li>
+                <li class="sidebar__item"><a href="/add">Add products</a></li>
             </ul>
         </div>
         
