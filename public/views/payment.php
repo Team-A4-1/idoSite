@@ -25,58 +25,58 @@
 
 
             <section class="payment-details">
-                <h1 class="payment-details__title">Payment method</h1>
+                <h1 class="payment-details__title">PAGO-METODO</h1>
 
                 <form class="payment-details__form">
-                        <h2 class="payment__title">Payment Details</h2>
+                        <h2 class="payment__title">Pago-detali</h2>
                     <div class="payment__content">
 
                         <div class="payment__one"> 
                             <div class="payment__fn">
-                                <label for="fname">Nom-ar:</label>
+                                <label for="fname">Prenomo:</label>
                                 <input type="text" id="fname" name="fname">
                             </div>
 
                             <div class="payment__ln">
-                                <label for="lname">Durar nomo:</label>
+                                <label for="lname">Familio-nomo:</label>
                                 <input type="text" id="lname" name="lname"><br><br>
                             </div>
                         </div>
 
                         <div class="payment__two"> 
                             <div class="payment__adress">
-                                <label for="fname">Diskursar:</label>
+                                <label for="fname">Adreso:</label>
                                 <input type="text" id="adress" name="adress">
                             </div>
 
                             <div class="payment__postcode">
-                                <label for="lname">Post-ala/Zipcode:</label>
+                                <label for="lname">Kodexo postala:</label>
                                 <input type="text" id="postcode" name="postcode"><br><br>
                             </div>
                         </div>
 
                         <div class="payment__three"> 
                             <div class="payment__city">
-                                <label for="fname">Civito:</label>
+                                <label for="fname">Urbo:</label>
                                 <input type="text" id="city" name="city">
                             </div>
 
                             <div class="payment__nummer">
-                                <label for="lname">Nombro:</label>
+                                <label for="lname">Numero:</label>
                                 <input type="text" id="nummer" name="nummer"><br><br>
                             </div>
                         </div>
 
                         <div class="payment__four"> 
                             <div class="payment__country">
-                                <label for="fname">Komt-io:</label>
+                                <label for="fname">Lando:</label>
                                 <input type="text" id="country" name="country">
                             </div>
                             <div id='sugestion'></div>
                         </div>
 
                         <div class="payment__methode"> 
-                                        <h3 class="h3-pay">Avalaible Payment Methodes</h3>
+                                        <h3 class="h3-pay">Obtenebla pago-metodi:s</h3>
                                         <div class="payment__choice">
                                         <div id="smart-button-container">
                                         <div style="text-align: center;">
@@ -99,7 +99,7 @@
                 <div class="order__wrapper">
                 <div class="order__top"></div>
                     <div class="order__content">
-                        <div class="order__title"><h2>Order Summary</h2></div>
+                        <div class="order__title"><h2>Komendita tituli</h2></div>
                         <div id="orders">
                         <div class="order__list">
                             <div class="order__left">

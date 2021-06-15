@@ -208,7 +208,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="random__price">&euro;12,40,-</div>
+                                        <div class="random__price">&euro;20,40,-</div>
                                         <a href="/shoppingcart"><button type="submit" class="random__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
@@ -225,7 +225,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="random__price">&euro;12,40,-</div>
+                                        <div class="random__price">&euro;12,49,-</div>
                                         <a href="/shoppingcart"><button type="submit" class="random__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
@@ -242,7 +242,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="random__price">&euro;12,40,-</div>
+                                        <div class="random__price">&euro;11,40,-</div>
                                         <a href="/shoppingcart"><button type="submit" class="random__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>
@@ -259,7 +259,7 @@ require_once('header-footer/header.php');
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span></div>
-                                        <div class="random__price">&euro;12,40,-</div>
+                                        <div class="random__price">&euro;19,40,-</div>
                                         <a href="/shoppingcart"><button type="submit" class="random__btn">ADD TO CARD</button></a>
                                     </div>
                                 </div>

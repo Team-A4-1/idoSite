@@ -17,29 +17,30 @@ require_once('header-footer/header.php');
 
 <body>
     <section>
-    
-                   
 
-                        <form class="modal-content animate" action="private/login/login.php" method="post">
-                    <div class="imgcontainer">
-                        
-                    </div>
 
-                    <div class="container">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
 
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+        <div class="modal-content animate" action="private/login/login.php" method="post">
+            <div class="imgcontainer">
 
-                        <button class="loginbtn" type="submit"> <a href="/productlist">Login</a> </button>
-                    </div>
+            </div>
 
-                    <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"> <a href="/">Cancel</a></button>
-                    </div>
-            
-        
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button class="loginbtn"> <a href="/productlist">Login</a> </button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+                    <a href="/">Cancel</a></button>
+            </div>
+    </div>
+
     </section>
 </body>
 
